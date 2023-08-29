@@ -8,14 +8,13 @@ function Nav() {
   const router = useRouter();
 
   return (
-
     <div className='fixed top-0 left-0 px-8 py-4 flex items-center justify-between w-full'>
       <Link href={"/"}> 
         <div className='font-bold text-2xl'>
           Logo
         </div>
       </Link> 
-      <div className='navContents flex align-middle'>
+      <div className='navContents flex items-center'>
         <Link href={'/home'}>
           <div className='text-white text-base'>
             Home
