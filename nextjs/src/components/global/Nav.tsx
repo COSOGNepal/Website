@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
-function Nav() {
+function Nav(): React.JSX.Element {
   
   const router = useRouter();
 
