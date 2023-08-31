@@ -8,26 +8,23 @@ function Nav(): React.JSX.Element {
   const router = useRouter();
 
   return (
-    <div className='fixed top-0 left-0 px-8 py-4 flex items-center  w-full'>
+    <nav className='sticky top-0 px-8 py-4 flex items-center w-full z-50'>
       <Link href={"/"}> 
-        <div className='font-bold text-2xl'>
-          Logo
-        </div>
+        <img src="/logo.png" alt="logo" className='h-12 cursor-pointer'/>
       </Link> 
-      <div className='navContents flex items-center flex-1 justify-center'>
-        <Link href={'/home'}>
-          <div className='text-white text-base opacity-70 hover:opacity-100'>
-            Home
-          </div>
+      <div className='navContents flex items-center flex-1 justify-center space-x-8'>
+        <Link href={'/'} className="hover:bg-gray-300 text-white-500 px-3 py-2 rounded-md text-sm font-bold">
+        Home
         </Link> 
-        <Link href={"/blog"}>
-          <div className='text-white text-base mx-5 opacity-70 hover:opacity-100'>
+        <Link href={"/blog"} className='text-base opacity-70 hover:opacity-100 text-white'>
             Blog
-          </div> 
         </Link> 
-        <Link href={"/contact"}> <div className='text-white text-base opacity-70 hover:opacity-100'>
+        <Link href={"/team"} className='text-white text-base opacity-70 hover:opacity-100'>
+            About us
+        </Link> 
+        <Link href={"/contact"} className='text-white text-base opacity-70 hover:opacity-100'>
           Contact
-        </div></Link> 
+        </Link> 
       </div>
 
       <div className='flex align-middle'>
@@ -36,7 +33,7 @@ function Nav(): React.JSX.Element {
         </div>
         
       </div>
-    </div>
+    </nav>
   )
 }
 
