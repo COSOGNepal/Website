@@ -220,7 +220,7 @@ const Rails = ({style}: iconProps) => {
 
   </div>
 }
-const React = ({style}: iconProps) => {
+const ReactIcon = ({style}: iconProps) => {
   return <div className={style}>
     <svg width="59" height="54" viewBox="0 0 59 54" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_d_16_20)">
@@ -287,7 +287,6 @@ const Rust = ({style}: iconProps) =>{
   </div>
 }
 
-
 export {
   Bash,
   BashM,
@@ -299,7 +298,7 @@ export {
   Kotlin,
   Python,
   Rails, 
-  React, 
+  ReactIcon, 
   Ruby,
   Rust
 }

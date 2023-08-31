@@ -3,6 +3,7 @@
 import React from "react";
 import { Nav } from "@/components/global";
 import { useRouter } from "next/navigation";
+import Icons from "@/components/home/Icons";
 
 export default function Home(): React.JSX.Element{
   const router = useRouter();
@@ -25,6 +26,7 @@ export default function Home(): React.JSX.Element{
             Join Now
           </div>
         </div>
+        <Icons />
       </div> 
     </>
   )
