@@ -8,18 +8,18 @@ function Nav(): React.JSX.Element {
   const router = useRouter();
 
   return (
-    <nav className='sticky top-0 px-8 py-4 flex items-center w-full z-50'>
+    <nav className='fixed top-0 px-8 py-4 flex tems-center w-full z-50'>
       <Link href={"/"}> 
         <img src="/logo.png" alt="logo" className='h-12 cursor-pointer'/>
       </Link> 
-      <div className='navContents flex items-center flex-1 justify-center space-x-8'>
-        <Link href={'/'} className="hover:bg-gray-300 text-white-500 px-3 py-2 rounded-md text-sm font-bold">
+      <div className='navContents flex items-center flex-1 justify-center '>
+        <Link href={'/'} className="hover:bg-gray-300 text-white-500 rounded-md font-bold">
         Home
         </Link> 
-        <Link href={"/blog"} className='text-base opacity-70 hover:opacity-100 text-white'>
+        <Link href={"/blog"} className='text-base opacity-70 hover:opacity-100 text-white mx-4'>
             Blog
         </Link> 
-        <Link href={"/team"} className='text-white text-base opacity-70 hover:opacity-100'>
+        <Link href={"/team"} className='text-white text-base opacity-70 hover:opacity-100 mr-4'>
             About us
         </Link> 
         <Link href={"/contact"} className='text-white text-base opacity-70 hover:opacity-100'>

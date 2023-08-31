@@ -19,7 +19,7 @@ from "@/components/global/LangIcon"
 
 
 const Icons = () => {
-	return <div>
+	return <div className="w-full h-full absolute top-0 left-0 pointer-events-none">
 		<Html style=""/>
 		<Bash style=""/>
 		<BashM style=""/>
