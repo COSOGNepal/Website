@@ -28,7 +28,7 @@ function Nav(): React.JSX.Element {
       </div>
 
       <div className='flex align-middle'>
-        <div className='h-10 leading-10 bg-btn-sec-red text-center rounded-lg w-44 cursor-pointer opacity-50 hover:opacity-70' onClick={()=>{router.push("/authenticate")}}>
+        <div className='h-10 leading-10 bg-btn-sec text-center rounded-lg text-sm w-44 cursor-pointer opacity-90' onClick={()=>{router.push("/authenticate")}}>
           Connect
         </div>
         

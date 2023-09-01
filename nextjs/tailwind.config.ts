@@ -8,8 +8,9 @@ const config: Config = {
   ],
   theme:{
     colors:{
-      "btn-sec-red": "#462935",
-      "btn-pri-red": "#E33F2BBD",
+      "btn-pri": "#6384D1",
+      "btn-sec": "#6384D12A",
+      "btn-sec-hover": "#6384D14A",
             
     },
     extend:{
