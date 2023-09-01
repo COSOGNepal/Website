@@ -2,7 +2,8 @@
 
 import React from "react";
 
-import {Html,
+import {
+	Html,
 	Bash,
 	BashM,
 	Css,
@@ -14,13 +15,12 @@ import {Html,
 	Rails,
 	ReactIcon,
 	Ruby,
-	Rust} 
-from "@/components/global/LangIcon"
+	Rust
+} from "@/components/global/LangIcon"
 import { getRandomOpacity } from "@/utils/randomizer";
 
 
 const Icons = () => {
-	
 	return <div className="w-full h-full absolute top-0 left-0 pointer-events-none">
 		<Html style={`opacity-${getRandomOpacity()}`}/>
 		<Bash style={`opacity-${getRandomOpacity()}`} />
