@@ -21,6 +21,7 @@ function VideoDemo() {
   };
 
 
+  // pausing the video when out of view.
 
   return (
     <div className='w-full '>
