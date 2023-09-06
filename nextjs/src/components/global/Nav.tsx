@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation'
 import React from 'react'
 
 function Nav(): React.JSX.Element {
-  
+
   const router = useRouter();
 
   return (
@@ -14,13 +14,13 @@ function Nav(): React.JSX.Element {
       </Link> 
       <div className='navContents flex items-center flex-1 justify-center '>
         <Link href={'/'} className="hover:bg-gray-300 text-white-500 rounded-md font-bold">
-        Home
+          Home
         </Link> 
         <Link href={"/blog"} className='text-base opacity-70 hover:opacity-100 text-white mx-4'>
-            Blog
+          Blog
         </Link> 
         <Link href={"/team"} className='text-white text-base opacity-70 hover:opacity-100 mr-4'>
-            About us
+          About us
         </Link> 
         <Link href={"/contact"} className='text-white text-base opacity-70 hover:opacity-100'>
           Contact
@@ -31,7 +31,7 @@ function Nav(): React.JSX.Element {
         <div className='h-10 leading-10 bg-btn-sec text-center rounded-lg text-sm w-44 cursor-pointer opacity-90' onClick={()=>{router.push("/authenticate")}}>
           Connect
         </div>
-        
+
       </div>
     </nav>
   )
