@@ -7,7 +7,7 @@ import React, { useEffect, useState } from "react";
 function Nav(): React.JSX.Element {
   const [scrollPixel, setScrollPixel] = useState(scrollY);
   window.onscroll = () => {
-    setScrollPixel(scrollY); // console.log(window.scrollY);
+    setScrollPixel(scrollY);
   };
 
   const router = useRouter();
