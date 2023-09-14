@@ -31,7 +31,6 @@ function Nav(): React.JSX.Element {
         <div className='h-10 leading-10 bg-btn-sec text-center rounded-lg text-sm w-44 cursor-pointer opacity-90' onClick={()=>{router.push("/authenticate")}}>
           Connect
         </div>
-
       </div>
     </nav>
   )
