@@ -1,17 +1,24 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState } from "react";
 
 type cursorModeTypes = "play" | "pause" | "hidden";
 function VideoDemo() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const cursorRef = useRef<HTMLDivElement>(null);
-  const [cursorMode, setCursor] =  useState<cursorModeTypes>("play");
+  const [cursorMode, setCursor] = useState<cursorModeTypes>("play");
 
+<<<<<<< HEAD
   const handleMouseMove = (e: MouseEvent) =>{
     const pageX = e.pageX;
     const pageY = e.pageY;
+=======
+  const handleMouseMove = (e: MouseEvent) => {
+    const clientX = e.clientX;
+    const clientY = e.clientY;
+>>>>>>> d7b8ab6dacb1678688c391d4e5bfda58eea72a6e
 
-    if(!cursorRef.current) return;
+    if (!cursorRef.current) return;
 
+<<<<<<< HEAD
     cursorRef.current.style.top = `${pageY}px`;
     cursorRef.current.style.left = `${pageX}px`;
 
@@ -50,8 +57,47 @@ console.log({cursorMode})
 
 
 
+=======
+    cursorRef.current.style.top = `${clientY}px`;
+    cursorRef.current.style.left = `${clientX}px`;
+  };
+  const handleMouseLeave = () => {
+    setCursor("hidden");
+  };
+
+  // pausing the video when out of view.
+
+  return (
+    <div className="w-full ">
+      <video
+        ref={videoRef}
+        src="/video.mp4"
+        className="w-screen h-auto cursor-none"
+        muted
+        onMouseOver={(e) => handleMouseMove(e)}
+        onMouseLeave={handleMouseLeave}
+        onPlay={() => {
+          setCursor("play");
+        }}
+        onPause={() => {
+          setCursor("pause");
+        }}
+        loop
+      ></video>
+
+      <div
+        ref={cursorRef}
+        className="pointer-events-none cursor-none transition-all absolute"
+      >
+        {cursorMode === "hidden" ? null : cursorMode === "play" ? (
+          <></>
+        ) : (
+          <> </>
+        )}
+      </div>
+>>>>>>> d7b8ab6dacb1678688c391d4e5bfda58eea72a6e
     </div>
-  )
+  );
 }
 
-export default VideoDemo
+export default VideoDemo;
