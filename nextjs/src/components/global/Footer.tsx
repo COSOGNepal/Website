@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="" style={{ background: "#0B0A27" }}>
+    <footer className="text-sm" style={{ background: "#0B0A27" }}>
       <div className="mx-auto max-w-screen-xl p-4 py-6 lg:py-8">
         {/* upper part */}
         <div className="flex gap-8 px-14 flex-wrap justify-between">
@@ -21,11 +21,13 @@ const Footer = () => {
                 Cosog Nepal
               </span>
             </Link>
-            <div>Coding for social good</div>
+            <div className="text-lg my-4 font-medium">
+              Coding for social good Nepal
+            </div>
           </div>
           {/* <div className="md:flex gap-8 px-14 wrap w-full   "> */}
           <div className="w-fit">
-            <h2 className="mb-6 text-xl font-extrabold text-gray-900  ">
+            <h2 className="mb-2 text-xl font-extrabold text-gray-900  ">
               Contact us:
             </h2>
             <ul className="text-gray-500 text-sm">
@@ -35,41 +37,44 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-fit">
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-              Follow us
+            <h2 className="mb-2 text-xl font-extrabold text-gray-900 ">
+              Quick links{" "}
             </h2>
             <ul className="text-gray-500 -400 font-medium">
-              <li className="mb-4">
-                <a href="" className="hover:underline ">
-                  Github
-                </a>
+              <li className="text-sm">
+                <Link href="/" className="hover:underline ">
+                  Home
+                </Link>
               </li>
-              <li>
-                <a
-                  href="https://discord.gg/4eeurUVvTy"
-                  className="hover:underline"
-                >
-                  Discord
-                </a>
+              <li className="text-sm">
+                <Link href="/goals" className="hover:underline ">
+                  Main Goals
+                </Link>
+              </li>
+              <li className="text-sm">
+                <Link href="/community" className="hover:underline ">
+                  Community info
+                </Link>
+              </li>
+              <li className="text-sm">
+                <Link href="/projects" className="hover:underline ">
+                  Projects
+                </Link>
+              </li>
+              <li className="text-sm">
+                <Link href="/blog" className="hover:underline ">
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
-              Legal
+            <h2 className="mb-2 text-xl font-extrabold text-gray-900 ">
+              Socials
             </h2>
-            <ul className="text-gray-500 -400 font-medium">
-              <li className="mb-4">
-                <a href="#" className="hover:underline">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Terms &amp; Conditions
-                </a>
-              </li>
-            </ul>
+            <div className="text-gray-500 grid grid-cols-3">
+              <div className="bg-red-200">facebook</div>
+            </div>
           </div>
           {/* </div> */}
         </div>
