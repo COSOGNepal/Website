@@ -5,19 +5,21 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 function Nav() {
-    const [scrollPixel, setScrollPixel] = useState<number>(0);
+  const [scrollPixel, setScrollPixel] = useState<number>(0);
 
-    const router = useRouter();
-    useEffect(()=>{
-        window.onscroll = () => {
-            setScrollPixel(scrollY);
-        };
-        setScrollPixel(scrollY)
-    },[])
+  const router = useRouter();
+  useEffect(() => {
+    window.onscroll = () => {
+      setScrollPixel(scrollY);
+    };
+    setScrollPixel(scrollY);
+  }, []);
 
   return (
     <nav
-      className={`fixed top-0 px-8 py-4 flex tems-center w-full z-50 transition ${scrollPixel > 50 && 'bg-dark-pri'}`}
+      className={`fixed top-0 px-8 py-4 flex tems-center w-full z-50 transition ${
+        scrollPixel > 50 && "bg-dark-pri"
+      }`}
     >
       <Link href={"/"}>
         <Image
@@ -29,10 +31,7 @@ function Nav() {
         />
       </Link>
       <div className="navContents flex items-center flex-1 justify-center ">
-        <Link
-          href={"/"}
-          className="hover:bg-gray-300 text-white-500 rounded-md font-bold"
-        >
+        <Link href={"/"} className=" text-white-500 rounded-md font-bold">
           Home
         </Link>
         <Link

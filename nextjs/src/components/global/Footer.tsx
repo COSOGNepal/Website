@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="text-sm" style={{ background: "#0B0A27" }}>
+    <footer className="text-sm " style={{ background: "#0B0A27" }}>
       <div className="mx-auto max-w-screen-xl p-4 py-6 lg:py-8">
         {/* upper part */}
         <div className="flex gap-8 px-14 flex-wrap justify-between">
@@ -32,9 +32,7 @@ const Footer = () => {
           </div>
           {/* <div className="md:flex gap-8 px-14 wrap w-full   "> */}
           <div className="w-fit">
-            <h2 className="mb-2 text-xl font-extrabold text-gray-900  ">
-              Contact us:
-            </h2>
+            <h2 className="mb-2 text-xl font-extrabold  ">Contact us:</h2>
             <ul className="text-gray-500 text-sm">
               <li className="mb-1">info.xyz@cosog.np</li>
               <li className="mb-1">9856554478</li>
@@ -42,9 +40,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="w-fit">
-            <h2 className="mb-2 text-xl font-extrabold text-gray-900 ">
-              Quick links{" "}
-            </h2>
+            <h2 className="mb-2 text-xl font-extrabold ">Quick links </h2>
             <ul className="text-gray-500 -400 font-medium">
               <li className="text-sm">
                 <Link href="/" className="hover:underline ">
@@ -74,9 +70,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-2 text-xl font-extrabold text-gray-900 ">
-              Socials
-            </h2>
+            <h2 className="mb-2 text-xl font-extrabold ">Socials</h2>
             <div className="text-gray-500 grid grid-cols-3 gap-2">
               <a href="https://www.facebook.com/Cosognepal" target="blank">
                 <div className="bg-white bg-opacity-10 w-10 h-10 flex justify-center items-center rounded-sm">
@@ -118,15 +112,15 @@ const Footer = () => {
           {/* </div> */}
         </div>
         <hr style={{ color: "#161449" }} className="my-8" />
-      </div>
-      <div className="pb-12 px-12 ">
-        <h1 className="text-2xl font-bold mx-2 md:mx-12 mb-6">
-          All the rights are reserved.
-        </h1>
-        <h4 className="text-md font-light mx-2 md:mx-12 ">
-          All the rights and ownership of this site are reserved under the MIT
-          license by COSOGNepal 2023{" "}
-        </h4>
+        <div className="pb-12  ">
+          <h1 className="text-2xl font-bold mx-2 md:mx-12 mb-6">
+            All the rights are reserved.
+          </h1>
+          <h4 className="text-md font-light mx-2 md:mx-12 ">
+            All the rights and ownership of this site are reserved under the MIT
+            license by COSOGNepal 2023{" "}
+          </h4>
+        </div>
       </div>
     </footer>
   );
