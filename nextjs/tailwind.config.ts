@@ -17,6 +17,7 @@ const config: Config = {
       "btn-sec": "#6384D12A",
       "btn-sec-hover": "#6384D14A",
       "white": "#fff",
+      "dark-pri": "#0B0A27",
     }
   },
   plugins:[]

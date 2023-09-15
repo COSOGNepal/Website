@@ -17,8 +17,7 @@ function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 px-8 py-4 flex tems-center w-full z-50 transition`}
-      style={{ background: scrollPixel === 0 ? "transparent" : "white" }}
+      className={`fixed top-0 px-8 py-4 flex tems-center w-full z-50 transition ${scrollPixel > 50 && 'bg-dark-pri'}`}
     >
       <Link href={"/"}>
         <Image
@@ -33,28 +32,24 @@ function Nav() {
         <Link
           href={"/"}
           className="hover:bg-gray-300 text-white-500 rounded-md font-bold"
-          style={{ color: scrollPixel === 0 ? "white" : "black" }}
         >
           Home
         </Link>
         <Link
           href={"/blog"}
           className="text-base opacity-70 hover:opacity-100 text-white mx-4"
-          style={{ color: scrollPixel === 0 ? "white" : "black" }}
         >
           Blog
         </Link>
         <Link
           href={"/team"}
           className="text-white text-base opacity-70 hover:opacity-100 mr-4"
-          style={{ color: scrollPixel === 0 ? "white" : "black" }}
         >
           About us
         </Link>
         <Link
           href={"/contact"}
           className="text-white text-base opacity-70 hover:opacity-100"
-          style={{ color: scrollPixel === 0 ? "white" : "black" }}
         >
           Contact
         </Link>
@@ -63,7 +58,6 @@ function Nav() {
       <div className="flex align-middle">
         <div
           className="h-10 leading-10 bg-btn-sec text-center rounded-lg text-sm w-44 cursor-pointer opacity-90"
-          style={{ color: scrollPixel === 0 ? "white" : "black" }}
           onClick={() => {
             router.push("/authenticate");
           }}
