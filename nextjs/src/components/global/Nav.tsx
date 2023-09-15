@@ -4,13 +4,16 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-function Nav(): React.JSX.Element {
-  const [scrollPixel, setScrollPixel] = useState(scrollY);
-  window.onscroll = () => {
-    setScrollPixel(scrollY);
-  };
+function Nav() {
+    const [scrollPixel, setScrollPixel] = useState<number>(0);
 
-  const router = useRouter();
+    const router = useRouter();
+    useEffect(()=>{
+        window.onscroll = () => {
+            setScrollPixel(scrollY);
+        };
+        setScrollPixel(scrollY)
+    },[])
 
   return (
     <nav
@@ -23,7 +26,7 @@ function Nav(): React.JSX.Element {
           alt="logo"
           width={50}
           height={50}
-          className="h-12 cursor-pointer"
+          className="h-12 cursor-pointer w-full"
         />
       </Link>
       <div className="navContents flex items-center flex-1 justify-center ">
