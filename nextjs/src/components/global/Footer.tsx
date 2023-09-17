@@ -12,9 +12,9 @@ import {
 const Footer = () => {
   return (
     <footer className="text-sm " style={{ background: "#0B0A27" }}>
-      <div className="mx-auto max-w-screen-xl p-4 py-6 lg:py-8">
+      <div className="mx-auto max-w-screen-xl p-4 pb-1 pt-6 lg:pt-8 ">
         {/* upper part */}
-        <div className="flex gap-8 px-14 flex-wrap justify-between">
+        <div className="flex gap-8 px-14 flex-wrap justify-between border-b-[1px] border-gray-500 border-opacity-90 pb-6 mb-6">
           <div className="mb-6 w-fit md:mb-0 ">
             <Link href="/" className="flex items-center">
               <Image
@@ -28,14 +28,14 @@ const Footer = () => {
                 Cosog Nepal
               </span>
             </Link>
-            <div className="text-base my-4 ">Coding for social good Nepal</div>
+            <div className="text-base my-4 ">Coding for Social Good Nepal</div>
           </div>
           {/* <div className="md:flex gap-8 px-14 wrap w-full   "> */}
           <div className="w-fit">
             <h2 className="mb-2 text-xl font-extrabold  ">Contact us:</h2>
             <ul className="text-gray-500 text-sm">
-              <li className="mb-1">info.xyz@cosog.np</li>
-              <li className="mb-1">9856554478</li>
+              <li className="mb-1">contact@cosognepal.org</li>
+              <li className="mb-1">9863196247</li>
               <li className="mb-1">Kathmandu, Nepal</li>
             </ul>
           </div>
@@ -111,14 +111,16 @@ const Footer = () => {
           </div>
           {/* </div> */}
         </div>
-        <hr style={{ color: "#161449" }} className="my-8" />
-        <div className="pb-12  ">
-          <h1 className="text-2xl font-bold mx-2 md:mx-12 mb-6">
-            All the rights are reserved.
+
+        {/* lower part */}
+        <div className="pb-5">
+          <h1 className="text-2xl font-bold mx-2 md:mx-12 mb-4">
+          © All rights reserved
           </h1>
           <h4 className="text-md font-light mx-2 md:mx-12 ">
-            All the rights and ownership of this site are reserved under the MIT
-            license by COSOGNepal 2023{" "}
+            All the rights and ownership of this site are reserved by <Link 
+            href={'/'}
+            className="hover:underline text-white-500">CoSoG Nepal 2023</Link>.
           </h4>
         </div>
       </div>
