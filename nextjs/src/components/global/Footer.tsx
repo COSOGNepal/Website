@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="text-sm " style={{ background: "#0B0A27" }}>
       <div className="mx-auto max-w-screen-xl p-4 pb-1 pt-6 lg:pt-8 ">
         {/* upper part */}
-        <div className="flex gap-8 px-14 flex-wrap justify-between border-b-[1px] border-gray-500 border-opacity-90 pb-6 mb-6">
+        <div className="flex gap-8 px-14 flex-wrap justify-between border-b-[2px] border-blue-sec border-opacity-90 pb-6 mb-6">
           <div className="mb-6 w-fit md:mb-0 ">
             <Link href="/" className="flex items-center">
               <Image
@@ -24,7 +24,7 @@ const Footer = () => {
                 className="h-14 w-14 mr-3"
                 alt=" Logo"
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap ">
+              <span className="self-center text-3xl font-extrabold whitespace-nowrap ">
                 Cosog Nepal
               </span>
             </Link>
@@ -32,17 +32,17 @@ const Footer = () => {
           </div>
           {/* <div className="md:flex gap-8 px-14 wrap w-full   "> */}
           <div className="w-fit">
-            <h2 className="mb-2 text-xl font-extrabold  ">Contact us:</h2>
-            <ul className="text-gray-500 text-sm">
+            <h2 className="mb-2 text-3xl font-extrabold  ">Contact us:</h2>
+            <ul className="text-gray-500 text-base">
               <li className="mb-1">contact@cosognepal.org</li>
               <li className="mb-1">9863196247</li>
               <li className="mb-1">Kathmandu, Nepal</li>
             </ul>
           </div>
           <div className="w-fit">
-            <h2 className="mb-2 text-xl font-extrabold ">Quick links </h2>
+            <h2 className="mb-2 text-3xl font-extrabold ">Quick links </h2>
             <ul className="text-gray-500 -400 font-medium">
-              <li className="text-sm">
+              <li className="text-base">
                 <Link href="/" className="hover:underline ">
                   Home
                 </Link>
@@ -70,7 +70,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="mb-2 text-xl font-extrabold ">Socials</h2>
+            <h2 className="mb-2 text-3xl font-extrabold ">Socials</h2>
             <div className="text-gray-500 grid grid-cols-3 gap-2">
               <a href="https://www.facebook.com/Cosognepal" target="blank">
                 <div className="bg-white bg-opacity-10 w-10 h-10 flex justify-center items-center rounded-sm">
@@ -114,13 +114,15 @@ const Footer = () => {
 
         {/* lower part */}
         <div className="pb-5">
-          <h1 className="text-2xl font-bold mx-2 md:mx-12 mb-4">
-          © All rights reserved
+          <h1 className="text-3xl font-extrabold mx-2 md:mx-12 mb-4">
+            © All rights reserved
           </h1>
-          <h4 className="text-md font-light mx-2 md:mx-12 ">
-            All the rights and ownership of this site are reserved by <Link 
-            href={'/'}
-            className="hover:underline text-white-500">CoSoG Nepal 2023</Link>.
+          <h4 className=" font-normal mx-2 md:mx-12  text-text-grey-sec text-base ">
+            All the rights and ownership of this site are reserved by{" "}
+            <Link href={"/"} className="hover:underlinee">
+              CoSoG Nepal 2023
+            </Link>
+            .
           </h4>
         </div>
       </div>

@@ -19,6 +19,8 @@ const config: Config = {
         "btn-sec-hover": "#6384D14A",
         white: "#fff",
         "dark-pri": "#0B0A27",
+        "text-grey-sec": "#C8C8C8",
+        "blue-sec": "#161449",
       },
     },
   },
