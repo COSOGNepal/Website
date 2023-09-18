@@ -1,9 +1,38 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import increasedNumber from "./../../utils/increaseNumbers";
 
 const Numbers = () => {
+  const NumbersRef = useRef() || null;
+  let callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      // Each entry describes an intersection change for one observed
+      // target element:
+      //   entry.boundingClientRect
+      //   entry.intersectionRatio
+      //   entry.intersectionRect
+      //   entry.isIntersecting
+      //   entry.rootBounds
+      //   entry.target
+      //   entry.time
+    });
+  };
+  useEffect(() => {
+    let options = {
+      root: document.querySelector("body"),
+      rootMargin: "20px",
+      threshold: 1.0,
+    };
+
+    let observer = new IntersectionObserver(callback, options);
+    observer.observe(NumbersRef.current);
+    console.log(NumbersRef.current);
+  }, []);
   return (
-    <main className="grid grid-cols-1 gap-y-6 md:grid-cols-3 bg-dark-pri py-12 h-fit md:h-64 items-center justify-items-center">
+    <main
+      ref={NumbersRef}
+      className="grid grid-cols-1 gap-y-6 md:grid-cols-3 bg-dark-pri py-12 h-fit md:h-64 items-center justify-items-center"
+    >
       <div>
         <h2 className="text-white text-6xl text-center font-extrabold">
           {increasedNumber(30)}+
