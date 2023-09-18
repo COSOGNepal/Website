@@ -5,7 +5,7 @@ interface GoalProps {
 }
 
 const Goal = ({ index, title, desc }: GoalProps) => {
-    return (<div className={`absolute top-10 left-10 w-[500px] flex rounded-md bg-white shadow-goals h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'}`}
+    return (<div className={`absolute top-20 left-10 w-[500px] flex rounded-md bg-white shadow-goals h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'}`}
         style={{
             marginTop: index * (150 + 20)
         }}>
