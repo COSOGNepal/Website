@@ -1,8 +1,7 @@
 "use client"
 
 import React from "react";
-import { Hero, VideoDemo } from "./index";
-import Goals from "./index/Goals";
+import { Hero, VideoDemo, Goals, Projects } from "./index";
 
 export default function Home() {
     return (
@@ -10,6 +9,7 @@ export default function Home() {
             <Hero />
             <VideoDemo />
             <Goals />
+            <Projects />
         </>
     )
 }
