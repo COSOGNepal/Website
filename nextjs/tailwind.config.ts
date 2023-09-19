@@ -19,7 +19,8 @@ const config: Config = {
                 "btn-sec-hover": "#6384D14A",
                 "dark-pri": "#0B0A27",
                 "main-txt": "#2D2335",
-                "sec-txt": "#675C71"
+                "sec-txt": "#675C71",
+                "overlay": "rgba(0,0,0,0.35)"
             },
             fontSize: {
                 "huge": "72px",
