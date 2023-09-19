@@ -4,8 +4,8 @@ import React from "react";
 import {
     Hero, VideoDemo, Goals, Projects
 } from "./index";
+import { Numbers } from "@/components/home";
 
-import Numbers from "@/componets/home/Numbers";
 export default function Home() {
     return (
         <>
