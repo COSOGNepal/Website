@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Project({ data, id }: { data: string, id: string }) {
     return (
-        <Link href={`/projects/${id}`} className=" cursor-pointer w-[60%] min-h-[500px] grid grid-cols-2  border-gray-300 border-[1px] overflow-hidden rounded-md">
+        <Link href={`/projects/${id}`} className="mt-[50px] cursor-pointer w-[60%] min-h-[500px] grid grid-cols-2  border-gray-300 border-[1px] overflow-hidden rounded-md">
             <div className="bg-red-300 bg-no-repeat bg-cover relative group" style={{ backgroundImage: `url(/testImg.jpg)` }}>
                 <div className="opacity-0 group-hover:opacity-100 bg-overlay absolute top-0 left-0 flex justify-center items-center h-full w-full">
                     <LinkIcon />
