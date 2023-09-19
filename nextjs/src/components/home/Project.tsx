@@ -1,14 +1,13 @@
 import React from "react";
-import Image from "next/image";
+import { Button } from "../global";
+import Link from "next/link";
 
-export default function Project({ data }: { data: string }) {
+export default function Project({ data, id }: { data: string, id: string }) {
     return (
-        <div className="w-[75%] h-[500px] flex flex-row border-gray-300 border-[1px]">
-            <div className="w-[50%] h-full object-cover">
-                <Image alt="project Image" src={"/testImg.jpg"} width={2560} height={1440} className="object-cover w-full h-full" />
+        <Link href={`/projects/${id}`} className=" cursor-pointer w-[60%] min-h-[500px] grid grid-cols-2  border-gray-300 border-[1px] overflow-hidden rounded-md">
+            <div className="bg-red-300 bg-no-repeat bg-cover" style={{ backgroundImage: `url(/testImg.jpg)` }}>
             </div>
-
-            <div className="p-[50px]" >
+            <div className="p-[50px] " >
                 <div>
                     <h1 className="text-main-txt font-bold text-sub-heading">NFT Marketplace</h1>
                     <p className="text-sec-txt font-medium text-small">
@@ -24,7 +23,12 @@ export default function Project({ data }: { data: string }) {
                         4. It uses css as the database so its very good.
                     </p>
                 </div>
+                <div className="flex justify-center mt-[50px]">
+                    <Button text="See Code" styles="bg-sec-txt" />
+                    <Button text="See in action" styles="ml-[50px] bg-dark-pri text-white" />
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }
+
