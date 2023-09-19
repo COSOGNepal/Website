@@ -3,14 +3,16 @@ import { Button } from "../global";
 import Link from "next/link";
 
 export default function Project({ data, id }: { data: string, id: string }) {
+    const seeCodeAction = () => { };
+    const seeInAction = () => { };
     return (
-        <Link href={`/projects/${id}`} className="mt-[50px] cursor-pointer w-[60%] min-h-[500px] grid grid-cols-2  border-gray-300 border-[1px] overflow-hidden rounded-md">
-            <div className="bg-red-300 bg-no-repeat bg-cover relative group" style={{ backgroundImage: `url(/testImg.jpg)` }}>
+        <Link href={`/projects/${id}`} className="mt-[50px] cursor-pointer w-[60%] min-h-[500px] grid grid-cols-2 border-gray-300 border-[1px] overflow-hidden rounded-md max-md:grid-cols-1 max-md:w-full max-md:grid-rows-prjt-min-brk">
+            <div className="bg-no-repeat bg-cover relative group" style={{ backgroundImage: `url(/testImg.jpg)` }}>
                 <div className="opacity-0 group-hover:opacity-100 bg-overlay absolute top-0 left-0 flex justify-center items-center h-full w-full">
                     <LinkIcon />
                 </div>
             </div>
-            <div className="p-[50px] " >
+            <div className="p-[50px]" >
                 <div>
                     <h1 className="text-main-txt font-bold text-sub-heading">NFT Marketplace</h1>
                     <p className="text-sec-txt font-medium text-small">
@@ -27,8 +29,8 @@ export default function Project({ data, id }: { data: string, id: string }) {
                     </p>
                 </div>
                 <div className="flex justify-center mt-[50px]">
-                    <Button text="See Code" styles="bg-sec-txt" />
-                    <Button text="See in action" styles="ml-[50px] bg-dark-pri text-white" />
+                    <Button text="See Code" styles="bg-sec-txt" onclick={seeCodeAction} />
+                    <Button text="See in action" styles="ml-[50px] bg-dark-pri text-white" onclick={seeInAction} />
                 </div>
             </div>
         </Link>

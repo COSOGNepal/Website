@@ -34,7 +34,9 @@ const config: Config = {
             , boxShadow: {
                 "goals": "0px 4px 60px rgba(155, 155, 155, 45%)"
             },
-
+            gridTemplateRows: {
+                "prjt-min-brk": "300px 1fr"
+            },
             plugins: []
         }
 
