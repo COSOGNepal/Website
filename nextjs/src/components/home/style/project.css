@@ -1,0 +1,24 @@
+.main_container{
+    position: relative;
+    background: white;
+    z-index: 1;
+}
+.main_container:after{
+    content:'';
+    height: 100%;
+    width: 100%;
+    border-radius:inherit;
+    background: radial-gradient(
+        800px circle at 300px 100px, 
+        #e8e8e8, 
+        transparent 40%
+    );
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+
+.image_section{
+    z-index: 20;
+}
