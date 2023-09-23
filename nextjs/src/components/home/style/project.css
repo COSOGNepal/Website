@@ -23,7 +23,9 @@
     pointer-events: none;
 }
 .wrapper_container{
-background:#e8e8e8; 
+    background:#e8e8e8;
+    transition: 0.25s;
+    translate: rotateX(0deg) rotateY(0deg);
 }
 .wrapper_container:hover {
      background: radial-gradient(

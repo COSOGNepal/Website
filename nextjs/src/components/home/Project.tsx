@@ -10,10 +10,21 @@ export default function Project({ data, id }: { data: string, id: string }) {
     const handleMouseMove = (e: MouseEvent<HTMLAnchorElement>) => {
         const rectPostion = e.currentTarget.getBoundingClientRect(),
             x = e.clientX - rectPostion.x,
-            y = e.clientY - rectPostion.y;
+            y = e.clientY - rectPostion.y,
+            _width = rectPostion.width,
+            _height = rectPostion.height;
+
+        const travelPer = {
+            x: x / _width,
+            y: y / _height
+        };
+        const threshold = 8,
+            rotateX = travelPer.x * threshold,
+            rotateY = travelPer.y * threshold;
 
         e.currentTarget.style.setProperty("--mouseX", `${x}px`)
         e.currentTarget.style.setProperty("--mouseY", `${y}px`)
+        e.currentTarget.style.transform = `perspective(${rectPostion.width}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg)`
     }
     return (
         <Link

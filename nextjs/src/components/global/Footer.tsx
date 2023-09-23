@@ -91,7 +91,6 @@ const Footer = () => {
                             <a href="https://github.com/COSOGNepal" target="_blank">
                                 <div className="bg-white bg-opacity-10 w-10 h-10 flex justify-center items-center rounded-sm">
                                     <GitHub />
-                                    {/* This icon needs to be changed */}
                                 </div>
                             </a>
                             <a

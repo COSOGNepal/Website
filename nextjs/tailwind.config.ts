@@ -16,6 +16,7 @@ const config: Config = {
             colors: {
                 "btn-pri": "#6384D1",
                 "btn-sec": "#6384D12A",
+                "blue-sec": "#161449",
                 "btn-sec-hover": "#6384D14A",
                 "dark-pri": "#0B0A27",
                 "main-txt": "#2D2335",
