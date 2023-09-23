@@ -20,7 +20,8 @@ const config: Config = {
                 "dark-pri": "#0B0A27",
                 "main-txt": "#2D2335",
                 "sec-txt": "#675C71",
-                "overlay": "rgba(0,0,0,0.35)"
+                "overlay": "rgba(0,0,0,0.35)",
+                "gray-custom": "#C8C8C8"
             },
             fontSize: {
                 "huge": "72px",
