@@ -26,11 +26,17 @@ export default function Project({ data, id }: { data: string, id: string }) {
         e.currentTarget.style.setProperty("--mouseY", `${y}px`)
         e.currentTarget.style.transform = `perspective(${rectPostion.width}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg)`
     }
+
+    const resetTransform = (e: MouseEvent<HTMLAnchorElement>) => {
+        e.currentTarget.style.transform = "";
+    }
+
     return (
         <Link
             href={`/projects/${id}`}
             className="wrapper_container mt-[50px] p-[1px] cursor-pointer w-[80%] max-w-[1000px] min-h-[500px] rounded-md overflow-hidden inline-block max-md:w-full"
             onMouseMove={handleMouseMove}
+            onMouseLeave={resetTransform}
         >
             <div className="border_element"></div>
             <div
