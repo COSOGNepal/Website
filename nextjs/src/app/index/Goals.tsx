@@ -4,17 +4,43 @@ import React from "react";
 import { Goal } from "@/components/home";
 import { SectionTitle } from "@/components/global";
 
+const goalsPosition = [
+    {
+        x: "22%",
+        y: "10%",
+    },
+
+    {
+        x: "60%",
+        y: "25%",
+    },
+    {
+        x: "4%",
+        y: "41%",
+    },
+    {
+        x: "40%",
+        y: "65%",
+    },
+    {
+        x: "5%",
+        y: "90%",
+    },
+
+
+]
+
 export default function Goals() {
     return (
-        <div className="h-screen bg-white w-full relative p-[20px]">
+        <section className="h-screen bg-white w-full relative p-[20px]">
             <SectionTitle title="Main Goals" />
-            <Goal index={0} title="Testing the goals" desc="This is the desccription it can be long as well" />
-            <Goal index={1} title="Testing the goals" desc="This is the desccription it can be long as well" />
-            <Goal index={2} title="Testing the goals" desc="This is the desccription it can be long as well" />
-            <Goal index={3} title="Testing the goals" desc="This is the desccription it can be long as well" />
-            <Goal index={4} title="Testing the goals" desc="This is the desccription it can be long as well" />
+            <Goal index={0} title="Testing the goals" desc="This is the desccription it can be long as well" position={goalsPosition[0]} />
+            <Goal index={1} title="Testing the goals" desc="This is the desccription it can be long as well" position={goalsPosition[1]} />
+            <Goal index={2} title="Testing the goals" desc="This is the desccription it can be long as well" position={goalsPosition[2]} />
+            <Goal index={3} title="Testing the goals" desc="This is the desccription it can be long as well" position={goalsPosition[3]} />
+            <Goal index={4} title="Testing the goals" desc="This is the desccription it can be long as well" position={goalsPosition[4]} />
             <BgSvgArrow />
-        </div>
+        </section>
     )
 }
 

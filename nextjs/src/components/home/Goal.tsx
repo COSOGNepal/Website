@@ -1,13 +1,18 @@
 interface GoalProps {
     index: number,
     title: string,
-    desc: string
+    desc: string,
+    position: {
+        x: string,
+        y: string
+    }
 }
 
-const Goal = ({ index, title, desc }: GoalProps) => {
-    return (<div className={`absolute top-20 left-10 w-[500px] flex rounded-md bg-white shadow-goals h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'}`}
+const Goal = ({ index, title, desc, position }: GoalProps) => {
+    return (<div className={`absolute w-[500px] flex rounded-md bg-white shadow-goals h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'}`}
         style={{
-            marginTop: index * (150 + 20)
+            top: position.y,
+            left: position.x,
         }}>
         <div className="flex-1 p-[32px]">
             <h1 className="text-main-txt font-bold text-heading ">
