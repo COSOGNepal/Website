@@ -49,28 +49,33 @@ const Goal = ({ index, title, desc, position }: GoalProps) => {
         return () => {
             window.removeEventListener("resize", makeResponsive)
         }
+
     }, [])
-    return (<div className={`absolute w-[500px] flex rounded-md bg-white shadow-goals h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'}`}
-        style={{
-            top: position.y,
-            left: position.x,
-        }}
-        ref={goalConRef}
-    >
-        <div className="flex-1 p-[32px]">
-            <h1 className="text-main-txt font-bold text-heading ">
-                {title}
-            </h1>
-            <p className="text-sec-txt font-normal text-small">
-                {desc}
-            </p>
-        </div>
-        <div className="w-[120px] h-full bg-[#EDEDED] flex justify-center items-center">
-            <h1 className="text-white text-huge font-bold">
-                0{index + 1}
-            </h1>
-        </div>
-    </div >)
+    return (
+        <div
+            className={`w-[500px] flex rounded-md bg-white shadow-goals
+                    h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'} 
+                    max-xl:scale-75 max-[880px]:scale-100 min-[880px]:absolute max-[880px]:my-[20px] mx-auto`}
+            style={{
+                top: position.y,
+                left: position.x,
+            }}
+            ref={goalConRef}
+        >
+            <div className="flex-1 p-[32px]">
+                <h1 className="text-main-txt font-bold text-heading ">
+                    {title}
+                </h1>
+                <p className="text-sec-txt font-normal text-small">
+                    {desc}
+                </p>
+            </div>
+            <div className="w-[120px] h-full bg-[#EDEDED] flex justify-center items-center">
+                <h1 className="text-white text-huge font-bold">
+                    0{index + 1}
+                </h1>
+            </div>
+        </div >)
 }
 
 export default Goal;
