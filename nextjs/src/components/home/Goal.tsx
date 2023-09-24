@@ -40,8 +40,15 @@ const Goal = ({ index, title, desc, position }: GoalProps) => {
         return window.matchMedia(query).matches;
     }
 
+
+
     useEffect(() => {
         makeResponsive();
+        window.addEventListener("resize", makeResponsive);
+
+        return () => {
+            window.removeEventListener("resize", makeResponsive)
+        }
     }, [])
     return (<div className={`absolute w-[500px] flex rounded-md bg-white shadow-goals h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'}`}
         style={{

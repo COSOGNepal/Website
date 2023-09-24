@@ -9,14 +9,40 @@ const goalsPosition: goalPosition[] = [
     {
         x: "22%",
         y: "10%",
+        responsive: [
+            {
+                breakPoint: 1500,
+                x: "22%",
+                y: "15%"
+            },
+            {
+                breakPoint: 1280,
+                x: "10%",
+                y: "22%"
+            }
+        ]
     },
     {
         x: "60%",
         y: "30%",
+        responsive: [
+            {
+                breakPoint: 1280,
+                x: "50%",
+                y: "35%"
+            }
+        ]
     },
     {
         x: "4%",
         y: "45%",
+        responsive: [
+            {
+                breakPoint: 1280,
+                x: "4%",
+                y: "50%"
+            }
+        ]
     },
     {
         x: "45%",
@@ -25,6 +51,13 @@ const goalsPosition: goalPosition[] = [
     {
         x: "10px",
         y: "90%",
+        responsive: [
+            {
+                breakPoint: 1280,
+                x: "10px",
+                y: "85%"
+            }
+        ]
     }
 
 ]
