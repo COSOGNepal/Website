@@ -34,7 +34,7 @@ const config: Config = {
                 "md": "15px"
             }
             , boxShadow: {
-                "goals": "0px 4px 60px rgba(155, 155, 155, 45%)"
+                "goals": "0px 4px 90px rgba(155, 155, 155, 35%)"
             },
             gridTemplateRows: {
                 "prjt-min-brk": "300px 1fr"
