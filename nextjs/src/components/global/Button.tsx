@@ -7,7 +7,7 @@ interface buttonProps {
     onclick: () => void
 }
 
-export default function Button({ styles, text }: buttonProps) {
+export default function Button({ text, styles, onclick }: buttonProps) {
     return <button className={`min-w-[150px] w-[100%] h-[50px] rounded-[4px] ${styles}`}
         onClick={onclick}>
         {text}
