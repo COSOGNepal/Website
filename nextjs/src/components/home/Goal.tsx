@@ -55,7 +55,7 @@ const Goal = ({ index, title, desc, position }: GoalProps) => {
         <div
             className={`w-[500px] flex rounded-md bg-white shadow-goals
                     h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'} 
-                    max-xl:scale-75 max-[880px]:scale-100 min-[880px]:absolute max-[880px]:my-[20px] mx-auto`}
+                    max-xl:scale-75 max-[880px]:scale-100 min-[880px]:absolute min-[880px]:my-[20px] mx-auto`}
             style={{
                 top: position.y,
                 left: position.x,
