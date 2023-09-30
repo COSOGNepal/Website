@@ -79,7 +79,7 @@ export default function Goals() {
     return (
         <section className="h-screen bg-white w-full relative p-[20px]">
             <SectionTitle title="Main Goals" />
-            <GoalsArrow />
+            <GoalsArrow scrollPercent={0.3} />
             {
                 Array(5).fill("").map((_, i) => {
                     return (
