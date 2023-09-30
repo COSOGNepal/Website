@@ -1,4 +1,4 @@
-import React from "react";
+import React, { MouseEvent, useEffect } from "react";
 import { Button } from "../global";
 import Link from "next/link";
 import "./style/project.css";
@@ -6,41 +6,71 @@ import "./style/project.css";
 export default function Project({ data, id }: { data: string, id: string }) {
     const seeCodeAction = () => { };
     const seeInAction = () => { };
+
+    const handleMouseMove = (e: MouseEvent<HTMLAnchorElement>) => {
+        const rectPostion = e.currentTarget.getBoundingClientRect(),
+            x = e.clientX - rectPostion.x,
+            y = e.clientY - rectPostion.y,
+            _width = rectPostion.width,
+            _height = rectPostion.height;
+
+        const travelPer = {
+            x: x / _width,
+            y: y / _height
+        };
+        const threshold = 8,
+            rotateX = travelPer.x * threshold,
+            rotateY = travelPer.y * threshold;
+
+        e.currentTarget.style.setProperty("--mouseX", `${x}px`)
+        e.currentTarget.style.setProperty("--mouseY", `${y}px`)
+        e.currentTarget.style.transform = `perspective(${rectPostion.width}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg)`
+    }
+
+    const resetTransform = (e: MouseEvent<HTMLAnchorElement>) => {
+        e.currentTarget.style.transform = "";
+    }
+
     return (
         <Link
             href={`/projects/${id}`}
-            className="main_container mt-[50px] cursor-pointer w-[60%] min-h-[500px] grid grid-cols-2 border-gray-300 border-[1px] overflow-hidden rounded-md max-md:grid-cols-1 max-md:w-full max-md:grid-rows-prjt-min-brk "
-
-
+            className="wrapper_container mt-[50px] p-[1px] cursor-pointer w-[80%] max-w-[1000px] min-h-[500px] rounded-md overflow-hidden inline-block max-md:w-full"
+            onMouseMove={handleMouseMove}
+            onMouseLeave={resetTransform}
         >
+            <div className="border_element"></div>
             <div
-                className="image_section bg-no-repeat bg-cover relative group"
-                style={{ backgroundImage: `url(/testImg.jpg)` }}
+                className="main_container h-full w-full rounded-[13px] grid grid-cols-2  max-md:grid-cols-1  max-md:grid-rows-prjt-min-bfk "
             >
                 <div
-                    className="image_section_overlay opacity-0 group-hover:opacity-100 bg-overlay absolute top-0 left-0 flex justify-center items-center h-full w-full">
-                    <LinkIcon />
+                    className="image_section bg-no-repeat bg-cover relative group"
+                    style={{ backgroundImage: `url(/testImg.jpg)` }}
+                >
+                    <div
+                        className="image_section_overlay opacity-0 group-hover:opacity-100 bg-overlay absolute top-0 left-0 flex justify-center items-center h-full w-full">
+                        <LinkIcon />
+                    </div>
                 </div>
-            </div>
-            <div className="p-[50px] text_section" >
-                <div className="text_section_fp1">
-                    <h1 className="text-main-txt font-bold text-sub-heading">NFT Marketplace</h1>
-                    <p className="text-sec-txt font-medium text-small">
-                        A great place to buy NFT and get rich as soon as possible it is just amazing project you will not get it but anyways keep looking press the links below, if not go to hell and don’t contact us ever again.
-                    </p>
-                </div>
-                <div className="mt-[50px] text_section_fp2">
-                    <h1 className="text-main-txt font-bold text-sub-heading">Main features:</h1>
-                    <p className="text-sec-txt font-medium text-small">
-                        1. It is an amazing site. <br />
-                        2. It will  work no matter what. <br />
-                        3. It is made in yavascript. <br />
-                        4. It uses css as the database so its very good.
-                    </p>
-                </div>
-                <div className="flex justify-center mt-[50px] action_buttons">
-                    <Button text="See Code" styles="bg-sec-txt" onclick={seeCodeAction} />
-                    <Button text="See in action" styles="ml-[50px] bg-dark-pri text-white" onclick={seeInAction} />
+                <div className="p-[50px] text_section" >
+                    <div className="text_section_fp1">
+                        <h1 className="text-main-txt font-bold text-sub-heading">NFT Marketplace</h1>
+                        <p className="text-sec-txt font-medium text-small">
+                            A great place to buy NFT and get rich as soon as possible it is just amazing project you will not get it but anyways keep looking press the links below, if not go to hell and don’t contact us ever again.
+                        </p>
+                    </div>
+                    <div className="mt-[50px] text_section_fp2">
+                        <h1 className="text-main-txt font-bold text-sub-heading">Main features:</h1>
+                        <p className="text-sec-txt font-medium text-small">
+                            1. It is an amazing site. <br />
+                            2. It will  work no matter what. <br />
+                            3. It is made in yavascript. <br />
+                            4. It uses css as the database so its very good.
+                        </p>
+                    </div>
+                    <div className="flex justify-center mt-[50px] action_buttons">
+                        <Button text="See Code" styles="bg-sec-txt" onclick={seeCodeAction} />
+                        <Button text="See in action" styles="ml-[50px] bg-dark-pri text-white" onclick={seeInAction} />
+                    </div>
                 </div>
             </div>
         </Link>

@@ -16,11 +16,13 @@ const config: Config = {
             colors: {
                 "btn-pri": "#6384D1",
                 "btn-sec": "#6384D12A",
+                "blue-sec": "#161449",
                 "btn-sec-hover": "#6384D14A",
                 "dark-pri": "#0B0A27",
                 "main-txt": "#2D2335",
                 "sec-txt": "#675C71",
-                "overlay": "rgba(0,0,0,0.35)"
+                "overlay": "rgba(0,0,0,0.35)",
+                "gray-custom": "#C8C8C8"
             },
             fontSize: {
                 "huge": "72px",
@@ -32,7 +34,7 @@ const config: Config = {
                 "md": "15px"
             }
             , boxShadow: {
-                "goals": "0px 4px 60px rgba(155, 155, 155, 45%)"
+                "goals": "0px 4px 90px rgba(155, 155, 155, 35%)"
             },
             gridTemplateRows: {
                 "prjt-min-brk": "300px 1fr"
