@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="text-sm " style={{ background: "#0B0A27" }}>
       <div className="mx-auto max-w-screen-xl p-4 pb-1 pt-6 lg:pt-8 ">
         {/* upper part */}
-        <div className="flex gap-8 px-14 flex-wrap justify-between border-b-[2px] border-blue-sec border-opacity-90 pb-6 mb-6">
+        <div className="flex gap-8 px-14 flex-wrap justify-between border-b-[2px] border-gray-sec border-opacity-50 pb-6 mb-6">
           <div className="mb-6 w-fit md:mb-0 ">
             <Link href="/" className="flex items-center">
               <Image
