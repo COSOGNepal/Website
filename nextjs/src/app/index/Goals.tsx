@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Goal } from "@/components/home";
 import { SectionTitle } from "@/components/global";
 import { goalPosition } from "@/components/home/Goal";
@@ -76,10 +76,34 @@ const goalsPosition: goalPosition[] = [
 ]
 
 export default function Goals() {
+    const sectionRef = useRef<HTMLElement | null>(null)
+
+    const [scrollPercent, setScrollPercent] = useState<number>(0);
+
+    useEffect(() => {
+        const scrollTracker = () => {
+            if (!sectionRef.current) return
+
+            const section = sectionRef.current;
+            const totalScroll = section.clientHeight;
+            const currentScroll = scrollY + (section.clientHeight / 2) - section.offsetTop;
+
+            const progress = currentScroll / totalScroll
+
+            setScrollPercent(progress)
+        }
+        window.addEventListener("scroll", scrollTracker)
+        return () => {
+            removeEventListener("scroll", scrollTracker)
+        }
+    }, [])
     return (
-        <section className="h-screen bg-white w-full relative p-[20px]">
+        <section
+            ref={sectionRef}
+            className="h-screen bg-white w-full relative p-[20px]">
             <SectionTitle title="Main Goals" />
-            <GoalsArrow scrollPercent={0.3} />
+
+            <GoalsArrow scrollPercent={scrollPercent} />
             {
                 Array(5).fill("").map((_, i) => {
                     return (
