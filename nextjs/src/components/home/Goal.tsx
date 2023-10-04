@@ -1,7 +1,7 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { motion, useScroll } from 'framer-motion'
 
-export interface IgoalPosition {
+export type TgoalPosition = {
     x: string,
     y: string,
     responsive?: {
@@ -11,14 +11,19 @@ export interface IgoalPosition {
     }[]
 }
 
-interface IgoalProps {
+type TgoalProps = {
     index: number,
     title: string,
     desc: string,
-    position: IgoalPosition
+    position: TgoalPosition
 }
 
-const Goal = ({ index, title, desc, position }: IgoalProps) => {
+type TfinalGoalPosition = Omit<TgoalPosition, "responsive">
+
+
+const Goal = ({ index, title, desc, position }: TgoalProps) => {
+    const [finalGoalPosition, setFinalGoalPosition] = useState<TfinalGoalPosition>();
+
     const goalConRef = useRef<HTMLDivElement | null>(null);
 
     const makeResponsive = () => {
@@ -80,7 +85,6 @@ const Goal = ({ index, title, desc, position }: IgoalProps) => {
                 </h1>
             </div>
         </motion.div >
-
     )
 }
 
