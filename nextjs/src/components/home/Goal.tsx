@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react"
+import { motion, useScroll } from 'framer-motion'
 
-export interface goalPosition {
+export interface IgoalPosition {
     x: string,
     y: string,
     responsive?: {
@@ -10,14 +11,14 @@ export interface goalPosition {
     }[]
 }
 
-interface GoalProps {
+interface IgoalProps {
     index: number,
     title: string,
     desc: string,
-    position: goalPosition
+    position: IgoalPosition
 }
 
-const Goal = ({ index, title, desc, position }: GoalProps) => {
+const Goal = ({ index, title, desc, position }: IgoalProps) => {
     const goalConRef = useRef<HTMLDivElement | null>(null);
 
     const makeResponsive = () => {
@@ -40,6 +41,9 @@ const Goal = ({ index, title, desc, position }: GoalProps) => {
         return window.matchMedia(query).matches;
     }
 
+    const { scrollYProgress } = useScroll({
+        target: goalConRef
+    });
 
 
     useEffect(() => {
@@ -49,10 +53,10 @@ const Goal = ({ index, title, desc, position }: GoalProps) => {
         return () => {
             window.removeEventListener("resize", makeResponsive)
         }
-
     }, [])
+
     return (
-        <div
+        <motion.div
             className={`w-[500px] flex rounded-md bg-white shadow-goals
                     h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'} 
                     max-xl:scale-75 max-[880px]:scale-100 min-[880px]:absolute min-[880px]:my-[20px] mx-auto`}
@@ -75,7 +79,9 @@ const Goal = ({ index, title, desc, position }: GoalProps) => {
                     0{index + 1}
                 </h1>
             </div>
-        </div >)
+        </motion.div >
+
+    )
 }
 
 export default Goal;

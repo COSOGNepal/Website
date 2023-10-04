@@ -8,67 +8,67 @@ import { GoalsArrow } from "@/utils/svgs";
 
 const goalsPosition: goalPosition[] = [
     {
-        x: "22%",
-        y: "10%",
+        x: 22,
+        y: 10,
         responsive: [
             {
                 breakPoint: 1500,
-                x: "22%",
-                y: "15%"
+                x: 22,
+                y: 15
             },
             {
                 breakPoint: 1280,
-                x: "5%",
-                y: "12%"
+                x: 5,
+                y: 12
             }
         ]
     },
     {
-        x: "60%",
-        y: "30%",
+        x: 60,
+        y: 30,
         responsive: [
             {
                 breakPoint: 1280,
-                x: "50%",
-                y: "27%"
+                x: 50,
+                y: 27
             }
         ]
     },
     {
-        x: "4%",
-        y: "45%",
+        x: 4,
+        y: 45,
         responsive: [
             {
                 breakPoint: 1280,
-                x: "-2%",
-                y: "41%"
+                x: -2,
+                y: 41
             }
         ]
     },
     {
-        x: "45%",
-        y: "70%",
+        x: 45,
+        y: 70,
         responsive: [
             {
                 breakPoint: 1280,
-                x: "41%",
-                y: "56%"
+                x: 41,
+                y: 56
             }
         ]
     },
     {
-        x: "10px",
-        y: "90%",
+        x: 10,
+        y: 90,
         responsive: [
 
             {
                 breakPoint: 1280,
-                x: "-5%",
-                y: "73%"
+                x: -5,
+                y: 73
             }, {
                 breakPoint: 980,
-                x: "-5%",
-                y: "70%"
+                x: -5,
+                y: 70
             },
         ]
     }
@@ -87,12 +87,12 @@ export default function Goals() {
             const section = sectionRef.current;
             const totalScroll = section.clientHeight;
             const currentScroll = scrollY + (section.clientHeight / 2) - section.offsetTop;
-
             const progress = currentScroll / totalScroll
-
             setScrollPercent(progress)
         }
         window.addEventListener("scroll", scrollTracker)
+        scrollTracker();
+
         return () => {
             removeEventListener("scroll", scrollTracker)
         }
