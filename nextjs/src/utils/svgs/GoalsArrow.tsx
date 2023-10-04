@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 
 export default function GoalsArrow({ scrollPercent }: { scrollPercent: number }) {
-    useEffect(() => {
+
+    function animateLine() {
         const path = document.querySelector("path");
         if (!path) return;
         const pathLength = path.getTotalLength();
@@ -12,7 +13,20 @@ export default function GoalsArrow({ scrollPercent }: { scrollPercent: number })
         const drawingLength = pathLength * scrollPercent;
         path.style.strokeDashoffset = `${pathLength - drawingLength}`;
 
+    }
+    useEffect(() => {
+        animateLine();
+        return () => {
+            animateLine()
+        }
     }, [scrollPercent])
+
+    useEffect(() => {
+        animateLine();
+        return () => {
+            animateLine()
+        }
+    }, [])
 
     return (
         <svg viewBox="0 0 1382 913" fill="none" className="absolute w-full xl:h-full h-[80%] max-[880px]:hidden">
