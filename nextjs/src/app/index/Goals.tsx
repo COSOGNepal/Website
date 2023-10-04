@@ -3,10 +3,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Goal } from "@/components/home";
 import { SectionTitle } from "@/components/global";
-import { goalPosition } from "@/components/home/Goal";
+import { TgoalPosition } from "@/components/home/Goal";
 import { GoalsArrow } from "@/utils/svgs";
 
-const goalsPosition: goalPosition[] = [
+const goalsPosition: TgoalPosition[] = [
     {
         x: 22,
         y: 10,
@@ -100,7 +100,7 @@ export default function Goals() {
     return (
         <section
             ref={sectionRef}
-            className="h-screen bg-white w-full relative p-[20px]">
+            className="h-screen bg-white w-full relative p-[20px] overflow-hidden">
             <SectionTitle title="Main Goals" />
 
             <GoalsArrow scrollPercent={scrollPercent} />

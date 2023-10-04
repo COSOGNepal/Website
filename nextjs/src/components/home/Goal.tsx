@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react"
-import { motion, useScroll } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 export type TgoalPosition = {
-    x: string,
-    y: string,
+    x: number,
+    y: number,
     responsive?: {
         breakPoint: number,
-        x: string,
-        y: string
+        x: number,
+        y: number
     }[]
 }
 
@@ -22,22 +22,35 @@ type TfinalGoalPosition = Omit<TgoalPosition, "responsive">
 
 
 const Goal = ({ index, title, desc, position }: TgoalProps) => {
-    const [finalGoalPosition, setFinalGoalPosition] = useState<TfinalGoalPosition>();
+    const [finalGoalPosition, setFinalGoalPosition] = useState<TfinalGoalPosition>({
+        x: position.x,
+        y: position.y
+    });
 
     const goalConRef = useRef<HTMLDivElement | null>(null);
 
     const makeResponsive = () => {
         if (!goalConRef.current || !position.responsive || position.responsive.length === 0) return;
 
-        goalConRef.current.style.top = position.y;
-        goalConRef.current.style.left = position.x;
+        goalConRef.current.style.top = `${position.y}%`;
+        goalConRef.current.style.left = `${position.x}%`;
+
+        setFinalGoalPosition({
+            x: position.x,
+            y: position.y,
+        })
 
         position.responsive.forEach((screen) => {
             const size = screen.breakPoint;
             if (!matches(size) || !goalConRef.current) return;
 
-            goalConRef.current.style.top = screen.y;
-            goalConRef.current.style.left = screen.x;
+            goalConRef.current.style.top = `${screen.y}%`;
+            goalConRef.current.style.left = `${screen.x}%`;
+
+            setFinalGoalPosition({
+                x: screen.x,
+                y: screen.y,
+            })
         })
     }
     const matches = (size: number): boolean => {
@@ -47,9 +60,13 @@ const Goal = ({ index, title, desc, position }: TgoalProps) => {
     }
 
     const { scrollYProgress } = useScroll({
-        target: goalConRef
+        target: goalConRef,
+        offset: ["start end", "1 0.8"]
     });
 
+    const animatedGoalPosition = {
+        x: useTransform(scrollYProgress, [1, 0], [0, 1]).get() || 0
+    }
 
     useEffect(() => {
         makeResponsive();
@@ -66,8 +83,9 @@ const Goal = ({ index, title, desc, position }: TgoalProps) => {
                     h-[150px] overflow-hidden ${index % 2 !== 0 && 'flex-row-reverse'} 
                     max-xl:scale-75 max-[880px]:scale-100 min-[880px]:absolute min-[880px]:my-[20px] mx-auto`}
             style={{
-                top: position.y,
-                left: position.x,
+                left: `${finalGoalPosition.x}%`,
+                top: `${finalGoalPosition.y}%`,
+                marginLeft: index % 2 === 0 ? `${-(100 - finalGoalPosition.x) * animatedGoalPosition.x}%` : `${finalGoalPosition.x * animatedGoalPosition.x}%`
             }}
             ref={goalConRef}
         >
