@@ -30,7 +30,6 @@ const Footer = () => {
             </Link>
             <div className="text-base my-4 ">Coding for Social Good Nepal</div>
           </div>
-          {/* <div className="md:flex gap-8 px-14 wrap w-full   "> */}
           <div className="w-fit">
             <h2 className="mb-2 text-3xl font-extrabold  ">Contact us:</h2>
             <ul className="text-gray-custom text-base">
