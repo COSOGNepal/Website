@@ -26,48 +26,20 @@ const Icons = () => {
   return (
     <div className="w-full h-full absolute top-0 left-0 pointer-events-none -z-5 overflow-hidden">
       <div className="relative w-full h-full  pointer-events-none ">
-        <Html
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-1`}
-        />
-        <Bash
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-2`}
-        />
-        <BashM
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-3`}
-        />
-        <Css
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-4`}
-        />
-        <Golang
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-5`}
-        />
-        <Html
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-6`}
-        />
-        <Java
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-7`}
-        />
-        <Js
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-8`}
-        />
-        <Kotlin
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-9`}
-        />
-        <Python
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-10`}
-        />
-        <Rails
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-11`}
-        />
-        <ReactIcon
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-12`}
-        />
-        <Ruby
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-13`}
-        />
-        <Rust
-          style={`opacity-${getRandomOpacity().toString()} absolute animate-move-random-14`}
-        />
+        <Html style={`opacity-10 absolute animate-move-random-1`} />
+        <Bash style={`opacity-10 absolute animate-move-random-2`} />
+        <BashM style={`opacity-10 absolute animate-move-random-3`} />
+        <Css style={`opacity-10 absolute animate-move-random-4`} />
+        <Golang style={`opacity-10 absolute animate-move-random-5`} />
+        <Html style={`opacity-10 absolute animate-move-random-6`} />
+        <Java style={`opacity-10 absolute animate-move-random-7`} />
+        <Js style={`opacity-10 absolute animate-move-random-8`} />
+        <Kotlin style={`opacity-10 absolute animate-move-random-9`} />
+        <Python style={`opacity-10 absolute animate-move-random-10`} />
+        <Rails style={`opacity-10 absolute animate-move-random-11`} />
+        <ReactIcon style={`opacity-10 absolute animate-move-random-12`} />
+        <Ruby style={`opacity-10 absolute animate-move-random-13`} />
+        <Rust style={`opacity-10 absolute animate-move-random-14`} />
       </div>
     </div>
   );
