@@ -43,46 +43,46 @@ const config: Config = {
       },
       animation: {
         "move-random-1": `random ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-2": `random2 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-3": `random3 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-4": `random4 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-5": `random5 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-6": `random6 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-7": `random7 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-8": `random8 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-9": `random9 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-10": `random10 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-11": `random11 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-12": `random12 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-13": `random13 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
         "move-random-14": `random14 ${Math.round(
-          Math.random() * 50 + 70
+          Math.random() * 50 + 50
         )}s linear infinite`,
       },
       keyframes: {
