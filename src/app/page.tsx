@@ -1,8 +1,6 @@
 "use client";
 
-import Link from "next/link";
 import React from "react";
-
 
 export default function Home() {
     return (
@@ -14,7 +12,7 @@ export default function Home() {
 
             <p>
                 Till then read some blogs.
-                <Link href={"/blogs"}> Go to blogs </Link>
+                <a href={"blog.cosognepal.org"}> Go to blogs </a>
             </p>
 
         </>
