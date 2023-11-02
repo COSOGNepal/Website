@@ -12,7 +12,7 @@ export default function Home() {
 
             <p>
                 Till then read some blogs.
-                <a href={"blog.cosognepal.org"}> Go to blogs </a>
+                <a href={"https://blog.cosognepal.org"} > Go to blogs </a>
             </p>
 
         </>
