@@ -1,43 +1,8 @@
 "use client";
 
 import React from "react";
+// import HeroSection from "./(homepage)/_components/HeroSection";
 
 export default function Home() {
-    return (
-        <>
-            <h1>
-                This site is under construction.
-                Stay tuned to be amazed.
-            </h1>
-
-            <p>
-                Till then read some blogs.
-                <a href={"https://blog.cosognepal.org"} > Go to blogs </a>
-            </p>
-
-        </>
-    );
-
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  return <>HeroSection</>;
+}
