@@ -1,32 +1,76 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [navClicked, setNavClicked] = useState(false);
   return (
-    <nav className="fixed inset-0 p-0 min-w-screen min-h-screen  ">
-      <div className="absolute hamcontainer ">
-        <Image
-          src={"/assets/hamicon.png"}
-          width={50}
-          height={50}
-          alt="mitho burger"
-        />
-      </div>
-      <main className="relative w-full h-full grid place-content-center">
-        <div className="backdrop-blur-[6px] absolute inset-0 -z-10 bg-transparent">
-          {" "}
+    <>
+      <div className="absolute hamcontainer z-10 py-6 px-10">
+        <div className="relative w-full h-full">
+          <Image
+            src={navClicked ? "/assets/crossIcon.svg" : "/assets/hamIcon.svg"}
+            width={navClicked ? 30 : 50}
+            height={navClicked ? 30 : 50}
+            className=" cursor-pointer  z-30"
+            alt="mitho burger"
+            onClick={() => {
+              setNavClicked(!navClicked);
+            }}
+          />
         </div>
-        <ul className="text-3xl font-small flex items-center flex-col gap-3 text-faded">
-          <li className="underline">Home</li>
-          <li className="cursor-pointer">About Us </li>
-          <li className="cursor-pointer">Events </li>
-          <li className="cursor-pointer">Blogs </li>
-          <li className="cursor-pointer">Contact </li>
-          <li className="cursor-pointer">Donate</li>
-        </ul>
-      </main>
-    </nav>
+      </div>
+      <nav
+        className={`fixed inset-0 p-0 min-w-screen min-h-screen ${
+          !navClicked ? "pointer-events-none" : "pointer-events-auto"
+        }`}
+      >
+        <main
+          className={`${
+            !navClicked
+              ? "-translate-y-full pointer-events-none"
+              : "translate-y-0"
+          } -translate-y-full relative w-full h-full grid place-content-center duration-500 transition `}
+        >
+          <div className="backdrop-blur-[6px] absolute inset-0 -z-10 bg-transparent">
+            {" "}
+          </div>
+          <ul className="text-2xl font-small flex items-center flex-col gap-3 text-faded uppercase">
+            <Link href="#">
+              <li className="link link-underline link-underline-black cursor-pointer ">
+                Home
+              </li>
+            </Link>
+            <Link href="#">
+              <li className="link link-underline link-underline-black cursor-pointer ">
+                About us
+              </li>
+            </Link>
+            <Link href="#">
+              <li className="link link-underline link-underline-black cursor-pointer ">
+                Events
+              </li>
+            </Link>
+            <Link href="#">
+              <li className="link link-underline link-underline-black cursor-pointer ">
+                Blog
+              </li>
+            </Link>
+            <Link href="#">
+              <li className="link link-underline link-underline-black cursor-pointer ">
+                Contact
+              </li>
+            </Link>
+            <Link href="#">
+              <li className="link link-underline link-underline-black cursor-pointer ">
+                Donate
+              </li>
+            </Link>
+          </ul>
+        </main>
+      </nav>
+    </>
   );
 };
 
