@@ -7,7 +7,7 @@ const Navbar = () => {
   const [navClicked, setNavClicked] = useState(false);
   return (
     <>
-      <div className="absolute hamcontainer z-10 py-6 px-10">
+      <div className="absolute hamcontainer z-10 py-6 px-6 md:px-10">
         <div className="relative w-full h-full">
           <Image
             src={navClicked ? "/assets/crossIcon.svg" : "/assets/hamIcon.svg"}

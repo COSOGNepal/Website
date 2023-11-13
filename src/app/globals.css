@@ -21,3 +21,6 @@
   background-size: 100% 3px;
   background-position: 0 100%;
 }
+body {
+  overflow-x: hidden;
+}
