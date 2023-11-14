@@ -15,7 +15,7 @@ const Herosection = () => {
             <Image src={"/assets/bgShape2.svg"} fill alt={"background"} />
           </div>
         </div>
-        <div className="socialmedia h-fit w-fit absolute z-auto pointer-events-auto cursor-help bottom-5 right-16 flex flex-col gap-3">
+        <div className="socialmedia h-fit w-fit absolute z-auto pointer-events-auto cursor-help bottom-5 right-16 flex sm:flex-col gap-3">
           <a
             href="https://www.facebook.com/Cosognepal"
             target="blank"
