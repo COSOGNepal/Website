@@ -40,7 +40,7 @@ const Events = () => {
     },
   ];
   return (
-    <main className="px-5 md:w-11/12 mx-auto  pt-16">
+    <main className="px-5 w-screen mx-auto pt-16">
       <div className="flex mb-5 justify-between">
         <h2 className={"text-xl md:text-3xl text-faded font-normal "}>
           Events
@@ -50,7 +50,7 @@ const Events = () => {
         </h2>
       </div>
       {/* events listing */}
-      <section className="w-10/12mx-auto grid grid-cols-1 sm:grid-cols-2 px-2 md:px-20 gap-4 bg-contain ">
+      <section className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 px-2 md:px-20 gap-4 bg-contain ">
         {EventData.map((data) => (
           <div
             key={data.id}

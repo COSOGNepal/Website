@@ -12,7 +12,7 @@ const Partners = () => {
       <section className="flex gap-4 justify-center ">
         <div className="w-48">
           <Image
-            src={"/assets/hamIcon.png"}
+            src={"/assets/partner_demo.png"}
             width={130}
             height={130}
             alt="partner__logo"
@@ -20,7 +20,7 @@ const Partners = () => {
         </div>
         <div className="w-48">
           <Image
-            src={"/assets/hamIcon.png"}
+            src={"/assets/partner_demo.png"}
             width={130}
             height={130}
             alt="partner__logo"
@@ -28,7 +28,7 @@ const Partners = () => {
         </div>
         <div className="w-48">
           <Image
-            src={"/assets/hamIcon.png"}
+            src={"/assets/partner_demo.png"}
             width={130}
             height={130}
             alt="partner__logo"
@@ -36,7 +36,7 @@ const Partners = () => {
         </div>
         <div className="w-48">
           <Image
-            src={"/assets/hamIcon.png"}
+            src={"/assets/partner_demo.png"}
             width={130}
             height={130}
             alt="partner__logo"
@@ -44,7 +44,7 @@ const Partners = () => {
         </div>
         <div className="w-48">
           <Image
-            src={"/assets/hamIcon.png"}
+            src={"/assets/partner_demo.png"}
             width={130}
             height={130}
             alt="partner__logo"

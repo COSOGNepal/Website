@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import "../globals.css";
+import Footer from "./_components/Footer";
 
 export const metadata: Metadata = {
   title: "COSOG Nepal",
@@ -14,9 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col justify-between">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

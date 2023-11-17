@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Numbers = () => {
   return (
-    <main className="h-72 text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply my-24 grid grid-cols-4 justify-center place-items-center">
+    <main className="h-72 text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply my-24 grid grid-cols-2 sm:grid-cols-4 justify-center place-items-center">
       <div className="flex flex-col items-center">
         <div className="w-12 sm:w-20 aspect-square relative">
           <Image src={"/assets/School_logo.svg"} fill alt="school" />

@@ -4,37 +4,37 @@ const Goals = () => {
   const GoalsList = [
     {
       id: 1,
-      title: "Helping people understand the tech",
-      desc: "In this day and age understanding the tech is a must. No one is complete without the tech knowledge so we focus on guiding young generation towards it",
+      title: "Learn a new language",
+      desc: "Master a foreign language, enabling better communication and understanding of different cultures.",
     },
     {
       id: 2,
-      title: "Helping people understand the tech",
-      desc: "In this day and age understanding the tech is a must. No one is complete without the tech knowledge so we focus on guiding young generation towards it",
+      title: "Travel to at least 5 different countries",
+      desc: "Explore diverse cultures, cuisines, and landscapes around the world.",
     },
     {
       id: 3,
-      title: "Helping people understand the tech",
-      desc: "In this day and age understanding the tech is a must. No one is complete without the tech knowledge so we focus on guiding young generation towards it",
+      title: "Achieve a healthy work-life balance",
+      desc: "Prioritize mental and physical well-being by balancing professional and personal life.",
     },
     {
       id: 4,
-      title: "Helping people understand the tech",
-      desc: "In this day and age understanding the tech is a must. No one is complete without the tech knowledge so we focus on guiding young generation towards it",
+      title: "Start a personal blog",
+      desc: "Share experiences, knowledge, and insights with a wider audience through a personal blog.",
     },
     {
       id: 5,
-      title: "Helping people understand the tech",
-      desc: "In this day and age understanding the tech is a must. No one is complete without the tech knowledge so we focus on guiding young generation towards it",
+      title: "Learn to play a musical instrument",
+      desc: "Acquire a new skill and find joy in creating music with a musical instrument.",
     },
     {
       id: 6,
-      title: "Helping people understand the tech",
-      desc: "In this day and age understanding the tech is a must. No one is complete without the tech knowledge so we focus on guiding young generation towards it",
+      title: "Volunteer for a social cause",
+      desc: "Contribute time and effort to a charitable organization or community project to make a positive impact.",
     },
   ];
   return (
-    <main className="px-4 md:px-16 my-20">
+    <main className="px-4 md:px-16 mt-20">
       <h2 className={"text-xl md:text-3xl text-faded font-normal "}>
         Our Main Goals{" "}
       </h2>

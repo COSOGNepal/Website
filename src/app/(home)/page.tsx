@@ -8,6 +8,7 @@ import Numbers from "./_components/Numbers";
 import CommunityMembers from "./_components/CommunityMembers";
 import Goals from "./_components/Goals";
 import CTABanner from "./_components/CTABanner";
+import FAQ from "./_components/FAQ";
 // import HeroSection from "./(homepage)/_components/HeroSection";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <CommunityMembers />
       <Goals />
       <CTABanner />
+      <FAQ />
       <br />
       <br />
       <br />

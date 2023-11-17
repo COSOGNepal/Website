@@ -16,7 +16,7 @@ const Herosection = () => {
           </div>
         </div>
 
-        <div className="socialmedia z-[100] h-fit w-fit absolute  cursor-help bottom-5 right-16 flex sm:flex-col gap-3">
+        <div className="socialmedia z-[100] h-fit w-fit absolute  cursor-pointer bottom-5 right-16 flex sm:flex-col gap-3">
           <a
             href="https://www.facebook.com/Cosognepal"
             target="blank"
