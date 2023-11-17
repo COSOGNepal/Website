@@ -6,6 +6,7 @@ import Partners from "./_components/Partners";
 import Events from "./_components/Events";
 import Numbers from "./_components/Numbers";
 import CommunityMembers from "./_components/CommunityMembers";
+import Goals from "./_components/Goals";
 // import HeroSection from "./(homepage)/_components/HeroSection";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Events />
       <Numbers />
       <CommunityMembers />
+      <Goals />
       <br />
       <br />
       <br />
