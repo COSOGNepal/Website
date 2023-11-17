@@ -22,13 +22,6 @@ export default function Home() {
       <Goals />
       <CTABanner />
       <FAQ />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </>
   );
 }
