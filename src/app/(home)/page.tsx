@@ -8,6 +8,14 @@ export default function Home() {
   return (
     <>
       <Herosection />
+      <button
+        onClick={() => {
+          console.log("first");
+        }}
+        className="bg-primary cursor-pointer w-44 h-12 text-white mt-8 text-center py-2"
+      >
+        Be a member
+      </button>
       this is section after HeroSectio Lorem ipsum dolor sit, amet consectetur
       adipisicing elit. Architecto, natus voluptatibus. Doloribus voluptatibus
       nam incidunt in possimus quas repudiandae aliquid quod! Cum mollitia,

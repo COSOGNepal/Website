@@ -7,7 +7,7 @@ const Navbar = () => {
   const [navClicked, setNavClicked] = useState(false);
   return (
     <>
-      <div className="absolute hamcontainer z-10 py-6 px-6 md:px-10">
+      <div className="absolute hamcontainer z-50 py-6 px-6 md:px-10">
         <div className="relative w-full h-full">
           <Image
             src={navClicked ? "/assets/crossIcon.svg" : "/assets/hamIcon.svg"}
@@ -22,18 +22,16 @@ const Navbar = () => {
         </div>
       </div>
       <nav
-        className={`fixed inset-0 p-0 min-w-screen min-h-screen ${
+        className={`fixed inset-0 p-0 min-w-screen min-h-screen z-40 ${
           !navClicked ? "pointer-events-none" : "pointer-events-auto"
         }`}
       >
         <main
           className={`${
-            !navClicked
-              ? "-translate-y-full pointer-events-none"
-              : "translate-y-0"
+            !navClicked ? "-translate-y-full " : "translate-y-0"
           } -translate-y-full relative w-full h-full grid place-content-center duration-500 transition `}
         >
-          <div className="backdrop-blur-[6px] absolute inset-0 -z-10 bg-transparent">
+          <div className="backdrop-blur-[20px] absolute inset-0 -z-10 bg-transparent">
             {" "}
           </div>
           <ul className="text-2xl font-small flex items-center flex-col gap-3 text-faded uppercase">
