@@ -34,6 +34,7 @@ const Navbar = () => {
           <div className="backdrop-blur-[20px] absolute inset-0 -z-10 bg-transparent">
             {" "}
           </div>
+
           <ul className="text-2xl font-small flex items-center flex-col gap-3 text-faded uppercase">
             <Link href="#">
               <li className="link link-underline link-underline-black cursor-pointer ">
