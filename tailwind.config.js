@@ -81,6 +81,13 @@ module.exports = {
         block: "50px",
         section: "100px",
       },
+      fontSize: {
+        heading: "52px",
+        title: "32px",
+        "sub-title": "24px",
+        para: "18px",
+        info: "12px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
