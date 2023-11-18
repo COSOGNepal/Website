@@ -4,39 +4,39 @@ const Goals = () => {
   const GoalsList = [
     {
       id: 1,
-      title: "Learn a new language",
-      desc: "Master a foreign language, enabling better communication and understanding of different cultures.",
+      title: "Promote CS culture in high schools",
+      desc: "We're dedicated to raising awareness about computer science education and opportunities among high school students.",
     },
     {
       id: 2,
-      title: "Travel to at least 5 different countries",
-      desc: "Explore diverse cultures, cuisines, and landscapes around the world.",
+      title: "Help establish CS clubs",
+      desc: "We support high school students in launching and managing computer science clubs, fostering collaboration and knowledge sharing within and outside of their school.",
     },
     {
       id: 3,
-      title: "Achieve a healthy work-life balance",
-      desc: "Prioritize mental and physical well-being by balancing professional and personal life.",
+      title: "Collaboration and Team Work Activities",
+      desc: "We encourage teamwork and collaboration among students to enhance their learning experiences.",
     },
     {
       id: 4,
-      title: "Start a personal blog",
-      desc: "Share experiences, knowledge, and insights with a wider audience through a personal blog.",
+      title: "Skill Development Workshops",
+      desc: "Our workshops equip students with practical computer science skills for success in the tech world.",
     },
     {
       id: 5,
-      title: "Learn to play a musical instrument",
-      desc: "Acquire a new skill and find joy in creating music with a musical instrument.",
+      title: "Networking and Talk Shows",
+      desc: "We connect students with industry experts through networking events and engaging talks to share how they started with computer science and provide the roadmaps for the newcomers.",
     },
     {
       id: 6,
-      title: "Volunteer for a social cause",
-      desc: "Contribute time and effort to a charitable organization or community project to make a positive impact.",
+      title: "Code for Charity",
+      desc: "We use coding skills to address real-world issues and make a positive impact in our communities. Therefore, we’re encouraging students to help the non-profits adapt technology.",
     },
   ];
   return (
     <main className="px-4 md:px-16 mt-20">
       <h2 className={"text-xl md:text-3xl text-faded font-normal "}>
-        Our Main Goals{" "}
+        Our Goals{" "}
       </h2>
       <section className="grid grid-cols-1 md:grid-cols-2 w-full gap-3 py-8 px-2 md:px-24">
         {GoalsList.map((goal) => (

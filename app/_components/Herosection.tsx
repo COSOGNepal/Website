@@ -29,7 +29,7 @@ const Herosection = () => {
               alt="social"
             />
           </a>
-          <a href="https://www.facebook.com/Cosognepal" target="blank">
+          <a href="https://www.instagram.com/cosognepal" target="blank">
             <Image
               src={"/assets/instagram_logo.svg"}
               width={40}
@@ -51,21 +51,22 @@ const Herosection = () => {
           <div className="left pl-8 md:pl-32 flex-1 relative z-0 ">
             <div className="flex flex-col gap-5 h-full justify-center ">
               <div className="text-2xl md:text-3xl text-dark-primary font-bold">
-                <h2>Coding is great and </h2>
-                <h2>you look great while coding</h2>
+                <h2>Coding for Social Good </h2>
+                <h2>CoSoG Nepal</h2>
               </div>
               <p className="w-full text-left text-faded text-sm md:text-base">
-                Designing is way way better than coding, since you have the
-                power to control the coders which is way powerfull. Do not
-                believe me give it a shot.
+              CoSoG Nepal is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Secondary/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal's digitalization.
               </p>
               <button
                 onClick={() => {
-                  console.log("first");
+                  window.open(
+                    "https://forms.gle/gRPEzxmbL9febVuMA",
+                    "_blank"
+                  );
                 }}
-                className="bg-primary cursor-pointer w-44 h-12 text-white mt-8 text-center py-2"
+                className="bg-primary cursor-pointer w-48 h-12 text-white mt-8 text-center py-2"
               >
-                Be a member
+                Join our community
               </button>
             </div>
           </div>

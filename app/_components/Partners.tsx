@@ -7,7 +7,7 @@ const Partners = () => {
       <h2
         className={"text-xl md:text-3xl text-faded font-normal p-4 md:pl-24 "}
       >
-        Our Partners
+        We've partnered with
       </h2>
       <section className="flex gap-4 justify-center px-2 md:px-28 w-screen ">
         <div className="w-48">
