@@ -6,33 +6,42 @@ const CommunityMembers = () => {
   const MembersData = [
     {
       id: 1,
-      name: "Sushil Bhattarai",
-      post: "Secretory",
-      fb: "https://www.facebook.com/sushilbhattarai",
-      insta: "https://www.instagram.com/sushilbhattarai",
-      linkedin: "ttps://www.linkedin.com/sushilbhattarai",
-      imageURL: "/images/members/Sushil_Bhattarai.png",
-    },
-    {
-      id: 2,
-      name: "Sanskar Lamsal",
-      post: "Kam Chor",
-      fb: "https://www.facebook.com/sanskarlamichhane",
-      insta: "https://www.instagram.com/sanskarlamichhane",
-      linkedin: "ttps://www.linkedin.com/sanskarlamichhane",
-      imageURL: "/images/members/Sanskar_Lamsal.jpg",
-    },
-    {
-      id: 3,
-      name: "Bibek Pulami",
-      post: "Community Leader",
+      name: "Bibek Bhandari",
+      post: "President",
       fb: "https://www.facebook.com/bibekpulami",
       insta: "https://www.instagram.com/bibekpulami",
       linkedin: "ttps://www.linkedin.com/bibekpulami",
       imageURL: "/images/members/Bibek_Pulami.jpg",
     },
     {
+      id: 2,
+      name: "Aashish Panthi",
+      post: "Vice President",
+      fb: "https://www.facebook.com/aashishpanthi11",
+      insta: "https://www.instagram.com/aashishpanthi11",
+      linkedin: "ttps://www.linkedin.com/in/aashishpanthi",
+      imageURL: "/images/members/Aashish Panthi.jpeg",
+    },
+    {
+      id: 3,
+      name: "Sushil Bhattarai",
+      post: "Secretary",
+      fb: "https://www.facebook.com/sushilbhattarai",
+      insta: "https://www.instagram.com/sushilbhattarai",
+      linkedin: "ttps://www.linkedin.com/sushilbhattarai",
+      imageURL: "/images/members/Sushil_Bhattarai.png",
+    },
+    {
       id: 4,
+      name: "Sanskar Lamsal",
+      post: "Program Manager",
+      fb: "https://www.facebook.com/sanskarlamichhane",
+      insta: "https://www.instagram.com/sanskarlamichhane",
+      linkedin: "ttps://www.linkedin.com/sanskarlamichhane",
+      imageURL: "/images/members/Sanskar_Lamsal.jpg",
+    },
+    {
+      id: 5,
       name: "Saroj Regmi",
       post: "IT Head",
       fb: "https://www.facebook.com/sarojregmi",
@@ -41,7 +50,7 @@ const CommunityMembers = () => {
       imageURL: "/images/members/Saroj_Regmi.jpg",
     },
     {
-      id: 5,
+      id: 6,
       name: "Anish Raj Pandey",
       post: "Community Leader",
       fb: "https://www.facebook.com/anishrajpandey0",
@@ -49,21 +58,12 @@ const CommunityMembers = () => {
       linkedin: "ttps://www.linkedin.com/anisjrajpandey",
       imageURL: "/images/members/Anish_Raj_Pandey.jpg",
     },
-    {
-      id: 6,
-      name: "Lenish Pandey",
-      post: "Community Leader",
-      fb: "https://www.facebook.com/lenishpandey",
-      insta: "https://www.instagram.com/lenishpandey",
-      linkedin: "ttps://www.linkedin.com/lenishpandey",
-      imageURL: "/images/members/Lenish_Pandey.jpg",
-    },
   ];
   return (
     <main className="px-4 md:px-16">
       <div className="flex mb-5 justify-between">
         <h2 className={"text-xl md:text-3xl text-faded font-normal "}>
-          Community Members
+          Our team
         </h2>
         <h2 className={"text-base md:text-xl text-faded font-normal "}>
           <Link href={"/members"}> View All</Link>
