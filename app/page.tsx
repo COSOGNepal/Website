@@ -11,16 +11,16 @@ import CTABanner from "./_components/CTABanner";
 import FAQ from "./_components/FAQ";
 
 export default function Home() {
-  return (
-    <>
-      <Herosection />
-      <Partners />
-      <Events />
-      <Numbers />
-      <CommunityMembers />
-      <Goals />
-      <CTABanner />
-      <FAQ />
-    </>
-  );
+    return (
+        <div className="flex flex-col space-y-section">
+            <Herosection />
+            <Partners />
+            <Events />
+            <Numbers />
+            <CommunityMembers />
+            <Goals />
+            <CTABanner />
+            <FAQ />
+        </div >
+    );
 }
