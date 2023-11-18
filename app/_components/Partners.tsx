@@ -20,7 +20,7 @@ const Partners = () => {
         </div>
         <div className="w-48">
           <Image
-            src={"/images/Partners/aws club.png"}
+            src={"/images/Partners/aws_club.png"}
             width={130}
             height={130}
             alt="AWS Cloud Club"

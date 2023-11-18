@@ -11,7 +11,7 @@ const CommunityMembers = () => {
       fb: "#",
       insta: "https://www.instagram.com/vandari_7/",
       linkedin: "https://www.linkedin.com/in/bibekbha/",
-      imageURL: "/images/members/Bibek Bhandari.png",
+      imageURL: "/images/members/Bibek_Bhandari.png",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const CommunityMembers = () => {
       fb: "https://www.facebook.com/aashishpanthi11",
       insta: "https://www.instagram.com/aashishpanthi11",
       linkedin: "https://www.linkedin.com/in/aashishpanthi",
-      imageURL: "/images/members/Aashish Panthi.jpeg",
+      imageURL: "/images/members/Aashish_Panthi.jpeg",
     },
     {
       id: 3,
@@ -80,7 +80,7 @@ const CommunityMembers = () => {
               src={MembersData.imageURL}
               fill
               className="object-cover"
-              alt="dk"
+              alt={MembersData.name}
             />
             <div className="absolute text-white px-4 pb-2 md:pb-6 h-1/2 w-full bg-gradient-to-t from-dark-transparent to-transparent flex justify-end flex-col gap-3 bottom-0">
               <div className="absolute bottom-5 md:-bottom-7 group-hover:bottom-5 transition-all">
