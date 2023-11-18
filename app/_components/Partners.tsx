@@ -9,7 +9,7 @@ const Partners = () => {
       >
         Our Partners
       </h2>
-      <section className="flex gap-4 justify-center ">
+      <section className="flex gap-4 justify-center px-2 md:px-28 w-screen ">
         <div className="w-48">
           <Image
             src={"/assets/partner_demo.png"}
