@@ -55,7 +55,7 @@ const Herosection = () => {
                 <h2>CoSoG Nepal</h2>
               </div>
               <p className="w-full text-left text-faded text-sm md:text-base">
-              CoSoG Nepal is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Secondary/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal's digitalization.
+              CoSoG Nepal is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Secondary/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal&apos;s digitalization.
               </p>
               <button
                 onClick={() => {
