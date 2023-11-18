@@ -12,39 +12,39 @@ const Partners = () => {
       <section className="flex gap-4 justify-center px-2 md:px-28 w-screen ">
         <div className="w-48">
           <Image
-            src={"/assets/partner_demo.png"}
+            src={"/images/Partners/codeforchange.png"}
             width={130}
             height={130}
-            alt="partner__logo"
+            alt="Code for Change"
           />
         </div>
         <div className="w-48">
           <Image
-            src={"/assets/partner_demo.png"}
+            src={"/images/Partners/aws club.png"}
             width={130}
             height={130}
-            alt="partner__logo"
+            alt="AWS Cloud Club"
           />
         </div>
         <div className="w-48">
           <Image
-            src={"/assets/partner_demo.png"}
+            src={"/images/Partners/itechkarnali.png"}
             width={130}
             height={130}
-            alt="partner__logo"
+            alt="iTech Karnali"
           />
         </div>
         <div className="w-48">
           <Image
-            src={"/assets/partner_demo.png"}
+            src={"/images/Partners/sagarmatha_techfest.png"}
             width={130}
             height={130}
-            alt="partner__logo"
+            alt="Sagarmatha Techfest"
           />
         </div>
         <div className="w-48">
           <Image
-            src={"/assets/partner_demo.png"}
+            src={"/images/Partners/sagarmatha_hacktoberfest.png"}
             width={130}
             height={130}
             alt="partner__logo"
