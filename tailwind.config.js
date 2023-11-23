@@ -22,6 +22,12 @@ module.exports = {
         "dark-primary": "#01010A",
         "gray-bg": "#F2F2F2",
         primary: "#278EED",
+        "black-dark": "#01010A",
+        "black-mid": "#555555",
+        "black-light": "#767676",
+        blue: "#3771C8",
+        gray: "#F2F2F2",
+        "white-light": "#E9E9E9",
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
