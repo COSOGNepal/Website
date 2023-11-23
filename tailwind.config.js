@@ -93,6 +93,9 @@ module.exports = {
         para: "18px",
         info: "12px",
       },
+      gridTemplateColumns: {
+        "auto-fit-320": "repeat(auto-fit, 320px)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
