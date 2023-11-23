@@ -84,33 +84,33 @@ const CommunityMembers = () => {
                                     {MembersData.post}
                                 </h2>
                                 <div>
-                                    <div className="h-fit w-fit cursor-pointer mt-1 md:mt-3 flex gap-3">
+                                    <div classname="h-fit w-fit cursor-pointer mt-1 md:mt-3 flex gap-3">
                                         <a
-                                            href={MembersData.fb}
+                                            href={membersdata.fb}
                                             target="blank"
-                                            className="cursor-pointer"
+                                            classname="cursor-pointer"
                                         >
-                                            <Image
+                                            <image
                                                 src={"/assets/facebook_logo.png"}
-                                                className="grayscale hover:grayscale-0"
+                                                classname="grayscale hover:grayscale-0"
                                                 width={25}
                                                 height={25}
                                                 alt="social"
                                             />
                                         </a>
-                                        <a href={MembersData.insta} target="blank">
-                                            <Image
+                                        <a href={membersdata.insta} target="blank">
+                                            <image
                                                 src={"/assets/instagram_logo.png"}
-                                                className="grayscale hover:grayscale-0 "
+                                                classname="grayscale hover:grayscale-0 "
                                                 width={25}
                                                 height={25}
                                                 alt="social"
                                             />
                                         </a>
-                                        <a href={MembersData.linkedin} target="blank">
-                                            <Image
+                                        <a href={membersdata.linkedin} target="blank">
+                                            <image
                                                 src={"/assets/linkedin_logo.png"}
-                                                className="grayscale hover:grayscale-0"
+                                                classname="grayscale hover:grayscale-0"
                                                 width={25}
                                                 height={25}
                                                 alt="social"
