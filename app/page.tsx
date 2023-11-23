@@ -20,7 +20,7 @@ export default function Home() {
             <CommunityMembers />
             <Goals />
             <CTABanner />
-            <FAQ />
+            {/* <FAQ /> */}
         </div >
     );
 }

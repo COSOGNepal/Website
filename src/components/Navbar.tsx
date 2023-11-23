@@ -38,7 +38,7 @@ const Navbar = () => {
                                 Home
                             </li>
                         </Link>
-                        <Link href="#">
+                        <Link href="/about">
                             <li className="link link-underline link-underline-black cursor-pointer ">
                                 About us
                             </li>

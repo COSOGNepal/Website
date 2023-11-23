@@ -50,6 +50,14 @@ const Partners = () => {
             alt="Sagarmantha Hacktoberfest"
           />
         </div>
+        <div className="w-48">
+          <Image
+            src={"/images/Partners/hackademedia.png"}
+            width={130}
+            height={130}
+            alt="Hackademedia"
+          />
+        </div>
       </section>
     </main>
   );
