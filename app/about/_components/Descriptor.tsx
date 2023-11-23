@@ -2,7 +2,7 @@ import type { TdescriptorData } from "../type"
 
 export default function Descriptor({ title, description, list = [] }: TdescriptorData) {
     return (
-        <div className="descriptor flex space-y-[20px] flex-col">
+        <div className="descriptor flex space-y-small flex-col">
             <div className="title font-bold text-sub-title text-black-dark  ">
                 {title}
             </div>
