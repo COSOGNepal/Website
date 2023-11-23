@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 type TSectionTitleProps = {
     title: string,
     viewall?: string,
@@ -6,10 +8,11 @@ type TSectionTitleProps = {
 export default function SectionTitle({ title, viewall }: TSectionTitleProps) {
     return (
         <div className="title_container flex justify-between items-center">
-            <h1 className="font-bold text-sub-title uppercase">
+            <h1 className="font-bold text-sub-title text-black-mid uppercase">
                 {title}
             </h1>
-            {viewall && <a href={viewall} className="text-blue font-medium text-para"> View all</a> || ""}
+            {viewall && <Link href={viewall} className="text-blue font-medium text-para uppercase"> View all</Link> || ""}
+
         </div >
     )
 }
