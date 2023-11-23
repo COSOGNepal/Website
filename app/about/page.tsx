@@ -1,7 +1,9 @@
 "use client"
 
 import Image from "next/image";
-import type { TdescriptorData } from "./type";
+
+import { Descriptor } from "./_components";
+
 export default function AboutPage() {
     return (
         <div className="main_container h-max flex flex-col space-y-section w-full px-block mt-section">
@@ -27,22 +29,3 @@ export default function AboutPage() {
     )
 }
 
-function Descriptor({ title, description, list = [] }: TdescriptorData) {
-    return (
-        <div className="descriptor flex space-y-[20px] flex-col">
-            <div className="title font-bold text-sub-title text-black-dark  ">
-                {title}
-            </div>
-            <div className="description font-normal text-para text-black-mid">
-                {description}
-                <div className="list_con mt-small">
-                    {
-                        list?.map((li, index) => {
-                            return <li key={index}>{li}</li>
-                        })
-                    }
-                </div>
-            </div>
-        </div>
-    )
-}
