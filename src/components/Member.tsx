@@ -3,7 +3,7 @@ import Image from "next/image"
 export default function Member() {
     const { name, post, fb, insta, linkedin, image } = {
         name: "Saroj Regmi",
-        post: "It Head",
+        post: "IT Head",
         fb: "https://www.facebook.com/sarojregmi200",
         insta: "https://www.instagram.com/sarojregmi200",
         linkedin: "https://www.linkedin.com/sarojregmi200",

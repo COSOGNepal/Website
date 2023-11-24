@@ -33,7 +33,7 @@ const Navbar = () => {
                     </div>
 
                     <ul className="text-2xl font-small flex items-center flex-col gap-3 text-faded uppercase">
-                        <Link href="#">
+                        <Link href="/">
                             <li className="link link-underline link-underline-black cursor-pointer ">
                                 Home
                             </li>
@@ -43,22 +43,22 @@ const Navbar = () => {
                                 About us
                             </li>
                         </Link>
-                        <Link href="#">
+                        <Link href="/events">
                             <li className="link link-underline link-underline-black cursor-pointer ">
                                 Events
                             </li>
                         </Link>
-                        <Link href="#">
+                        <Link href="https://blog.cosognepal.org">
                             <li className="link link-underline link-underline-black cursor-pointer ">
                                 Blog
                             </li>
                         </Link>
-                        <Link href="#">
+                        <Link href="/contact">
                             <li className="link link-underline link-underline-black cursor-pointer ">
                                 Contact
                             </li>
                         </Link>
-                        <Link href="#">
+                        <Link href="/donate">
                             <li className="link link-underline link-underline-black cursor-pointer ">
                                 Donate
                             </li>
