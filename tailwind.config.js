@@ -91,6 +91,7 @@ module.exports = {
         title: "32px",
         "sub-title": "24px",
         para: "18px",
+        "sub-para": "16px",
         info: "12px",
       },
       gridTemplateColumns: {
@@ -99,7 +100,7 @@ module.exports = {
         "2-320": "repeat(2, 320px)",
       },
       gridTemplateRows: {
-        "2-250": "repeat(2, 250px)",
+        "2-250": "repeat(2, minmax(0,250px))",
       },
     },
   },
