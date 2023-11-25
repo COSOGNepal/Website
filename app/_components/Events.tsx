@@ -1,5 +1,4 @@
 import SectionTitle from "@/components/SectionTitle";
-import Link from "next/link";
 import React from "react";
 
 const Events = () => {
