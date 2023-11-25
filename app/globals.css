@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 *, *::before, *::after{
-    font-family: 'Inter', sans-serif;
+ scroll-behavior: smooth;
+ font-family: 'Inter', sans-serif;
 }
 
 .link-underline {
