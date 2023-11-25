@@ -5,16 +5,18 @@ import Image from "next/image";
 import { Descriptor } from "./_components";
 import SectionTitle from "@/components/SectionTitle";
 import Member from "@/components/Member";
+import getMembers from "./getMembersInfo";
 
 export default function AboutPage() {
+    getMembers().then(res => console.log(res))
     return (
         <div className="main_container h-max flex flex-col space-y-section w-full px-block mt-section max-w-[1400px] m-auto">
             <div className="aboutSection">
                 <Image src="/images/assets/about_banner.png" width={1230} height={470} alt="banner_about_section"
                     className="banner  max-h-[470px]  h-auto  object-cover m-auto" />
                 <div className="description flex flex-col space-y-block  mt-block max-w-[1200px] m-auto">
-                    <Descriptor title="Who we are?" 
-                    description={`Cosog Nepal, also known as Coding for Social Good, is a student-driven non-profit organization founded in November 2022. Based in Kathmandu, Nepal, we are dedicated to revolutionizing computer science education throughout the country. Our primary focus is enabling students to initiate and manage Computer Science clubs in secondary and high schools across remote areas, creating a vibrant community of young tech enthusiasts.`}
+                    <Descriptor title="Who we are?"
+                        description={`Cosog Nepal, also known as Coding for Social Good, is a student-driven non-profit organization founded in November 2022. Based in Kathmandu, Nepal, we are dedicated to revolutionizing computer science education throughout the country. Our primary focus is enabling students to initiate and manage Computer Science clubs in secondary and high schools across remote areas, creating a vibrant community of young tech enthusiasts.`}
                     />
                     <Descriptor title="Our story" description="Cosog Nepal's journey was rooted in a transformative observation by Bibek, our president, during his tenure as a STEM instructor. The recent expansion of the Nepalese high school system from 11th-12th to 9th-12th grades opened new doors for younger students, yet many remained unaware of these burgeoning opportunities, especially in technology. Bibek identified a critical void in high schools: the absence of a Computer Science club culture from grade 9 onwards. This gap deprived students of valuable experiences like engaging with cutting-edge technologies, participating in hackathons, and competing in Olympiads – opportunities essential for cultivating tech-savvy and competitive individuals." />
                     <Descriptor title="Our Mission" description="At Cosog Nepal, our mission is to help high school students establish and sustain computer science clubs in their schools. Our goal is to cultivate young innovators and leaders who are proficient in technology and ready to make a difference in their communities."
@@ -47,4 +49,6 @@ export default function AboutPage() {
         </div>
     )
 }
+
+
 
