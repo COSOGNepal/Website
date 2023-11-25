@@ -1,7 +1,9 @@
+import Event from "./Event";
+
 export default function EventsPage() {
     return (
-        <section>
-
+        <section className="mt-section px-block">
+            <Event />
         </section>
     )
 
