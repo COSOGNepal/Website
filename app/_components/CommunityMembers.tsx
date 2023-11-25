@@ -9,7 +9,7 @@ const CommunityMembers = async () => {
         <main className="px-block space-y-block">
             <SectionTitle title="Our Members" viewall="/about/#team" />
             {/* members list */}
-            <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
+            <div className="members grid grid-cols-3-320 grid-rows-max gap-standard justify-center">
                 {
                     members.map((member, index) => {
                         if (member.post != "Community Leader")

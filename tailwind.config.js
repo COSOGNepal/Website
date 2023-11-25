@@ -95,6 +95,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         "auto-fit-320": "repeat(auto-fit, 320px)",
+        "3-320": "repeat(3, 320px)",
       },
     },
   },
