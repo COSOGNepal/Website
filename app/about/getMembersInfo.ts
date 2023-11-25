@@ -1,6 +1,6 @@
 import type { Tmember } from "./type";
 
-export default async function getMembers() {
+export default async function getMembers(): Promise<Tmember[]> {
     const data: Tmember[] = [
         {
             "name": "Bibek Bhandari",
@@ -8,7 +8,7 @@ export default async function getMembers() {
             "fb_link": "",
             "insta_link": "https://www.instagram.com/vandari_7/",
             "linkedin_link": "https://www.linkedin.com/in/bibekbha/",
-            "image": "https://drive.google.com/open?id=1bQrHJvJJMZ84IoLYXXNyCU-HrBiEqCUp",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Precident"
         },
         {
@@ -17,7 +17,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/aashishpanthi11",
             "insta_link": "https://www.instagram.com/aashishpanthi11/",
             "linkedin_link": "https://www.linkedin.com/in/aashishpanthi/",
-            "image": "https://drive.google.com/open?id=1lAXnvACu9foeNZqh-KCkpFzooxp1gnqz",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Vice Precident",
         },
         {
@@ -26,7 +26,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/sushilbhattaraiofficial",
             "insta_link": "instagram.com/sushil_bhattarai45",
             "linkedin_link": "https://www.linkedin.com/in/sushilbhattarai45",
-            "image": "https://drive.google.com/open?id=1pt8l7eZZSx8dcoi_Lc-lExOisjI2ICDU",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Secratory"
         },
         {
@@ -35,7 +35,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/OfficialPujanPokharel",
             "insta_link": "https://www.instagram.com/pujanpokharelofficial/",
             "linkedin_link": "https://www.linkedin.com/in/pujanpokharelofficial/",
-            "image": "https://drive.google.com/open?id=1pt8l7eZZSx8dcoi_Lc-lExOisjI2ICDU",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Treasurer"
         },
         {
@@ -44,7 +44,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/sarojregmi200",
             "insta_link": "https://www.instagram.com/sarojregmi200",
             "linkedin_link": "https://www.linkedin.com/in/sarojregmi200",
-            "image": "/images/members/sarojregmi.jpg",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "It Head",
         },
         {
@@ -53,7 +53,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/Sanskar.lmsl",
             "insta_link": "https://instagram.com/ssanskaar_?igshid=OGQ5ZDc2ODk2ZA==",
             "linkedin_link": "https://www.linkedin.com/in/sanskar-lamsal-b03a4b266",
-            "image": "https://drive.google.com/open?id=1WNhLN2ITgOULBcjKl8dN_DL-pmenLoun",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Program Manager"
         },
         {
@@ -62,7 +62,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/profile.php?id=100092346487256",
             "insta_link": "",
             "linkedin_link": "https://www.linkedin.com/in/adonis-sharma-1083b91b1",
-            "image": "https://drive.google.com/open?id=1V7ngWkxhYhQwyVVjrFLm3bSNa6jcBuwr",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -71,7 +71,7 @@ export default async function getMembers() {
             "fb_link": "facebook.com/djdjesh",
             "insta_link": "Instagram.com/djsh__14",
             "linkedin_link": "https://www.linkedin.com/in/dijesh-shrestha-81985627b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            "image": "https://drive.google.com/open?id=1wQj9fLNMZ-igShuVDh89VIe7YiptHTVe",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -80,7 +80,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/anishrajpandey0",
             "insta_link": "https://www.instagram.com/pandeyanishraj/",
             "linkedin_link": "https://www.linkedin.com/in/anish-raj-pandey-b13470258/",
-            "image": "https://drive.google.com/open?id=1JealDDi567Z1-AgyHPIKNmg7ixKFeYnz",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -89,7 +89,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/tankaprasad.budha.1",
             "insta_link": "https://www.instagram.com/sirelvinn/",
             "linkedin_link": "https://www.linkedin.com/in/aditya-bikram-thakur-a76501266/",
-            "image": "https://drive.google.com/open?id=1yF8ackFCoT9Zp1my4K5H_VA-uBvmCnYo",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -98,7 +98,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/AadarshaBhagataadarsh",
             "insta_link": "https://www.instagram.com/vagaat/",
             "linkedin_link": "https://www.linkedin.com/in/aadarsh-bhagat-a55343288/",
-            "image": "https://drive.google.com/open?id=11dkLnokDfy_l3K7VLe0dAf16vn19plJI",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -107,7 +107,7 @@ export default async function getMembers() {
             "fb_link": "",
             "insta_link": "",
             "linkedin_link": "https://www.linkedin.com/in/avipsha-dawadi-b3774327a?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=np",
-            "image": "https://drive.google.com/open?id=17Bt3k4vg8rsI3QfRzawms2vlxlGgSZ-u",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -116,7 +116,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/zen.itha.9/",
             "insta_link": "https://www.instagram.com/zenjtha/",
             "linkedin_link": "https://www.linkedin.com/in/zenitha-chalise-0610b3279/",
-            "image": "https://drive.google.com/open?id=1gDoxjtlrhL_nvevfHI_p-Jm0gEdeYp-K",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -125,7 +125,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/abhinav.acharya7s",
             "insta_link": "https://www.instagram.com/abhinav.bat/",
             "linkedin_link": "",
-            "image": "https://drive.google.com/open?id=1oE_dG8Nj7DeABZo831mSLDfOjHE-mKGb",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
 
@@ -135,7 +135,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/profile.php?id=100055852849657&mibextid=ZbWKwL",
             "insta_link": "",
             "linkedin_link": "",
-            "image": "https://drive.google.com/open?id=1WGHRyO9gWFAVDOfcBGcNfCIzBEEJDPgL",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
 
@@ -145,7 +145,7 @@ export default async function getMembers() {
             "fb_link": "https://m.facebook.com/profile.php/?id=100063454430616",
             "insta_link": "",
             "linkedin_link": "https://www.linkedin.com/mwlite/profile/in/kumudghimire/",
-            "image": "https://drive.google.com/open?id=1C86J3HrYkCDSQevxdW0CPt8f8b2QGdGI",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -154,7 +154,7 @@ export default async function getMembers() {
             "fb_link": "https://m.facebook.com/lenish.pandey",
             "insta_link": "",
             "linkedin_link": "https://www.linkedin.com/in/lenish-pandey-830720214",
-            "image": "https://drive.google.com/open?id=1vrEhWfPzM3uFFuwYL3HYmEE-sNn7pfOT",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -163,7 +163,7 @@ export default async function getMembers() {
             "fb_link": "https://www.facebook.com/gaurav.subedi.5245?mibextid=ZbWKwL",
             "insta_link": "https://instagram.com/gaurav.subedi0710?igshid=OGQ5ZDc2ODk2ZA==",
             "linkedin_link": "",
-            "image": "https://drive.google.com/open?id=1icTtFgOh3H-ZENC6t4ir7Qg23cMrMCky",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         },
         {
@@ -172,7 +172,7 @@ export default async function getMembers() {
             "fb_link": "",
             "insta_link": "@sssujalll",
             "linkedin_link": "",
-            "image": "https://drive.google.com/open?id=1_evS3FPznioCdiu8BXxRfxTiF8jZrBil",
+            "image": "/images/Members/Saroj_Regmi.jpg",
             "post": "Community Leader"
         }
     ]

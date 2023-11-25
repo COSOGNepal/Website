@@ -1,14 +1,11 @@
-"use client"
-
 import Image from "next/image";
-
 import { Descriptor } from "./_components";
 import SectionTitle from "@/components/SectionTitle";
 import Member from "@/components/Member";
 import getMembers from "./getMembersInfo";
 
-export default function AboutPage() {
-    getMembers().then(res => console.log(res))
+export default async function AboutPage() {
+    const members = await getMembers();
     return (
         <div className="main_container h-max flex flex-col space-y-section w-full px-block mt-section max-w-[1400px] m-auto">
             <div className="aboutSection">
@@ -35,15 +32,26 @@ export default function AboutPage() {
                 </div>
 
             </div>
-            <div className="main_members space-y-block ">
+            <div className="board_members space-y-block ">
                 <SectionTitle title="Board Members" />
                 <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
-                    <Member />
-                    <Member />
-                    <Member />
-                    <Member />
-                    <Member />
-                    <Member />
+                    {
+                        members.map((member, index) => {
+                            if (member.post != "Community Leader")
+                                return <Member key={index} data={member} />
+                        })
+                    }
+                </div>
+            </div>
+            <div className="community_leaders space-y-block ">
+                <SectionTitle title="Members" />
+                <div className="members grid grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
+                    {
+                        members.map((member, index) => {
+                            if (member.post === "Community Leader")
+                                return <Member key={index} data={member} />
+                        })
+                    }
                 </div>
             </div>
         </div>

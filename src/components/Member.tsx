@@ -1,14 +1,8 @@
 import Image from "next/image"
+import type { Tmember } from "../../app/about/type";
 
-export default function Member() {
-    const { name, post, fb, insta, linkedin, image } = {
-        name: "Saroj Regmi",
-        post: "IT Head",
-        fb: "https://www.facebook.com/sarojregmi200",
-        insta: "https://www.instagram.com/sarojregmi200",
-        linkedin: "https://www.linkedin.com/sarojregmi200",
-        image: "/images/Members/Saroj_Regmi.jpg"
-    };
+export default function Member({ data }: { data: Tmember }) {
+    const { name, post, fb_link, insta_link, linkedin_link, image } = data;
     return (
         <div className="member max-h-[350px] max-w-[320px] rounded-[5px] relative overflow-hidden group transition-all duration-100 ease-in-out">
             <Image src={image} height={350} width={320} alt={"SarojRegmi"}
@@ -20,7 +14,7 @@ export default function Member() {
                 </div>
                 <div className="socials flex space-x-small mt-[200%] opacity-0 group-hover:mt-small group-hover:opacity-100 transition-all duration-300 ease-in-out">
                     <a
-                        href={fb}
+                        href={fb_link}
                         target="blank"
                         className="cursor-pointer"
                     >
@@ -32,7 +26,7 @@ export default function Member() {
                             alt="facebook_logo"
                         />
                     </a>
-                    <a href={insta} target="blank">
+                    <a href={insta_link} target="blank">
                         <Image
                             src={"/assets/instagram_logo.png"}
                             className="grayscale hover:grayscale-0 "
@@ -41,7 +35,7 @@ export default function Member() {
                             alt="instagram_logo"
                         />
                     </a>
-                    <a href={linkedin} target="blank">
+                    <a href={linkedin_link} target="blank">
                         <Image
                             src={"/assets/linkedin_logo.png"}
                             className="grayscale hover:grayscale-0"
