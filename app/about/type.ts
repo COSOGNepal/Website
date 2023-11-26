@@ -1,6 +1,6 @@
 export type TdescriptorData = {
     title: string,
-    description: string,
+    descriptions: string[],
     list?: string[]
 }
 
@@ -11,5 +11,5 @@ export type Tmember = {
     insta_link?: string,
     linkedin_link?: string,
     image: string,
-    post: "Precident" | "Vice Precident" | "Secratory" | "Treasurer" | "It Head" | "Program Manager" | "Community Leader"
+    post: "President" | "Vice President" | "Secretary" | "Treasurer" | "IT Head" | "Program Manager" | "Community Leader"
 }
