@@ -8,11 +8,11 @@ export default function EventsPage() {
                 <Event />
                 <Event />
             </div>
-            <div className="slider_container max-w-[400px] h-[80vh] p-standard flex flex-col justify-between items-center text-sub-para font-normal text-black-mid">
+            <div className="slider_container max-w-[400px] h-[80vh] p-standard flex flex-col justify-between items-center text-sub-para font-normal text-black-mid sticky top-block ">
                 <div className="start_time">
                     17<sup>th </sup> Jan 2021
                 </div>
-                <div className="slider relative h-[90%]">
+                <div className="slider relative h-[90%]  top-0">
                     <div className="line h-full w-[2px] bg-gray-dark"></div>
                     <div className="active_container h-max w-full">
                         <div className="line_active h-[50px] w-[10px] bg-primary absolute top-0 left-[-3px] rounded-[4px]"></div>
