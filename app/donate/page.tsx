@@ -24,9 +24,9 @@ const Donate = () => {
             <button
               className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${
                 ShownComponent.shown === "esewa"
-                  ? "bg-blue "
+                  ? "bg-blue text-white"
                   : "bg-slate-200 text-black"
-              } text-white `}
+              }  `}
               onClick={() => {
                 setShownComponent({ shown: "esewa" });
               }}
@@ -38,7 +38,7 @@ const Donate = () => {
                 ShownComponent.shown === "fund"
                   ? "bg-blue text-white"
                   : "bg-slate-200 text-black"
-              } text-white `}
+              }  `}
               onClick={() => {
                 setShownComponent({ shown: "fund" });
               }}
@@ -51,7 +51,7 @@ const Donate = () => {
                 ShownComponent.shown === "coffee"
                   ? "bg-blue text-white"
                   : "bg-slate-200 text-black"
-              } text-white `}
+              }  `}
               onClick={() => {
                 setShownComponent({ shown: "coffee" });
               }}
@@ -122,7 +122,7 @@ const EsewaDonation = () => {
               DonationAmount.shown === "Rs. 2,000"
                 ? "bg-blue text-white"
                 : "bg-slate-200 text-black"
-            } text-white `}
+            }  `}
             onClick={() => {
               setDonationAmount({ shown: "Rs. 2,000" });
             }}
@@ -134,7 +134,7 @@ const EsewaDonation = () => {
               DonationAmount.shown === "Rs. 3,000"
                 ? "bg-blue text-white"
                 : "bg-slate-200 text-black"
-            } text-white `}
+            }  `}
             onClick={() => {
               setDonationAmount({ shown: "Rs. 3,000" });
             }}
@@ -147,7 +147,7 @@ const EsewaDonation = () => {
               DonationAmount.shown === "Rs. 4,000"
                 ? "bg-blue text-white"
                 : "bg-slate-200 text-black"
-            } text-white `}
+            }  `}
             onClick={() => {
               setDonationAmount({ shown: "Rs. 4,000" });
             }}
@@ -159,7 +159,7 @@ const EsewaDonation = () => {
               DonationAmount.shown === "Rs. 5,000"
                 ? "bg-blue text-white"
                 : "bg-slate-200 text-black"
-            } text-white `}
+            }  `}
             onClick={() => {
               setDonationAmount({ shown: "Rs. 5,000" });
             }}
@@ -230,10 +230,49 @@ const EsewaDonation = () => {
   );
 };
 const FundDonation = () => {
-  return <section>this is fund donation section</section>;
+  return (
+    <section>
+      <div className="my-block text-title  text-faded mx-[0] md:mx-auto mb-block">
+        <h2 className="text-title font-semibold pb-2">
+          How can you donate us?
+        </h2>
+        <p className="text-sub-para">
+          Visit our official{" "}
+          <a
+            href="https://www.fundraisepage.com"
+            className="underline text-blue"
+            target="blank"
+          >
+            fund raise
+          </a>{" "}
+          page and follow the instructions provided there.
+        </p>
+      </div>
+    </section>
+  );
 };
 const CoffeeDonation = () => {
-  return <section>this is coffee donation section</section>;
+  return (
+    <section>
+      {" "}
+      <div className="my-block text-title  text-faded mx-[0] md:mx-auto mb-block">
+        <h2 className="text-title font-semibold pb-2">
+          How can you donate us?
+        </h2>
+        <p className="text-sub-para">
+          Visit our official{" "}
+          <a
+            href="https://www.buymeacoffee.com"
+            className="underline text-blue"
+            target="blank"
+          >
+            Buy me a Coffee
+          </a>{" "}
+          page and follow the instructions provided there.
+        </p>
+      </div>
+    </section>
+  );
 };
 const InfoBannerLeftContent = () => {
   return (
