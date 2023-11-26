@@ -1,6 +1,6 @@
 export type TdescriptorData = {
     title: string,
-    description: string,
+    descriptions: string[],
     list?: string[]
 }
 
