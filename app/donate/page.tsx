@@ -24,7 +24,7 @@ const Donate = () => {
             <button
               className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${
                 ShownComponent.shown === "esewa"
-                  ? "bg-blue text-white"
+                  ? "bg-blue "
                   : "bg-slate-200 text-black"
               } text-white `}
               onClick={() => {
@@ -106,7 +106,8 @@ const EsewaDonation = () => {
           thank you for your contribution.
         </p>
       </div>
-      <form className="my-block text-title  text-faded mx-[0] md:mx-auto mb-block">
+      {/* actually , the element just below should be a form tag (as of semantics) */}
+      <div className="my-block text-title  text-faded mx-[0] md:mx-auto mb-block">
         <h2 className="text-title font-semibold pb-2">Donation Information</h2>
         <p className="text-sub-para">Amount</p>
         <input
@@ -224,7 +225,7 @@ const EsewaDonation = () => {
             Submit
           </button>
         </div>
-      </form>
+      </div>
     </section>
   );
 };
