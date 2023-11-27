@@ -13,11 +13,7 @@ export default function Member({ data }: { data: Tmember }) {
                     <div className="post font-normal text-para text-white-light">{post} </div>
                 </div>
                 <div className="socials flex space-x-small mt-[200%] opacity-0 group-hover:mt-small group-hover:opacity-100 transition-all duration-300 ease-in-out">
-                    <a
-                        href={fb_link || "#"}
-                        target="blank"
-                        className="cursor-pointer"
-                    >
+                    {fb_link ? <a href={fb_link} target="blank" className="cursor-pointer" >
                         <Image
                             src={"/assets/facebook_logo.png"}
                             className="grayscale hover:grayscale-0"
@@ -26,7 +22,8 @@ export default function Member({ data }: { data: Tmember }) {
                             alt="facebook_logo"
                         />
                     </a>
-                    <a href={insta_link || "#"} target="blank">
+                        : ""}
+                    {insta_link ? <a href={insta_link} target="blank">
                         <Image
                             src={"/assets/instagram_logo.png"}
                             className="grayscale hover:grayscale-0 "
@@ -35,15 +32,18 @@ export default function Member({ data }: { data: Tmember }) {
                             alt="instagram_logo"
                         />
                     </a>
-                    <a href={linkedin_link || "#"} target="blank">
-                        <Image
-                            src={"/assets/linkedin_logo.png"}
-                            className="grayscale hover:grayscale-0"
-                            width={25}
-                            height={25}
-                            alt="linkedin_logo"
-                        />
-                    </a>
+                        : ""}
+                    {linkedin_link ?
+                        <a href={linkedin_link || "#"} target="blank">
+                            <Image
+                                src={"/assets/linkedin_logo.png"}
+                                className="grayscale hover:grayscale-0"
+                                width={25}
+                                height={25}
+                                alt="linkedin_logo"
+                            />
+                        </a>
+                        : ""}
                 </div>
             </div>
         </div>
