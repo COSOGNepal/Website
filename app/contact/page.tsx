@@ -21,7 +21,7 @@ const ContactPage = () => {
           <input
             className="rounded-sm w-full h-12 py-3 px-2 text-faded text-info border focus:outline  "
             type="text"
-            placeholder="Ex: contact@cosog.org"
+            placeholder="Ex: contact@cosognepal.org"
             value={ContactInfo.email}
             onChange={(e) => {
               setContactInfo((prev) => ({ ...prev, email: e.target.value }));
@@ -101,9 +101,9 @@ const ContactPage = () => {
             </a>{" "}
             and&nbsp;
             <a
-              href="mailto:contact@cosognepal.org"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=cosognepal@gmail.com"
               className="underline text-blue"
-              target="blank"
+              target="_blank"
             >
               gmail
             </a>{" "}
@@ -115,11 +115,11 @@ const ContactPage = () => {
           <p className="text-sub-para">
             You can connect with us via our&nbsp;
             <a
-              href="tel:+9779866776670"
+              href="tel:+9779863196247"
               className="underline text-blue"
               target="blank"
             >
-              +977 9866776670
+              +977 9863196247
             </a>{" "}
             , this contact number is available for contact during office time of
             Nepal.
@@ -131,11 +131,11 @@ const ContactPage = () => {
           <p className="text-sub-para">
             You can get in touch by mailing us at :
             <a
-              href="mailto:support@cosog.org"
+              href="mailto:contact@cosognepal.org"
               className="underline text-blue"
               target="blank"
             >
-              support@cosog.org
+              contact@cosognepal.org
             </a>{" "}
           </p>
         </div>
