@@ -105,7 +105,7 @@ const ContactPage = () => {
               className="underline text-blue"
               target="_blank"
             >
-              email
+              gmail
             </a>{" "}
           </p>
         </div>
@@ -131,11 +131,11 @@ const ContactPage = () => {
           <p className="text-sub-para">
             You can get in touch by mailing us at :
             <a
-              href="mailto:support@cosog.org"
+              href="mailto:contact@cosognepal.org"
               className="underline text-blue"
               target="blank"
             >
-              support@cosog.org
+              contact@cosognepal.org
             </a>{" "}
           </p>
         </div>
