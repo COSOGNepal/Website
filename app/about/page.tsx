@@ -17,7 +17,9 @@ export default async function AboutPage() {
                     <Descriptor title="Our story" descriptions={["Cosog Nepal's journey was rooted in a transformative observation by Bibek, our president, during his tenure as a STEM instructor. The recent expansion of the Nepalese high school system from 11th-12th to 9th-12th grades opened new doors for younger students, yet many remained unaware of these burgeoning opportunities, especially in technology. Bibek identified a critical void in high schools: the absence of a Computer Science club culture from grade 9 onwards. This gap deprived students of valuable experiences like engaging with cutting-edge technologies, participating in hackathons, and competing in Olympiads – opportunities essential for cultivating tech-savvy and competitive individuals."]} />
                     <Descriptor
                         title="Our Mission"
-                        descriptions={["At Cosog Nepal, our mission is to help high school students establish and sustain computer science clubs in their schools. Our goal is to cultivate young innovators and leaders who are proficient in technology and ready to make a difference in their communities."]}
+                        descriptions={["At Cosog Nepal, our mission is to help high school students establish and sustain computer science clubs in their schools. Our goal is to cultivate young innovators and leaders who are proficient in technology and ready to make a difference in their communities.",
+                            "At Cosog Nepal, our mission is to help high school students establish and sustain computer science clubs in their schools. Our goal is to cultivate young innovators and leaders who are proficient in technology and ready to make a difference in their communities."
+                        ]}
                         list={["Personal probably wait interest worker its. Member others throw scene two mission camera.",
                             "Personal probably wait interest worker its. Member others throw scene two mission camera.",
                             "Personal probably wait interest worker its. Member others throw scene two mission camera."
@@ -31,7 +33,6 @@ export default async function AboutPage() {
                             "Charitable Coding Initiatives: We are currently engaged in charitable coding projects. These initiatives are crucial in driving forward Nepal's digitalization, demonstrating our commitment to using technology for societal advancement."
                         ]} />
                 </div>
-
             </div>
             <div className="board_members space-y-block " id="team">
                 <SectionTitle title="Board Members" />
@@ -58,4 +59,3 @@ export default async function AboutPage() {
         </div>
     )
 }
-

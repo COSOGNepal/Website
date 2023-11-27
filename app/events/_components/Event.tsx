@@ -1,6 +1,8 @@
 import Image from "next/image";
+import type { Tevent } from "../type";
 
-export default function Event() {
+export default function Event({ data }: { data: Tevent }) {
+    const { title, images, date, descriptions } = data;
     return (
         <div className="main_container max-w-[680px] h-max flex flex-col border-white-light border-2">
             <div className="imagesContainer grid grid-cols-2 grid-rows-2-250 gap-small w-full">
@@ -16,18 +18,17 @@ export default function Event() {
             </div >
             <div className="desc_container h-auto w-full p-standard">
                 <div className="date font-normal text-black-mid text-sub-para">
-                    17<sup>th </sup> Jan 2021
+                    {date}
                 </div>
                 <h1 className="title font-bold text-black-dark text-sub-title">
-                    Ramchap school bharman bewasthapan samiti sanga ko bhet
+                    {title}
                 </h1>
-                <div className="desc text-black-mid text-para mt-small">
-                    <p>
-                        Bar off step class keep car information shoulder. Father quite send state year factor model. Physical control per ahead get throw.
-                    </p>
-                    <p>
-                        Who table notice develop. Buy onto answer only product several. Reach arrive customer food live beyond check space. Pull professor movie value fish news care.
-                    </p>
+                <div className="desc text-black-mid text-para mt-small space-y-v-small">
+                    {
+                        descriptions.map((description, index) => {
+                            return (<p key={index}> {description} </p>)
+                        })
+                    }
                 </div>
             </div>
         </div>
