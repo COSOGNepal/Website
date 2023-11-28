@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import type { Tevent } from "../type";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 type Tparam =
     {
@@ -18,7 +18,7 @@ type Tparam =
 export default function Event({ data, index, states, activeBarHeightPerEvent }: Tparam) {
     const { title, images, date, descriptions } = data;
     const main_container = useRef<HTMLDivElement | null>(null);
-
+    const [bottomOffset, setBottomOffset] = useState<number>(0)
     const visibleActions = () => {
         states.setCurrentDate(date)
         if (index === 0) return states.setActiveBarHeight(index * activeBarHeightPerEvent)
