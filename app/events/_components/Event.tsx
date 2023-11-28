@@ -1,10 +1,43 @@
-import Image from "next/image";
-import type { Tevent } from "../type";
+'use client'
 
-export default function Event({ data }: { data: Tevent }) {
+import Image from "next/image"
+import type { Tevent } from "../type";
+import React, { useEffect, useRef } from "react";
+
+type Tparam =
+    {
+        data: Tevent,
+        index: number,
+        states: {
+            setCurrentDate: React.Dispatch<React.SetStateAction<string>>,
+            setActiveBarHeight: React.Dispatch<React.SetStateAction<number>>
+        }
+        , activeBarHeightPerEvent: number
+    }
+
+export default function Event({ data, index, states, activeBarHeightPerEvent }: Tparam) {
     const { title, images, date, descriptions } = data;
+    const main_container = useRef<HTMLDivElement | null>(null);
+
+    const visibleActions = () => {
+        states.setCurrentDate(date)
+        if (index === 0) return states.setActiveBarHeight(index * activeBarHeightPerEvent)
+        states.setActiveBarHeight((index + 1) * activeBarHeightPerEvent)
+    }
+    const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) visibleActions()
+    }, {
+        rootMargin: '0px',
+        threshold: 0.90
+    });
+
+    useEffect(() => {
+        if (!main_container.current) return
+        observer.observe(main_container.current)
+    }, [])
+
     return (
-        <div className="main_container max-w-[680px] h-max flex flex-col border-white-light border-2">
+        <div className="main_container max-w-[680px] h-max flex flex-col border-white-light border-2" ref={main_container}>
             <div className="imagesContainer grid grid-cols-2 grid-rows-2-250 gap-small w-full">
                 <div className="image col-span-2 overflow-hidden relative group cursor-pointer">
                     <Image src="/images/Event.png" height={260} width={680} alt="event" className="event w-full h-max absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:scale-105  transition-all ease-in-out duration-150 " />
