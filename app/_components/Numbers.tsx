@@ -11,7 +11,7 @@ const Numbers = () => {
           {" "}
           Schools Reached
         </h2>
-        <h1 className="text-center text-xl sm:text-3xl font-bold">15+</h1>
+        <h1 className="text-center text-xl sm:text-3xl font-bold">20+</h1>
       </div>
       {/* next one */}
       <div className="flex flex-col items-center">
@@ -32,7 +32,7 @@ const Numbers = () => {
           {" "}
           Events Organized
         </h2>
-        <h1 className="text-center text-xl sm:text-3xl font-bold">10+</h1>
+        <h1 className="text-center text-xl sm:text-3xl font-bold">12+</h1>
       </div>
       <div className="flex flex-col items-center">
         <div className="w-12 sm:w-20 aspect-square relative">

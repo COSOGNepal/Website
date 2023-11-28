@@ -2,91 +2,111 @@
   {
     "id": "1",
     "title": "CoSoG Nepal Presentation",
-    "description": "",
+    "description": "Green Village",
     "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "images": [
+      "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
+      "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
+      "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    ]
   },
   {
     "id": "2",
     "title": "CoSoG Nepal Presentation",
-    "description": "description1",
-    "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "description": "Magus Secondary School",
+    "date": "10th July 2023",
+    "images": [
+      "/images/Events/Magus_Secondary_School/photo1.jpeg",
+      "/images/Events/Magus_Secondary_School/photo2.jpeg",
+      "/images/Events/Magus_Secondary_School/photo3.jpeg"
+    ]
   },
   {
     "id": "3",
     "title": "CoSoG Nepal Presentation",
-    "description": "description1",
-    "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "description": "Everest boarding school",
+    "date": "10th August 2023",
+    "images": [
+      "/images/Events/Everest_boarding_school/photo1.jpeg",
+      "/images/Events/Everest_boarding_school/photo2.jpeg",
+      "/images/Events/Everest_boarding_school/photo3.jpeg"
+    ]
   },
   {
     "id": "4",
     "title": "CoSoG Nepal Presentation",
-    "description": "description1",
-    "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "description": "Constellation Secondary English Boarding School",
+    "date": "28th August 2023",
+    "images": [
+      "/images/Events/Constellation_Secondary_English_Boarding_School/photo1.jpeg",
+      "/images/Events/Constellation_Secondary_English_Boarding_School/photo2.jpg",
+      "/images/Events/Constellation_Secondary_English_Boarding_School/photo3.jpg"
+    ]
   },
   {
     "id": "5",
     "title": "CoSoG Nepal Presentation",
-    "description": "description1",
-    "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "description": "Hathausa Little Star English Boarding School",
+    "date": "15th September 2023",
+    "images": [
+      "/images/Events/Hathausa_Little_Star_English_Boarding_School/photo1.jpg",
+      "/images/Events/Hathausa_Little_Star_English_Boarding_School/photo2.jpg",
+      "/images/Events/Hathausa_Little_Star_English_Boarding_School/photo3.jpg"
+    ]
   },
   {
     "id": "6",
     "title": "CoSoG Nepal Presentation",
-    "description": "description1",
-    "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "description": "Skylark Secondary English Boarding School",
+    "date": "25th September 2023",
+    "images": [
+      "/images/Events/Skylark_Secondary_English_Boarding_School/photo1.jpg",
+      "/images/Events/Skylark_Secondary_English_Boarding_School/photo2.jpg",
+      "/images/Events/Skylark_Secondary_English_Boarding_School/photo3.jpg"
+    ]
   },
   {
     "id": "7",
     "title": "CoSoG Nepal Presentation",
-    "description": "description1",
-    "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "description": "Deep Boarding High school",
+    "date": "3rd October 2023",
+    "images": [
+      "/images/Events/Deep_Boarding_High_school/photo1.jpg",
+      "/images/Events/Deep_Boarding_High_school/photo2.jpg",
+      "/images/Events/Deep_Boarding_High_school/photo3.jpg"
+    ]
   },
   {
     "id": "8",
     "title": "CoSoG Nepal Presentation",
-    "description": "description1",
-    "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "description": "The Rolling Stones School",
+    "date": "10th October 2023",
+    "images": [
+      "/images/Events/The_Rolling_Stones_School/photo1.jpg",
+      "/images/Events/The_Rolling_Stones_School/photo2.jpg",
+      "/images/Events/The_Rolling_Stones_School/photo3.jpg"
+    ]
   },
   {
     "id": "9",
     "title": "CoSoG Nepal Presentation",
-    "description": "description1",
-    "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "description": "L.B Namuna Academy, Butwal",
+    "date": "24th November 2023",
+    "images": [
+      "/images/Events/LB_Namuna_Academy/photo1.jpg",
+      "/images/Events/LB_Namuna_Academy/photo2.jpg",
+      "/images/Events/LB_Namuna_Academy/photo3.jpg"
+    ]
   },
   {
     "id": "10",
     "title": "CoSoG Nepal Presentation",
-    "description": "description1",
-    "date": "17th June 2023",
-    "largeImage": "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-    "smallLeftImage": "/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-    "smallRightImage": "/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
+    "description": "Butwal Madina School",
+    "date": "28th November 2023",
+    "images": [
+      "/images/Events/Butwal_Madina_School/photo1.jpg",
+      "/images/Events/Butwal_Madina_School/photo2.jpg",
+      "/images/Events/Butwal_Madina_School/photo3.jpg"
+    ]
   }
 ]
