@@ -11,20 +11,13 @@ export default function EventsPage() {
 
     const [currentDate, setCurrentDate] = useState<string>("");
     const [activeBarHeight, setActiveBarHeight] = useState<number>(0)
-
     useEffect(() => {
         (async () => {
             setEvents(await getEvents())
         })()
-
-        const scrollAction = () => { }
-        window.addEventListener("scroll", scrollAction)
-
-        return () => {
-            window.removeEventListener("scroll", scrollAction, true)
-        }
     }, [])
 
+    const activeBarHeightPerEvent = 100 / dates.length;
     return (
         <section className="mt-section px-block flex justify-between max-w-[1400px] w-[90%] m-auto">
             <div className="events space-y-block">
@@ -35,7 +28,7 @@ export default function EventsPage() {
                             key={index}
                             index={index}
                             states={{ setCurrentDate, setActiveBarHeight }}
-                            activeBarHeightPerEvent={100 / dates.length} />
+                            activeBarHeightPerEvent={activeBarHeightPerEvent} />
                     })
                 }
             </div>
