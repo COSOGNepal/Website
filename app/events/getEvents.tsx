@@ -1,43 +1,10 @@
 import type { Tevent } from "./type";
-export default async function getEvents(): Promise<Tevent[]> {
-    const events: Tevent[] = [
-        {
-            title: "Event title, is great",
-            date: "18th Jun 2020",
-            images: ["/images/Event.png", "/images/Event.png", "/images/Event.png"],
-            descriptions: ["The event description is very importnant as it explains the event and this can be very long as well as very short as well.",
-                "The event description is very importnant as it explains the event and this can be very long as well as very short as well.",
-                "The event description is very importnant as it explains the event and this can be very long as well as very short as well."
-            ]
-        },
-        {
-            title: "Event title, is great",
-            date: "19th Jun 2020",
-            images: ["/images/Event.png", "/images/Event.png", "/images/Event.png"],
-            descriptions: ["The event description is very importnant as it explains the event and this can be very long as well as very short as well.",
-                "The event description is very importnant as it explains the event and this can be very long as well as very short as well.",
-                "The event description is very importnant as it explains the event and this can be very long as well as very short as well."
-            ]
-        },
-        {
-            title: "Event title, is great",
-            date: "20th Jun 2020",
-            images: ["/images/Event.png", "/images/Event.png", "/images/Event.png"],
-            descriptions: ["The event description is very importnant as it explains the event and this can be very long as well as very short as well.",
-                "The event description is very importnant as it explains the event and this can be very long as well as very short as well.",
-                "The event description is very importnant as it explains the event and this can be very long as well as very short as well."
-            ]
-        },
-        {
-            title: "Event title, is great",
-            date: "21th Jun 2020",
-            images: ["/images/Event.png", "/images/Event.png", "/images/Event.png"],
-            descriptions: ["The event description is very importnant as it explains the event and this can be very long as well as very short as well.",
-                "The event description is very importnant as it explains the event and this can be very long as well as very short as well.",
-                "The event description is very importnant as it explains the event and this can be very long as well as very short as well."
-            ]
-        }
+import allevents from "@/data/events.json"
 
-    ]
+export default async function getEvents(): Promise<Tevent[]> {
+    const events: Tevent[] = allevents.map(event => ({
+        ...event,
+        descriptions: [event.description]
+    }));
     return events;
 }
