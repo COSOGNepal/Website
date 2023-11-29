@@ -8,24 +8,24 @@ import { useEffect, useRef, useState } from "react"
 export default function EventsPage() {
     const [events, setEvents] = useState<Tevent[]>([]);
     const dates: string[] = events.map((event) => (event.date))
-
     const [currentDate, setCurrentDate] = useState<string>("");
     const [activeBarHeight, setActiveBarHeight] = useState<number>(0)
     const previousScrollY = useRef(0)
     const events_container = useRef<HTMLDivElement | null>()
+    const activeBarHeightPerEvent = 100 / events.length;
+
     useEffect(() => {
         (async () => {
             setEvents(await getEvents())
         })()
     }, [])
+
     useEffect(() => {
         const scrollAction = () => {
             let currentScrollY = window.scrollY;
             if (!events_container.current) return
             const totalScrollHeight = (((events_container.current.childNodes[0]) as HTMLDivElement).getBoundingClientRect().height);
             const onePercent = (activeBarHeightPerEvent / totalScrollHeight) * events.length / 2;
-
-            console.log(onePercent)
 
             if (currentScrollY > previousScrollY.current) {
                 // moving down 
@@ -48,7 +48,7 @@ export default function EventsPage() {
             window.removeEventListener("scroll", scrollAction)
         }
     }, [dates])
-    const activeBarHeightPerEvent = 100 / events.length;
+
     return (
         <section className="mt-section px-block flex justify-between max-w-[1400px] w-[90%] m-auto">
             <div className="events space-y-block" ref={events_container}>
