@@ -2,18 +2,18 @@
 
 import Image from "next/image"
 import type { Tevent } from "../type";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
+import ImageViewer from 'awesome-image-viewer'
 
-type Tparam =
-    {
-        data: Tevent,
-        index: number,
-        states: {
-            setCurrentDate: React.Dispatch<React.SetStateAction<string>>,
-            setActiveBarHeight: React.Dispatch<React.SetStateAction<number>>
-        },
-        activeBarHeightPerEvent: number
-    }
+type Tparam = {
+    data: Tevent,
+    index: number,
+    states: {
+        setCurrentDate: React.Dispatch<React.SetStateAction<string>>,
+        setActiveBarHeight: React.Dispatch<React.SetStateAction<number>>
+    },
+    activeBarHeightPerEvent: number
+}
 
 export default function Event({ data, index, states, activeBarHeightPerEvent }: Tparam) {
     const { title, images, date, descriptions } = data;
@@ -34,16 +34,35 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
         observer.observe(main_container.current)
     }, [])
 
+    const imageData = data.images.map((imageUrl, index) => ({ mainUrl: imageUrl, description: data.title }))
     return (
         <div className="main_container max-w-[680px] h-max flex flex-col border-white-light border-2" ref={main_container}>
             <div className="imagesContainer grid grid-cols-2 grid-rows-2-250 gap-small w-full">
-                <div className="image col-span-2 overflow-hidden relative group cursor-pointer">
+                <div className="image col-span-2 overflow-hidden relative group cursor-pointer"
+                    onClick={() => {
+                        new ImageViewer({
+                            images: imageData,
+                            currentSelected: 0
+                        })
+                    }}>
                     <Image src={images[0]} height={260} width={680} alt="event" className="event w-full h-max absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:scale-105  transition-all ease-in-out duration-150 " />
                 </div>
-                <div className="image group overflow-hidden cursor-pointer h-max">
+                <div className="image group overflow-hidden cursor-pointer h-max"
+                    onClick={() => {
+                        new ImageViewer({
+                            images: imageData,
+                            currentSelected: 0
+                        })
+                    }}>
                     <Image src={images[1]} height={260} width={680} alt="event" className="image group-hover:scale-105  transition-all ease-in-out duration-150" />
                 </div>
-                <div className="image overflow-hidden group cursor-pointer h-max">
+                <div className="image overflow-hidden group cursor-pointer h-max"
+                    onClick={() => {
+                        new ImageViewer({
+                            images: imageData,
+                            currentSelected: 0
+                        })
+                    }}>
                     <Image src={images[2]} height={260} width={680} alt="event" className="image group-hover:scale-105  transition-all ease-in-out duration-150" />
                 </div>
             </div >
