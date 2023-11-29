@@ -3,7 +3,7 @@
 import Event from "./_components/Event"
 import getEvents from "./getEvents"
 import { Tevent } from "./type";
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export default function EventsPage() {
     const [events, setEvents] = useState<Tevent[]>([]);
@@ -11,16 +11,47 @@ export default function EventsPage() {
 
     const [currentDate, setCurrentDate] = useState<string>("");
     const [activeBarHeight, setActiveBarHeight] = useState<number>(0)
+    const previousScrollY = useRef(0)
+    const events_container = useRef<HTMLDivElement | null>()
     useEffect(() => {
         (async () => {
             setEvents(await getEvents())
         })()
     }, [])
+    useEffect(() => {
+        const scrollAction = () => {
+            let currentScrollY = window.scrollY;
+            if (!events_container.current) return
+            const totalScrollHeight = (((events_container.current.childNodes[0]) as HTMLDivElement).getBoundingClientRect().height);
+            const onePercent = (activeBarHeightPerEvent / totalScrollHeight) * events.length / 2;
 
-    const activeBarHeightPerEvent = 100 / dates.length;
+            console.log(onePercent)
+
+            if (currentScrollY > previousScrollY.current) {
+                // moving down 
+                setActiveBarHeight((currentActiveBarHeight) => {
+                    if (currentActiveBarHeight > 90) return currentActiveBarHeight
+                    return currentActiveBarHeight + onePercent
+                })
+            }
+            else {
+                setActiveBarHeight((currentActiveBarHeight) => {
+                    if (currentActiveBarHeight < 5) return currentActiveBarHeight
+                    return currentActiveBarHeight - onePercent
+                })
+            }
+            previousScrollY.current = currentScrollY
+        };
+        if (events.length > 0)
+            window.addEventListener("scroll", scrollAction)
+        return () => {
+            window.removeEventListener("scroll", scrollAction)
+        }
+    }, [dates])
+    const activeBarHeightPerEvent = 100 / events.length;
     return (
         <section className="mt-section px-block flex justify-between max-w-[1400px] w-[90%] m-auto">
-            <div className="events space-y-block">
+            <div className="events space-y-block" ref={events_container}>
                 {
                     events.map((event, index) => {
                         return <Event

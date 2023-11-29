@@ -29,36 +29,9 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
         rootMargin: '0px',
         threshold: 0.90
     });
-    const previousScrollY = useRef(0);
     useEffect(() => {
         if (!main_container.current) return
         observer.observe(main_container.current)
-
-        const scrollAction = () => {
-            let currentScrollY = window.scrollY;
-            const onePercent = activeBarHeightPerEvent / 2000;
-
-            if (currentScrollY > previousScrollY.current) {
-                // moving down 
-                states.setActiveBarHeight((currentActiveBarHeight) => {
-                    if (currentActiveBarHeight > 90) return currentActiveBarHeight
-                    return currentActiveBarHeight + onePercent
-                })
-            }
-            else {
-                states.setActiveBarHeight((currentActiveBarHeight) => {
-                    if (currentActiveBarHeight < 5) return currentActiveBarHeight
-                    return currentActiveBarHeight - onePercent
-                })
-            }
-
-            previousScrollY.current = currentScrollY
-        };
-
-        window.addEventListener("scroll", scrollAction)
-        return () => {
-            window.removeEventListener("scroll", scrollAction)
-        }
     }, [])
 
     return (
