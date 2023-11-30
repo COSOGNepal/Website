@@ -4,6 +4,7 @@ import Image from "next/image"
 import type { Tevent } from "../type";
 import React, { useEffect, useRef } from "react";
 import ImageViewer from 'awesome-image-viewer'
+import { useRouter } from "next/router";
 
 type Tparam = {
     data: Tevent,
@@ -18,17 +19,23 @@ type Tparam = {
 export default function Event({ data, index, states, activeBarHeightPerEvent }: Tparam) {
     const { title, images, date, descriptions } = data;
     const main_container = useRef<HTMLDivElement | null>(null);
+    const router = useRouter();
+
     const visibleActions = () => {
-        states.setCurrentDate(date)
+        states.setCurrentDate(date);
+        router.push(`?/# ${date}`)
         if (index === 0) return states.setActiveBarHeight(index * activeBarHeightPerEvent)
         states.setActiveBarHeight((index + 1) * activeBarHeightPerEvent)
+
     }
+
     const observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) visibleActions()
     }, {
         rootMargin: '0px',
         threshold: 0.90
     });
+
     useEffect(() => {
         if (!main_container.current) return
         observer.observe(main_container.current)

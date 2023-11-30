@@ -11,7 +11,7 @@ export default function EventsPage() {
     const [currentDate, setCurrentDate] = useState<string>("");
     const [activeBarHeight, setActiveBarHeight] = useState<number>(0)
     const previousScrollY = useRef(0)
-    const events_container = useRef<HTMLDivElement | null>()
+    const events_container = useRef<HTMLDivElement | null>(null)
     const activeBarHeightPerEvent = 100 / events.length;
 
     useEffect(() => {
