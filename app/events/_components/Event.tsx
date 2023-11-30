@@ -19,11 +19,9 @@ type Tparam = {
 export default function Event({ data, index, states, activeBarHeightPerEvent }: Tparam) {
     const { title, images, date, descriptions } = data;
     const main_container = useRef<HTMLDivElement | null>(null);
-    const router = useRouter();
 
     const visibleActions = () => {
         states.setCurrentDate(date);
-        router.push(`?/# ${date}`)
         if (index === 0) return states.setActiveBarHeight(index * activeBarHeightPerEvent)
         states.setActiveBarHeight((index + 1) * activeBarHeightPerEvent)
 
