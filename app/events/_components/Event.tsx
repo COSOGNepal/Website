@@ -4,7 +4,6 @@ import Image from "next/image"
 import type { Tevent } from "../type";
 import React, { useEffect, useRef } from "react";
 import ImageViewer from 'awesome-image-viewer'
-import { useRouter } from "next/router";
 
 type Tparam = {
     data: Tevent,
