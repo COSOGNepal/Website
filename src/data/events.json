@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "CoSoG Nepal Presentation",
-    "description": "Green Village",
+    "description": ["Green Village"],
     "date": "17th June 2023",
     "images": [
       "/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
@@ -13,7 +13,7 @@
   {
     "id": "2",
     "title": "CoSoG Nepal Presentation",
-    "description": "Magus Secondary School",
+    "description": ["Magus Secondary School"],
     "date": "10th July 2023",
     "images": [
       "/images/Events/Magus_Secondary_School/photo1.jpeg",
@@ -24,7 +24,7 @@
   {
     "id": "3",
     "title": "CoSoG Nepal Presentation",
-    "description": "Everest boarding school",
+    "description": ["Everest boarding school"],
     "date": "10th August 2023",
     "images": [
       "/images/Events/Everest_boarding_school/photo1.jpeg",
@@ -35,7 +35,7 @@
   {
     "id": "4",
     "title": "CoSoG Nepal Presentation",
-    "description": "Constellation Secondary English Boarding School",
+    "description": ["Constellation Secondary English Boarding School"],
     "date": "28th August 2023",
     "images": [
       "/images/Events/Constellation_Secondary_English_Boarding_School/photo1.jpeg",
@@ -46,7 +46,7 @@
   {
     "id": "5",
     "title": "CoSoG Nepal Presentation",
-    "description": "Hathausa Little Star English Boarding School",
+    "description": ["Hathausa Little Star English Boarding School"],
     "date": "15th September 2023",
     "images": [
       "/images/Events/Hathausa_Little_Star_English_Boarding_School/photo1.jpg",
@@ -57,7 +57,7 @@
   {
     "id": "6",
     "title": "CoSoG Nepal Presentation",
-    "description": "Skylark Secondary English Boarding School",
+    "description": ["Skylark Secondary English Boarding School"],
     "date": "25th September 2023",
     "images": [
       "/images/Events/Skylark_Secondary_English_Boarding_School/photo1.jpg",
@@ -68,7 +68,7 @@
   {
     "id": "7",
     "title": "CoSoG Nepal Presentation",
-    "description": "Deep Boarding High school",
+    "description": ["Deep Boarding High school"],
     "date": "3rd October 2023",
     "images": [
       "/images/Events/Deep_Boarding_High_school/photo1.jpg",
@@ -79,7 +79,7 @@
   {
     "id": "8",
     "title": "CoSoG Nepal Presentation",
-    "description": "The Rolling Stones School",
+    "description": ["The Rolling Stones School"],
     "date": "10th October 2023",
     "images": [
       "/images/Events/The_Rolling_Stones_School/photo1.jpg",
@@ -90,7 +90,7 @@
   {
     "id": "9",
     "title": "CoSoG Nepal Presentation",
-    "description": "L.B Namuna Academy, Butwal",
+    "description": ["L.B Namuna Academy, Butwal"],
     "date": "24th November 2023",
     "images": [
       "/images/Events/LB_Namuna_Academy/photo1.jpg",
@@ -101,7 +101,7 @@
   {
     "id": "10",
     "title": "CoSoG Nepal Presentation",
-    "description": "Butwal Madina School",
+    "description": ["Butwal Madina School"],
     "date": "28th November 2023",
     "images": [
       "/images/Events/Butwal_Madina_School/photo1.jpg",
