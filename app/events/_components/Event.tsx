@@ -23,7 +23,6 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
         states.setCurrentDate(date);
         if (index === 0) return states.setActiveBarHeight(index * activeBarHeightPerEvent)
         states.setActiveBarHeight((index + 1) * activeBarHeightPerEvent)
-
     }
 
     const observer = new IntersectionObserver((entries) => {
