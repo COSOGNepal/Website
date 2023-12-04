@@ -2,7 +2,7 @@ import type { Tevent } from "./type";
 
 import eventsData from "@/data/events.json"
 
-export default async function getEvents(): Promise<Tevent[] | Error> {
+export default async function getEvents(): Promise<Tevent[]> {
     try {
         if (!eventsData) throw new Error("Invalid json file");
         if (eventsData.length < 1) throw new Error("Json file cannot be empty");

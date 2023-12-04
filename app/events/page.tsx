@@ -16,7 +16,13 @@ export default function EventsPage() {
 
     useEffect(() => {
         (async () => {
-            setEvents(await getEvents())
+            try {
+                const events = await getEvents();
+                setEvents(events)
+            }
+            catch (e) {
+                console.log("Sorry, something went wrong while getting events.")
+            }
         })()
     }, [])
 
