@@ -48,42 +48,45 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
                             currentSelected: 0
                         })
                     }}>
-                    <Image src={images[0]} height={260} width={680} alt={title} className="event w-full h-max absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:scale-105  transition-all ease-in-out duration-150 " />
+                    <Image src={images[0]} height={250} width={680} alt={title}
+                        className="event w-full h-max absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:scale-105  transition-all ease-in-out duration-150 " />
                 </div>
-                <div className="image group overflow-hidden cursor-pointer"
+                <div className="image group relative overflow-hidden cursor-pointer"
                     onClick={() => {
                         new ImageViewer({
                             images: imageData,
                             currentSelected: 0
                         })
                     }}>
-                    <Image src={images[1]} height={260} width={680} alt={title} className="image group-hover:scale-105 transition-all ease-in-out duration-150" />
+                    <Image src={images[1]} height={250} width={680} alt={title}
+                        className="image group-hover:scale-105 transition-all ease-in-out duration-150 h-full object-cover" />
                 </div>
-                <div className="image overflow-hidden group cursor-pointer"
+                <div className="image overflow-hidden relative group cursor-pointer"
                     onClick={() => {
                         new ImageViewer({
                             images: imageData,
                             currentSelected: 0
                         })
                     }}>
-                    <Image src={images[2]} height={260} width={680} alt={title} className="image group-hover:scale-105 transition-all ease-in-out duration-150" />
+                    <Image src={images[2]} height={250} width={680} alt={title}
+                        className="image group-hover:scale-105 transition-all ease-in-out duration-150 h-full object-cover" />
                 </div>
             </div >
             <div className="desc_container h-auto w-full p-standard">
-                    <div className="date font-normal text-black-mid text-sub-para">
-                        {date}
-                    </div>
-                    <h1 className="title font-bold text-black-dark text-sub-title">
-                        {title}
-                    </h1>
-                    <div className="desc text-black-mid text-para mt-small space-y-v-small">
-                        {
-                            descriptions.map((description, index) => {
-                                return (<p key={index}> {description} </p>)
-                            })
-                        }
-                    </div>
+                <div className="date font-normal text-black-mid text-sub-para">
+                    {date}
+                </div>
+                <h1 className="title font-bold text-black-dark text-sub-title">
+                    {title}
+                </h1>
+                <div className="desc text-black-mid text-para mt-small space-y-v-small">
+                    {
+                        descriptions.map((description, index) => {
+                            return (<p key={index}> {description} </p>)
+                        })
+                    }
                 </div>
             </div>
-            )
+        </div>
+    )
 }
