@@ -69,7 +69,7 @@ export default function EventsPage() {
                     })
                 }
             </div>
-            <div className="slider_container max-w-[400px] h-[80vh] p-standard flex flex-col justify-between items-center text-sub-para font-normal text-black-mid sticky top-block ">
+            <div className="slider_container max-w-[400px] h-[80vh] p-standard flex flex-col space-y-standard items-center text-sub-para font-normal text-black-mid sticky top-block ">
                 <div className="start_time">
                     {dates[0]}
                 </div>
