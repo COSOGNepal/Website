@@ -13,7 +13,7 @@ export default function Descriptor({ title, descriptions = [], list = [] }: Tdes
                     })
 
                 }
-                <div className="list_con mt-small">
+                <ul className="list_con mt-small list-disc" >
                     {
                         list?.map((li, index) => {
                             return (
@@ -24,7 +24,7 @@ export default function Descriptor({ title, descriptions = [], list = [] }: Tdes
                                 </li>)
                         })
                     }
-                </div>
+                </ul>
             </div>
         </div>
     )
