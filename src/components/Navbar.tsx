@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixed hamcontainer z-50 py-6 px-6 md:px-10">
+      <div className="fixed hamcontainer z-50 p-standard  bg-[rgba(255,255,255,0.8)] backdrop-blur-[20px] m-standard rounded-full">
         <div className="relative w-full h-full cursor-pointer"
             onClick={() => {
               setNavActive(!navActive);
