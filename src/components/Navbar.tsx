@@ -4,31 +4,31 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [navClicked, setNavClicked] = useState(false);
+  const [navActive, setNavActive] = useState(false);
   return (
     <>
       <div className="fixed hamcontainer z-50 py-6 px-6 md:px-10">
         <div className="relative w-full h-full">
           <Image
-            src={navClicked ? "/assets/crossIcon.svg" : "/assets/hamIcon.svg"}
-            width={navClicked ? 30 : 50}
-            height={navClicked ? 30 : 50}
+            src={navActive ? "/assets/crossIcon.svg" : "/assets/hamIcon.svg"}
+            width={navActive ? 30 : 50}
+            height={navActive ? 30 : 50}
             className=" cursor-pointer  z-30"
-            alt="mitho burger"
+            alt="Nav Icon"
             onClick={() => {
-              setNavClicked(!navClicked);
+              setNavActive(!navActive);
             }}
           />
         </div>
       </div>
       <nav
         className={`fixed inset-0 p-0 min-w-screen min-h-screen z-40 ${
-          !navClicked ? "pointer-events-none" : "pointer-events-auto"
+          !navActive ? "pointer-events-none" : "pointer-events-auto"
         }`}
       >
         <main
           className={`${
-            !navClicked ? "-translate-y-full " : "translate-y-0"
+            !navActive ? "-translate-y-full " : "translate-y-0"
           } -translate-y-full relative w-full h-full grid place-content-center duration-500 transition `}
         >
           <div className="backdrop-blur-[20px] absolute inset-0 -z-10 bg-transparent"></div>
@@ -36,7 +36,7 @@ const Navbar = () => {
           <ul className="text-2xl font-small flex items-center flex-col gap-3 text-faded uppercase">
             <Link href="/">
               <li
-                onClick={() => setNavClicked(!navClicked)}
+                onClick={() => setNavActive(!navActive)}
                 className="link link-underline link-underline-black cursor-pointer "
               >
                 Home
@@ -44,7 +44,7 @@ const Navbar = () => {
             </Link>
             <Link href="/about">
               <li
-                onClick={() => setNavClicked(!navClicked)}
+                onClick={() => setNavActive(!navActive)}
                 className="link link-underline link-underline-black cursor-pointer "
               >
                 About us
@@ -52,7 +52,7 @@ const Navbar = () => {
             </Link>
             <Link href="/events">
               <li
-                onClick={() => setNavClicked(!navClicked)}
+                onClick={() => setNavActive(!navActive)}
                 className="link link-underline link-underline-black cursor-pointer "
               >
                 Events
@@ -60,7 +60,7 @@ const Navbar = () => {
             </Link>
             <Link href="https://blog.cosognepal.org">
               <li
-                onClick={() => setNavClicked(!navClicked)}
+                onClick={() => setNavActive(!navActive)}
                 className="link link-underline link-underline-black cursor-pointer "
               >
                 Blog
@@ -68,7 +68,7 @@ const Navbar = () => {
             </Link>
             <Link href="/contact">
               <li
-                onClick={() => setNavClicked(!navClicked)}
+                onClick={() => setNavActive(!navActive)}
                 className="link link-underline link-underline-black cursor-pointer "
               >
                 Contact
@@ -77,7 +77,7 @@ const Navbar = () => {
             <Link href="/donate">
               <li
                 className="link link-underline link-underline-black cursor-pointer "
-                onClick={() => setNavClicked(!navClicked)}
+                onClick={() => setNavActive(!navActive)}
               >
                 Donate
               </li>
