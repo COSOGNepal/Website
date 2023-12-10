@@ -5,19 +5,21 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
+
   return (
     <>
       <div className="fixed hamcontainer z-50 py-6 px-6 md:px-10">
-        <div className="relative w-full h-full">
+        <div className="relative w-full h-full cursor-pointer"
+            onClick={() => {
+              setNavActive(!navActive);
+            }}
+        >
           <Image
             src={navActive ? "/assets/crossIcon.svg" : "/assets/hamIcon.svg"}
             width={navActive ? 30 : 50}
             height={navActive ? 30 : 50}
-            className=" cursor-pointer  z-30"
+            className="z-30"
             alt="Nav Icon"
-            onClick={() => {
-              setNavActive(!navActive);
-            }}
           />
         </div>
       </div>
@@ -29,15 +31,14 @@ const Navbar = () => {
         <main
           className={`${
             !navActive ? "-translate-y-full " : "translate-y-0"
-          } -translate-y-full relative w-full h-full grid place-content-center duration-500 transition `}
+          } relative w-full h-full grid place-content-center duration-500 transition `}
         >
-          <div className="backdrop-blur-[20px] absolute inset-0 -z-10 bg-transparent"></div>
-
-          <ul className="text-2xl font-small flex items-center flex-col gap-3 text-faded uppercase">
+          <div className="backdrop-blur-[20px] absolute inset-0 -z-10 bg-[rgba(255,255,255,0.5)]"></div>
+          <ul className="text-sub-title font-small flex items-center flex-col gap-3 text-faded uppercase">
             <Link href="/">
               <li
                 onClick={() => setNavActive(!navActive)}
-                className="link link-underline link-underline-black cursor-pointer "
+                className="link-underline"
               >
                 Home
               </li>
@@ -45,7 +46,7 @@ const Navbar = () => {
             <Link href="/about">
               <li
                 onClick={() => setNavActive(!navActive)}
-                className="link link-underline link-underline-black cursor-pointer "
+                className="link-underline"
               >
                 About us
               </li>
@@ -53,7 +54,7 @@ const Navbar = () => {
             <Link href="/events">
               <li
                 onClick={() => setNavActive(!navActive)}
-                className="link link-underline link-underline-black cursor-pointer "
+                className="link-underline"
               >
                 Events
               </li>
@@ -61,7 +62,7 @@ const Navbar = () => {
             <Link href="https://blog.cosognepal.org">
               <li
                 onClick={() => setNavActive(!navActive)}
-                className="link link-underline link-underline-black cursor-pointer "
+                className="link-underline"
               >
                 Blog
               </li>
@@ -69,14 +70,14 @@ const Navbar = () => {
             <Link href="/contact">
               <li
                 onClick={() => setNavActive(!navActive)}
-                className="link link-underline link-underline-black cursor-pointer "
+                className="link-underline"
               >
                 Contact
               </li>
             </Link>
             <Link href="/donate">
               <li
-                className="link link-underline link-underline-black cursor-pointer "
+                className="link-underline"
                 onClick={() => setNavActive(!navActive)}
               >
                 Donate
