@@ -21,7 +21,7 @@ export default function EventsPage() {
                 setEvents(events)
             }
             catch (e) {
-                console.log("Sorry, something went wrong while getting events.")
+                console.log("Sorry, something went wrong while getting events.", e)
             }
         })()
     }, [])

@@ -33,11 +33,7 @@ const Events = async () => {
                             }
                         </div>
                     </div>
-
-                            <h3 className="text-sm md:text-md font-normal">
-                                {event.location}
-                            </h3>
-                        </div>
+                 </div>
                     </div>
                 ))}
             </section>
