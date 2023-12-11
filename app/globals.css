@@ -9,6 +9,7 @@
  font-family: 'Inter', sans-serif;
 }
 
+@media only screen and (max-width:768px){
 .link-underline {
   border-bottom-width: 0;
   background-image: linear-gradient(var(--blue), var(--blue));
@@ -28,4 +29,5 @@
 body {
   --blue: #3771c8;
   overflow-x: hidden;
+}
 }
