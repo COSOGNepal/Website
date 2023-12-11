@@ -2,12 +2,19 @@ import type { Tevent } from "./type";
 
 import eventsData from "@/data/events.json"
 
-export default async function getEvents(): Promise<Tevent[]> {
+export default async function getEvents({count}:{count?: number}): Promise<Tevent[]> {
     try {
         if (!eventsData) throw new Error("Invalid json file");
         if (eventsData.length < 1) throw new Error("Json file cannot be empty");
-
-        return eventsData.reverse();
+        
+        if(!count)
+            return eventsData.reverse();
+        const shortedEvents = eventsData
+                                .reverse()
+                                .filter((event, index) => {
+                                    return (index + 1) <= count 
+                                    })
+        return shortedEvents
     }
     catch (e) {
         console.log(e)
