@@ -105,7 +105,7 @@ const ContactPage = () => {
                             target="_blank"
                         >
                             Gmail
-                        </a>{" ."}
+                        </a>.
                     </p>
                 </div>
 
