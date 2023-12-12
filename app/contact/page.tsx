@@ -73,40 +73,39 @@ const ContactPage = () => {
                             className="underline text-blue"
                             target="blank"
                         >
-                            facebook
-                        </a>{" "}
-                        ,
+                            Facebook
+                        </a>,{" "}
                         <a
                             href="https://www.instagram.com/cosognepal"
                             className="underline text-blue"
                             target="blank"
                         >
-                            instagram
-                        </a>{" "}
-                        ,{" "}
+                            Instagram
+                        </a>
+                        {/* ,{" "}
                         <a
                             href="https://www.fundraisepage.com"
                             className="underline text-blue"
                             target="blank"
                         >
-                            twitter
-                        </a>{" "}
+                            Twitter(X)
+                        </a> */}
                         ,{" "}
                         <a
                             href="https://www.linkedin.com/company/cosognepal/"
                             className="underline text-blue"
                             target="blank"
                         >
-                            linkedin
-                        </a>{" "}
-                        and&nbsp;
+                            Linkedin
+                        </a>{", "}
+                        and {" "}
                         <a
                             href="https://mail.google.com/mail/?view=cm&fs=1&to=cosognepal@gmail.com"
                             className="underline text-blue"
                             target="_blank"
                         >
-                            gmail
-                        </a>{" "}
+                            Gmail
+                        </a>.
                     </p>
                 </div>
 
@@ -120,8 +119,8 @@ const ContactPage = () => {
                             target="blank"
                         >
                             +977 9863196247
-                        </a>{" "}
-                        , this contact number is available for contact during office time of
+                        </a>,{" "}
+                        this contact number is available for contact during office time of
                         Nepal.
                     </p>
                 </div>
@@ -129,14 +128,14 @@ const ContactPage = () => {
                 <div className="md:w-8/12 text-sub-title  text-faded md:mx-auto mt-block">
                     <h2 className=" font-semibold pb-2">Organization Email</h2>
                     <p className="text-sub-para">
-                        You can get in touch by mailing us at :
+                        You can get in touch by mailing us at: {" "}
                         <a
                             href="mailto:contact@cosognepal.org"
                             className="underline text-blue"
                             target="blank"
                         >
                             contact@cosognepal.org
-                        </a>{" "}
+                        </a>
                     </p>
                 </div>
             </section>

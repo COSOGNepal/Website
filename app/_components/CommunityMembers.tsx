@@ -12,7 +12,7 @@ const CommunityMembers = async () => {
 
         return (
             <main className="px-block space-y-block">
-                <SectionTitle title="Our Members" viewall="/about/#team" />
+                <SectionTitle title="Our Team" viewall="/about/#team" />
                 {/* members list */}
                 <div className="members grid gap-small complex-grid-members-section">
                     {
