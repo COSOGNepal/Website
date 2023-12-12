@@ -44,7 +44,7 @@ export default async function AboutPage() {
                 </div>
             </div>
             <div className="community_leaders space-y-block ">
-                <SectionTitle title="Members" />
+                <SectionTitle title="Community Leaders" />
                 <div className="members grid lg:grid-cols-3-320 grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
                     {
                         members.map((member, index) => {

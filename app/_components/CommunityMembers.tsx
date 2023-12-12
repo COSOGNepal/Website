@@ -7,7 +7,7 @@ const CommunityMembers = async () => {
     const members = await getMembers();
     return (
         <main className="px-block space-y-block">
-            <SectionTitle title="Our Members" viewall="/about/#team" />
+            <SectionTitle title="Our Team" viewall="/about#team" />
             {/* members list */}
             <div className="members grid lg:grid-cols-3-320 grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
                 {
