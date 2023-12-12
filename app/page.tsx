@@ -11,7 +11,7 @@ import FAQ from "./_components/FAQ";
 
 export default function Home() {
     return (
-        <div className="flex flex-col space-y-section">
+        <div className="flex flex-col space-y-section overflow-x-hidden">
             <Herosection />
             <Partners />
             <Events />
