@@ -74,8 +74,7 @@ const ContactPage = () => {
                             target="blank"
                         >
                             Facebook
-                        </a>{" "}
-                        ,
+                        </a>,{" "}
                         <a
                             href="https://www.instagram.com/cosognepal"
                             className="underline text-blue"
