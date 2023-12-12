@@ -65,7 +65,7 @@ const Footer = () => {
                             alt="social"
                         />
                     </a>
-                    <a href="mailto:cosognepal@gmail.com" target="blank">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=cosognepal@gmail.com" target="blank">
                         <Image
                             src={"/assets/gmail_logo.svg"}
                             width={30}
@@ -74,7 +74,7 @@ const Footer = () => {
                         />
                     </a>
                 </div>
-                <h4 className="text-sm text-faded my-2">cosognepal@gmail.com</h4>
+                <h4 className="text-sm text-faded my-2">contact@cosognepal.org</h4>
                 <h4 className="text-sm text-faded">
                     ©2023 cosognepal.org. All rights are reserved.
                 </h4>
