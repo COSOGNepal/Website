@@ -20,7 +20,7 @@ export default function RootLayout({
             <meta property="og:image:type" content="image/png" />
             <meta property="og:image:width" content="386" />
             <meta property="og:image:height" content="386" />
-            <body className="flex flex-col justify-between  overflow-hidden">
+            <body className="flex flex-col justify-between  overflow-x-hidden">
                 <Navbar />
                 {children}
                 <Footer />
