@@ -16,7 +16,13 @@ export default function EventsPage() {
 
     useEffect(() => {
         (async () => {
-            setEvents(await getEvents())
+            try {
+                const events = await getEvents();
+                setEvents(events)
+            }
+            catch (e) {
+                console.log("Sorry, something went wrong while getting events.", e)
+            }
         })()
     }, [])
 
@@ -63,7 +69,7 @@ export default function EventsPage() {
                     })
                 }
             </div>
-            <div className="slider_container max-w-[400px] h-[80vh] p-standard flex flex-col justify-between items-center text-sub-para font-normal text-black-mid sticky top-block ">
+            <div className="slider_container max-w-[400px] h-[80vh] p-standard flex flex-col space-y-standard items-center text-sub-para font-normal text-black-mid sticky top-block ">
                 <div className="start_time">
                     {dates[0]}
                 </div>

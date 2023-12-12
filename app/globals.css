@@ -4,31 +4,84 @@
 @tailwind components;
 @tailwind utilities;
 
-*, *::before, *::after{
- scroll-behavior: smooth;
- font-family: 'Inter', sans-serif;
+*,
+*::before,
+*::after {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
 }
 
-.link-underline {
-  border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#fff, #fff);
-  background-size: 0 3px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.5s ease-in-out;
+@media only screen and (max-width:768px) {
+    .link-underline {
+        border-bottom-width: 0;
+        background-image: linear-gradient(var(--blue), var(--blue));
+        background-size: 0 3px;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.25s ease-in-out;
+        width: 200px;
+        text-align: center;
+    }
+
+    .link-underline:hover {
+        background-size: 100% 3px;
+        background-position: 50% 100%;
+        color: var(--blue);
+    }
+
+    body {
+        --blue: #3771c8;
+        overflow-x: hidden;
+    }
 }
 
-.link-underline-black {
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#555, #555);
-  /* todo change the gradient color */
+.complex-grid-members-section {
+    grid-template-columns: repeat(auto-fit, 320px);
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
 }
 
-.link-underline:hover {
-  background-size: 100% 3px;
-  background-position: 0 100%;
-}
-body {
-  overflow-x: hidden;
+@media only screen and (min-width: 1200px) {
+    .complex-grid-members-section {
+        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+        grid-template-areas:
+            "tl tl tl tl tc tc tc tc tr tr tr tr "
+            "bl bl bl blc blc blc brc brc brc br br br"
+        ;
+    }
+
+    .member-container {
+        max-width: 100%;
+        min-width: 270px;
+    }
+
+    .complex-grid-members-section .member-container:nth-of-type(1) {
+        grid-area: tl;
+    }
+
+    .complex-grid-members-section .member-container:nth-child(2) {
+        grid-area: tc;
+    }
+
+    .complex-grid-members-section .member-container:nth-child(3) {
+        grid-area: tr;
+    }
+
+    .complex-grid-members-section .member-container:nth-child(4) {
+        grid-area: bl;
+    }
+
+    .complex-grid-members-section .member-container:nth-child(5) {
+        grid-area: blc;
+    }
+
+    .complex-grid-members-section .member-container:nth-child(6) {
+        grid-area: brc;
+    }
+
+    .complex-grid-members-section .member-container:nth-child(7) {
+        grid-area: br;
+    }
 }

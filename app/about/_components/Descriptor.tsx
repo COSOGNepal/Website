@@ -13,13 +13,18 @@ export default function Descriptor({ title, descriptions = [], list = [] }: Tdes
                     })
 
                 }
-                <div className="list_con mt-small">
+                <ul className="list_con mt-small list-disc" >
                     {
                         list?.map((li, index) => {
-                            return <li key={index}>{li}</li>
+                            return (
+                                <li key={index}>
+                                    {li.split(":").map((chunk, index) => {
+                                        return index == 0 ? <b>{chunk} : </b> : chunk
+                                    })}
+                                </li>)
                         })
                     }
-                </div>
+                </ul>
             </div>
         </div>
     )

@@ -1,66 +1,37 @@
 import SectionTitle from "@/components/SectionTitle";
 import React from "react";
+import getEvents from "../events/getEvents"
 
-const Events = () => {
-    const EventData = [
-        {
-            id: 1,
-            date: "14 march 2023",
-            title: "Fueling the Spark:",
-            description: "Igniting Computer Science Clubs Through CoSoG!",
-            location: "Nepal, Asia",
-            imgPath: "/images/Event1.jpg",
-        },
-        {
-            id: 2,
-            date: "14 march 2023",
-            title: "Empowering High Schools",
-            description: "We will create digital nepal... soon",
-            location: "Nepal, Asia",
-            imgPath: "/images/Event2.jpg",
-        },
-        {
-            id: 3,
-            date: "14 march 2023",
-            title: "Empowering High Schools",
-            description: "We will create digital nepal... soon",
-            location: "Nepal, Asia",
-            imgPath: "/images/Event3.jpg",
-        },
-        {
-            id: 4,
-            date: "14 march 2023",
-            title: "Empowering High Schools",
-            description: "We will create digital nepal... soon",
-            location: "Nepal, Asia",
-            imgPath: "/images/Event1.jpg",
-        },
-    ];
+const Events = async () => {
+    const EventsData = await getEvents();
     return (
         <main className="px-block w-screen mx-auto space-y-block">
             <SectionTitle title="Events" viewall="/events" />
             {/* events listing */}
-            <section className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 px-2 md:px-20 gap-4 bg-contain ">
-                {EventData.map((data) => (
+            <section className="w-full max-w-[1400px] mx-auto grid grid-cols-auto-fit-600 grid-rows-2-400 gap-small justify-center">
+                {EventsData.map((event, index) => (
                     <div
-                        key={data.id}
-                        style={{ backgroundImage: `url("${data.imgPath}")` }}
-                        className={`relative aspect-[12/9] rounded-xl overflow-hidden bg-no-repeat bg-cover`}
+                        key={index}
+                        style={{ backgroundImage: `url("${event.images[0]}")` }}
+                        className={`relative rounded-[5px] overflow-hidden bg-no-repeat bg-cover group`}
                     >
-                        <div className="absolute  text-white px-8 pb-2 md:pb-6 bottom-0 h-1/2 w-full bg-gradient-to-t from-dark-transparent to-transparent flex justify-end flex-col gap-3">
-                            <span className="text-sm md:text-base font-light">
-                                {data.date}
+                        <div className="absolute text-white px-8 pb-2 md:pb-6 bottom-0 h-1/2 w-full bg-gradient-to-t from-[rgba(0,0,0,0.8)] group-hover:from-30% flex justify-end flex-col">
+                            <span className="text-info font-medium">
+                                {event.date}
                             </span>
-                            <div>
-                                <h1 className="text-xl md:text-3xl font-bold">{data.title}</h1>
-                                <h2 className="text-sm md:text-md font-medium">
-                                    {data.description}
-                                </h2>
+                            <div className="mb-[-10px] group-hover:mb-[0] transition-all ease-in-out duration-250">
+                                <h1 className="text-title font-bold">{event.title}</h1>
+                                <div className="descriptions space-y-v-small opacity-0 absolute top-[200px] group-hover:opacity-100 group-hover:top-[0px] group-hover:static">
+                                    {
+                                        event.descriptions.map((description, index) => {
+                                            return (<p className="text-sub-para font-medium" key={index}>
+                                                {description}
+                                            </p>
+                                            )
+                                        })
+                                    }
+                                </div>
                             </div>
-
-                            <h3 className="text-sm md:text-md font-normal">
-                                {data.location}
-                            </h3>
                         </div>
                     </div>
                 ))}

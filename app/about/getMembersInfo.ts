@@ -2,10 +2,14 @@ import type { Tmember } from "./type";
 import members from "../../src/data/members.json";
 
 export default async function getMembers(): Promise<Tmember[]> {
-  const data: Tmember[] = members.map((member) => ({
-    ...member,
-    post: member.post as Tmember["post"],
-  }));
+    try {
+        if (!members) throw new Error("Invalid json file");
+        if (members.length < 1) throw new Error("Json file cannot be empty");
 
-  return data;
+        return members as Tmember[];
+    }
+    catch (e) {
+        console.log(e)
+        throw new Error(e as string)
+    }
 }
