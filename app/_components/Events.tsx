@@ -13,18 +13,18 @@ const Events = async () => {
                     <div
                         key={index}
                         style={{ backgroundImage: `url("${event.images[0]}")` }}
-                        className={`relative rounded-xl overflow-hidden bg-no-repeat bg-cover`}
+                        className={`relative rounded-[5px] overflow-hidden bg-no-repeat bg-cover group`}
                     >
-                        <div className="absolute text-white px-8 pb-2 md:pb-6 bottom-0 h-1/2 w-full bg-gradient-to-t from-dark-transparent to-transparent flex justify-end flex-col gap-3">
-                            <span className="text-sm md:text-base font-light">
+                        <div className="absolute text-white px-8 pb-2 md:pb-6 bottom-0 h-1/2 w-full bg-gradient-to-t from-dark-transparent to-transparent flex justify-end flex-col">
+                            <span className="text-info font-medium">
                                 {event.date}
                             </span>
-                            <div>
-                                <h1 className="text-xl md:text-3xl font-bold">{event.title}</h1>
-                                <div className="descriptions">
+                            <div className="mb-[-10px] group-hover:mb-[0] transition-all ease-in-out duration-250">
+                                <h1 className="text-title font-bold">{event.title}</h1>
+                                <div className="descriptions space-y-v-small hidden mt-[200px] group-hover:block group-hover:mt-[0px]">
                                     {
                                         event.descriptions.map((description, index) => {
-                                            return (<p className="text-sm md:text-md font-medium" key={index}>
+                                            return (<p className="text-sub-para font-medium" key={index}>
                                                 {description}
                                             </p>
                                             )
