@@ -24,7 +24,7 @@ const Navbar = () => {
                 </div>
             </div>
             <nav
-                className={`fixed inset-0 p-0 min-w-screen min-h-screen md:min-h-[100px] h-[100px] z-40 md:pointer-events-auto${!navActive ? "pointer-events-none" : "pointer-events-auto"}`}
+                className={`fixed left-0 overflow-hidden w-screen  min-h-screen md:min-h-[100px] h-[100px] z-40 md:pointer-events-auto${!navActive ? "pointer-events-none" : "pointer-events-auto"}`}
             >
                 <main
                     className={`${!navActive ? "-translate-y-full " : "translate-y-0"
