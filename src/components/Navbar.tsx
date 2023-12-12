@@ -24,21 +24,16 @@ const Navbar = () => {
                 </div>
             </div>
             <nav
-                className={`fixed inset-0 p-0 min-w-screen min-h-screen z-40 md:pointer-events-auto${!navActive ? "pointer-events-none" : "pointer-events-auto"
-                    }
-        `}
+                className={`fixed inset-0 p-0 min-w-screen min-h-screen md:min-h-[100px] h-[100px] z-40 md:pointer-events-auto${!navActive ? "pointer-events-none" : "pointer-events-auto"}`}
             >
                 <main
                     className={`${!navActive ? "-translate-y-full " : "translate-y-0"
-                        } relative w-full h-full grid place-content-center duration-500 transition 
-            md:w-full md:h-[100px] md:translate-y-0
-            border-bottom-black border-bottom-2  
-          `}
+                        } relative w-full h-full grid place-content-center duration-500 transition md:w-full md:h-[100px] md:translate-y-0 border-bottom-black border-bottom-2  `}
                 >
                     <div className={`
-                backdrop-blur-[20px] absolute inset-0 -z-10 bg-[rgba(255,255,255,0.5)]
-                md:bg-[rgba(255,255,255,0.8)] 
-          `}></div>
+                    backdrop-blur-[20px] absolute inset-0 -z-10 bg-[rgba(255,255,255,0.5)]
+                        md:bg-[rgba(255,255,255,0.8)] 
+                        `}></div>
                     <Image
                         src={"/assets/logo.png"}
                         height={50}
@@ -47,9 +42,9 @@ const Navbar = () => {
                         alt={"nav logo"}
                     />
                     <ul className={`
-                text-sub-title font-small flex items-center flex-col gap-3 text-faded uppercase
-                md:flex-row md:space-x-small md:items-center md:h-full md:max-w-[600px] md:text-sub-para md:margin-l-auto md:absolute md:right-block
-          `}>
+                    text-sub-title font-small flex items-center flex-col gap-3 text-faded uppercase
+                        md:flex-row md:space-x-small md:items-center md:h-full md:max-w-[600px] md:text-sub-para md:margin-l-auto md:absolute md:right-block
+                        `}>
                         <Link href="/">
                             <li
                                 onClick={() => setNavActive(!navActive)}
