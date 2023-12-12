@@ -8,7 +8,7 @@ export default function Member({ data }: { data: Tmember }) {
             <Image src={image} height={350} width={320} alt={name}
                 className="image object-cover min-h-full w-full" />
             <div className="description flex flex-col  h-1/2 w-full bg-gradient-to-t from-[rgba(0,0,0,0.7)] group-hover:from-[rgba(0,0,0,0.9)] to-transparent absolute bottom-0 left-0 p-standard">
-                <div className="visible transition-all mt-[75px] group-hover:mt-small duration-300 ease-in-out">
+                <div className="visible transition-all mt-[25%] group-hover:mt-small duration-300 ease-in-out">
                     <div className="title font-bold text-sub-title text-white"> {name} </div>
                     <div className="post font-normal text-para text-white-light">{post} </div>
                 </div>
