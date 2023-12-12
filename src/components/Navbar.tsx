@@ -34,13 +34,15 @@ const Navbar = () => {
                     backdrop-blur-[20px] absolute inset-0 -z-10 bg-[rgba(255,255,255,0.5)]
                         md:bg-[rgba(255,255,255,0.8)] 
                         `}></div>
-                    <Image
-                        src={"/assets/logo.png"}
-                        height={50}
-                        width={50}
-                        className={"absolute hidden md:block left-block top-[25px] "}
-                        alt={"nav logo"}
-                    />
+                    <Link href="/">
+                        <Image
+                            src={"/assets/logo.png"}
+                            height={50}
+                            width={50}
+                            className={"absolute hidden md:block left-block top-[25px] "}
+                            alt={"nav logo"}
+                        />
+                    </Link>
                     <ul className={`
                     text-sub-title font-small flex items-center flex-col gap-3 text-faded uppercase
                         md:flex-row md:space-x-small md:items-center md:h-full md:max-w-[600px] md:text-sub-para md:margin-l-auto md:absolute md:right-block
