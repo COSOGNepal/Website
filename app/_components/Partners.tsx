@@ -4,9 +4,9 @@ import React from "react";
 
 const Partners = () => {
     return (
-        <main className="bg-gray-bg  p-block space-y-block">
+        <main className="bg-gray-bg  p-block space-y-block ">
             <SectionTitle title="we've partnered with" />
-            <section className="flex gap-4 justify-center w-screen">
+            <section className="flex gap-4 justify-center max-w-[1400px] mx-auto">
                 <div className="w-48">
                     <Image
                         src={"/images/Partners/codeforchange.png"}

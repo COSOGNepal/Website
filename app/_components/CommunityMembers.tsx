@@ -11,7 +11,7 @@ const CommunityMembers = async () => {
         members = await getMembers();
 
         return (
-            <main className="px-block space-y-block">
+            <main className="px-block space-y-block max-w-[1400px] mx-auto">
                 <SectionTitle title="Our Team" viewall="/about/#team" />
                 {/* members list */}
                 <div className="members grid gap-small complex-grid-members-section">

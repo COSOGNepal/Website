@@ -4,8 +4,8 @@ import React from "react";
 
 const Herosection = () => {
     return (
-        <section className="w-screen min-h-screen">
-            <main className="relative flex p-0 z-10  w-screen min-h-screen">
+        <section className="w-screen bg-white max-w-[1400px] mx-auto min-h-screen">
+            <main className="relative flex p-0 z-10  w-full min-h-screen">
                 <div className="item1 absolute ">
                     <div className="relative w-40 h-52  md:w-56 md:h-64 ">
                         <Image src={"/assets/bgShape1.svg"} fill alt={"background"} />
