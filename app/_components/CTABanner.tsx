@@ -10,7 +10,7 @@ const CTABanner = () => {
         humanity.
       </div>
       <div className="col-span-1">
-        <Link href={"/collaborate-or-something-idk-rn"}>
+        <Link href={"https://forms.gle/nKwtAMG2Q4rL57QW7"}>
           <button className="bg-gray-bg px-12 rounded-sm text-faded text-xl font-bold py-3 hover:bg-transparent hover:text-white transition border">
             Lets Collaborate
           </button>
