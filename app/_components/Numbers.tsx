@@ -11,22 +11,23 @@ const NumbersData: Tdata[] = [
 
 const Numbers = () => {
     return (
-        <main className="h-72 text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply my-24 grid grid-cols-2 sm:grid-cols-4 justify-center place-items-center">
+        <main className="h-72 w-full brk-1400:px-[calc((100%-1400px)/2)] text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply bg-fixed my-24 grid grid-cols-2 sm:grid-cols-4 justify-center place-items-center">
             {
                 NumbersData.map((data, index) => {
                     return (
-                        <div className="flex flex-col items-center" key={index}>
+                        <div className="flex flex-col items-center space-y-small" key={index}>
                             <div className="w-12 sm:w-20 aspect-square relative">
                                 <Image src={data.icon} fill alt={data.title} />
                             </div>
-                            <h2 className="text-center text-md sm:text-xl font-light">
-                                {data.title}
-                            </h2>
-                            <h1 className="text-center text-xl sm:text-3xl font-bold">{data.number}+</h1>
+                            <div className="text_context">
+                                <h2 className="text-center text-para font-medium">
+                                    {data.title}
+                                </h2>
+                                <h1 className="text-center text-title font-bold">{data.number}+</h1>
+                            </div>
                         </div>
 
                     )
-
                 })
             }
         </main>
