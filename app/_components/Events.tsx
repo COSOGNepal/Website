@@ -19,9 +19,9 @@ const Events = async () => {
                             <span className="text-info font-medium">
                                 {event.date}
                             </span>
-                            <div className="mb-[-10px] group-hover:mb-[0] transition-all ease-in-out duration-250">
+                            <div className="mb-[-10px] group-hover:mb-[0] transition-all ease-in-out duration-300">
                                 <h1 className="text-title font-bold">{event.title}</h1>
-                                <div className="descriptions space-y-v-small opacity-0 absolute top-[200px] group-hover:opacity-100 group-hover:top-[0px] group-hover:static">
+                                <div className="descriptions space-y-v-small opacity-0 absolute top-[200px] group-hover:opacity-100 group-hover:top-[0px] group-hover:static ">
                                     {
                                         event.descriptions.map((description, index) => {
                                             return (<p className="text-sub-para font-medium" key={index}>

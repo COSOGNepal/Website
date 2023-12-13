@@ -53,6 +53,13 @@
         grid-template-rows: 400px 350px;
     }
 
+    .complex-grid-members-section .member-container:nth-of-type(1):hover .visible-section-description-members,
+    .complex-grid-members-section .member-container:nth-of-type(2):hover .visible-section-description-members,
+    .complex-grid-members-section .member-container:nth-of-type(3):hover .visible-section-description-members {
+        margin-top: 50px
+    }
+
+
     .complex-grid-members-section .member-container {
         max-width: 100%;
         min-width: 270px;
