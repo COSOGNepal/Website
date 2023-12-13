@@ -52,7 +52,7 @@ const Herosection = () => {
                     <div className="left pl-8 md:pl-32 flex-1 relative z-0 ">
                         <div className="flex flex-col gap-5 h-full justify-center ">
                             <div className="text-heading text-dark-primary font-bold ">
-                                <h2>Coding for Social Good Nepal <br /> CoSoG Nepal</h2>
+                                <h2>Coding for Social Good <br /> CoSoG Nepal</h2>
                             </div>
                             <p className="w-full text-left text-faded text-para mt-standard leading-tight">
                                 CoSoG Nepal is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Secondary/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal&apos;s digitalization.
