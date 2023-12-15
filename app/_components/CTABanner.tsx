@@ -3,7 +3,7 @@ import React from "react";
 
 const CTABanner = () => {
     return (
-        <main className="min-h brk-1400:px-[calc((100%-1400px)/2)] h-44 text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-no-repeat bg-cover bg-fixed bg-blend-multiply flex items-center justify-between  px-block">
+        <main className="min-h brk-1400:px-[calc(((100%-1400px)/2)+50px)] h-44 text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-no-repeat bg-cover bg-fixed bg-blend-multiply flex items-center justify-between  px-block">
             <div className="text-para text-white w-[70%]">
                 Collaboration is one of the most powerfull thing, one must take part
                 with one another to better this world and to preserve kindness in

@@ -11,7 +11,7 @@ const NumbersData: Tdata[] = [
 
 const Numbers = () => {
     return (
-        <main className="h-72 w-full brk-1400:px-[calc((100%-1400px)/2)] text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply bg-fixed my-24 grid grid-cols-2 sm:grid-cols-4 justify-center place-items-center">
+        <main className="h-72 w-full brk-1400:px-[calc(((100%-1400px)/2)+50px)] text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply bg-fixed my-24 grid grid-cols-2 sm:grid-cols-4 justify-center place-items-center">
             {
                 NumbersData.map((data, index) => {
                     return (

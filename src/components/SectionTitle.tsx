@@ -7,7 +7,7 @@ type TSectionTitleProps = {
 
 export default function SectionTitle({ title, viewall }: TSectionTitleProps) {
     return (
-        <div className="title_container max-w-[1400px] mx-auto flex justify-between items-center">
+        <div className="title_container max-w-[1400px] brk-1400:mx-auto flex justify-between items-center">
             <h1 className="font-bold text-sub-title text-black-mid uppercase">
                 {title}
             </h1>

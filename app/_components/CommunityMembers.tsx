@@ -9,7 +9,6 @@ const CommunityMembers = async () => {
     let members: Tmember[];
     try {
         members = await getMembers();
-
         return (
             <main className="px-block space-y-block max-w-[1400px] brk-1400:mx-auto">
                 <SectionTitle title="Our Team" viewall="/about/#team" />
