@@ -4,9 +4,9 @@ import React from "react";
 
 const Herosection = () => {
     return (
-        <section className="w-screen bg-white max-w-[1400px] mx-auto min-h-screen">
-            <main className="relative flex p-0 z-10  w-full min-h-screen">
-                <div className="item1 absolute ">
+        <section className="w-screen max-w-[1400px] brk-1400:mx-auto h-screen">
+            <main className="relative flex z-10 w-full h-full">
+                <div className="item1 absolute">
                     <div className="relative w-40 h-52  md:w-56 md:h-64 ">
                         <Image src={"/assets/bgShape1.svg"} fill alt={"background"} />
                     </div>
@@ -16,8 +16,7 @@ const Herosection = () => {
                         <Image src={"/assets/bgShape2.svg"} fill alt={"background"} />
                     </div>
                 </div>
-
-                <div className="socialmedia z-[100] h-fit w-fit absolute  cursor-pointer bottom-5 right-16 flex sm:flex-col gap-3">
+                <div className="socialmedia z-[100] h-fit w-fit absolute bottom-standard right-standard md:right-0 flex sm:flex-col gap-small">
                     <a
                         href="https://www.facebook.com/Cosognepal"
                         target="blank"
@@ -48,15 +47,17 @@ const Herosection = () => {
                         />
                     </a>
                 </div>
-                <main className="w-full h-auto flex ">
-                    <div className="left pl-8 md:pl-32 flex-1 relative z-0 ">
-                        <div className="flex flex-col gap-5 h-full justify-center ">
-                            <div className="text-heading text-dark-primary font-bold ">
-                                <h2>Coding for Social Good <br /> CoSoG Nepal</h2>
+                <main className="w-full flex flex-col-reverse justify-center h-auto md:flex-row">
+                    <div className="left brk-1400:px-0 px-standard relative z-0 w-full mt-block md:mt-0">
+                        <div className="flex flex-col h-full justify-center space-y-block">
+                            <div className="text_content">
+                                <div className="text-title text-dark-primary font-bold md:text-heading">
+                                    <h2>Coding for Social Good Nepal<br /> CoSoG Nepal</h2>
+                                </div>
+                                <p className="max-w-[1000px] text-left text-faded text-para mt-standard leading-tight">
+                                    CoSoG Nepal is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Secondary/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal&apos;s digitalization.
+                                </p>
                             </div>
-                            <p className="w-full text-left text-faded text-para mt-standard leading-tight">
-                                CoSoG Nepal is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Secondary/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal&apos;s digitalization.
-                            </p>
                             <button
                                 onClick={() => {
                                     window.open(
@@ -64,13 +65,13 @@ const Herosection = () => {
                                         "_blank"
                                     );
                                 }}
-                                className="bg-primary cursor-pointer w-48 h-12 text-white text-center py-2 mt-block rounded-[5px] font-medium"
+                                className="bg-primary cursor-pointer h-12 text-white text-center py-2 mt-block rounded-[5px] font-medium w-full sm:w-48"
                             >
                                 Join our community
                             </button>
                         </div>
                     </div>
-                    <div className="hidden sm:grid right flex-1  place-items-center">
+                    <div className="flex justify-center items-center">
                         <div className="relative w-64 h-64">
                             <Image src={"/assets/logo.png"} fill alt="logo" />
                         </div>
