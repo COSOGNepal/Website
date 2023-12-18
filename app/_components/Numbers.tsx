@@ -11,26 +11,25 @@ const NumbersData: Tdata[] = [
 
 const Numbers = () => {
     return (
-        <main className="h-72 w-full brk-1400:px-[calc(((100%-1400px)/2)+50px)] text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply bg-fixed my-24 grid grid-cols-2 sm:grid-cols-4 justify-center place-items-center">
+        <main className="w-full py-standard brk-1400:px-[calc(((100%-1400px)/2)+50px)] text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply bg-fixed grid grid-cols-1 v-sm:grid-cols-2 gap-y-standard md:grid-cols-4 justify-center place-items-center p-standard md:p-block">
             {
                 NumbersData.map((data, index) => {
                     return (
-                        <div className="flex flex-col items-center space-y-small" key={index}>
-                            <div className="w-12 sm:w-20 aspect-square relative">
+                        <div className="flex flex-row w-full items-center space-x-standard v-sm:flex-col v-sm:w-auto v-sm:items-center v-sm:space-y-small" key={index}>
+                            <div className="w-14 v-sm-12 md:w-20 aspect-square relative">
                                 <Image src={data.icon} fill alt={data.title} />
                             </div>
                             <div className="text_context">
-                                <h2 className="text-center text-para font-medium">
+                                <h2 className="text-center text-sub-title font-bold v-sm:text-gray-bg v-sm:text-para v-sm:font-medium">
                                     {data.title}
                                 </h2>
-                                <h1 className="text-center text-title font-bold">{data.number}+</h1>
+                                <h1 className="text-gray-bg v-sm:text-center v-sm:text-title v-sm:font-bold">{data.number}+</h1>
                             </div>
                         </div>
-
                     )
                 })
             }
-        </main>
+        </main >
     );
 };
 

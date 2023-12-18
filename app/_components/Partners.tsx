@@ -4,7 +4,7 @@ import React from "react";
 
 const Partners = () => {
     return (
-        <main className="bg-gray-bg  p-block space-y-block ">
+        <main className="bg-gray-bg p-block space-y-block px-standard md:px-block brk-1400:px-0">
             <SectionTitle title="we've partnered with" />
             <section className="flex gap-4 justify-center max-w-[1400px] mx-auto">
                 <div className="w-48">

@@ -102,7 +102,8 @@ module.exports = {
                 "2-400": "repeat(2, 400px)",
             },
             screens: {
-                "brk-1400": "1400px"
+                "brk-1400": "1400px",
+                "v-sm": "480px"
             }
         },
     },
