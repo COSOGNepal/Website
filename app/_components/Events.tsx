@@ -8,7 +8,7 @@ const Events = async () => {
         <main className="px-standard md:px-block brk-1400:px-0 w-screen mx-auto space-y-block">
             <SectionTitle title="Events" viewall="/events" />
             {/* events listing */}
-            <section className="w-full max-w-[1400px] mx-auto grid grid-cols-auto-fit-600 brk-1400:grid-cols-2 grid-rows-2-400 gap-small justify-center">
+            <section className="w-full max-w-[1400px] mx-auto grid grid-cols-1 sm-grid-cols-auto-fit-600 brk-1400:grid-cols-2 grid-rows-2-400 gap-small justify-center">
                 {EventsData.map((event, index) => (
                     <div
                         key={index}
