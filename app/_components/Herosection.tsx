@@ -16,7 +16,7 @@ const Herosection = () => {
                         <Image src={"/assets/bgShape2.svg"} fill alt={"background"} />
                     </div>
                 </div>
-                <div className="socialmedia z-[100] h-fit w-fit absolute bottom-standard right-standard md:right-0 flex sm:flex-col gap-small">
+                <div className="socialmedia z-[100] h-fit w-fit absolute bottom-standard right-standard md:right-standard flex sm:flex-col gap-small">
                     <a
                         href="https://www.facebook.com/Cosognepal"
                         target="blank"
@@ -47,12 +47,18 @@ const Herosection = () => {
                         />
                     </a>
                 </div>
-                <main className="w-full flex flex-col-reverse justify-center h-auto md:flex-row">
-                    <div className="left brk-1400:px-0 px-standard relative z-0 w-full mt-block md:mt-0">
+                <main className="w-full flex flex-col-reverse justify-center h-auto md:flex-row brk-1400:px-0 px-standard">
+                    <div className="left brk-1400:px-0 relative z-0 w-full mt-block md:mt-0">
                         <div className="flex flex-col h-full justify-center space-y-block">
                             <div className="text_content">
                                 <div className="text-title text-dark-primary font-bold md:text-heading">
-                                    <h2>Coding for Social Good Nepal<br /> CoSoG Nepal</h2>
+                                    <h2>
+                                        <span className="hidden sm:inline-block">
+                                            Coding for Social Good Nepal
+                                        </span>
+                                        <br />
+                                        CoSoG Nepal
+                                    </h2>
                                 </div>
                                 <p className="max-w-[1000px] text-left text-faded text-para mt-standard leading-tight">
                                     CoSoG Nepal is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Secondary/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal&apos;s digitalization.
