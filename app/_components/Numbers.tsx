@@ -11,7 +11,7 @@ const NumbersData: Tdata[] = [
 
 const Numbers = () => {
     return (
-        <main className="w-full py-standard brk-1400:px-[calc(((100%-1400px)/2)+50px)] text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply bg-fixed grid grid-cols-1 v-sm:grid-cols-2 gap-y-standard md:grid-cols-4 justify-center place-items-center p-standard md:p-block">
+        <main className="w-full brk-1400:px-[calc(((100%-1400px)/2)+50px)] text-white bg-primary bg-[url('/assets/bgPattern.svg')] bg-cover bg-blend-multiply bg-fixed grid grid-cols-1 v-sm:grid-cols-2 gap-y-standard md:grid-cols-4 justify-center place-items-center p-standard md:p-block">
             {
                 NumbersData.map((data, index) => {
                     return (
