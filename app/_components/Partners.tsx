@@ -15,18 +15,19 @@ const Partners = () => {
     return (
         <main className="bg-gray-bg p-block space-y-block px-standard md:px-block brk-1400:px-0">
             <SectionTitle title="we've partnered with" />
-            <section className="flex gap-4 justify-center max-w-[1400px] mx-auto">
+            <section className="flex space-x-standard justify-center max-w-[1400px] mx-auto overflow-hidden">
                 {
                     partenersData.map((partnerName, index) =>
-                        <div className="w-48 h-48 aspect-square relative" key={index}>
+                        <div className={`w-48 h-48 aspect-square relative grid place-items-center bg-white rounded-md`} key={index}>
                             <Image
                                 src={`/images/Partners/${partnerName
                                     .split(" ")
                                     .map(token => token.toLowerCase())
                                     .join("_")}.png`
                                 }
-                                fill
-                                alt="Code for Change"
+                                height={150}
+                                width={150}
+                                alt={partnerName}
                             />
                         </div>
                     )
