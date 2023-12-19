@@ -7,7 +7,7 @@ import getMembers from "./getMembersInfo";
 export default async function AboutPage() {
     const members = await getMembers();
     return (
-        <div className="main_container h-max flex flex-col space-y-section w-full px-standard sm:px-block mt-section max-w-[1400px] m-auto">
+        <div className="main_container h-max flex flex-col space-y-section w-full px-standard sm:px-block mt-section max-w-[1400px] m-auto pb-section">
             <div className="aboutSection w-full">
                 <Image src="/images/assets/about_banner.png" width={1400} height={550} alt="banner_about_section"
                     className="banner max-h-[550px] h-auto object-cover m-auto" />
