@@ -94,8 +94,3 @@
         grid-area: br;
     }
 }
-
-
-.accordionItem-container button {
-    justify-content: space-between;
-}
