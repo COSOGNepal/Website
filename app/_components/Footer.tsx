@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-bg w-full py-block brk-1400:px-[calc(((100%-1400px)/2)+50px)] px-standard">
+        <footer className="mt-section bg-gray-bg w-full py-block brk-1400:px-[calc(((100%-1400px)/2)+50px)] px-standard">
             <main className="flex md:space-x-standard items-center w-full max-w-[1400px] mx-auto flex-col sm:flex-row brk-1400:px-0">
                 <Image src={"/assets/logo.png"} width={100} height={100} alt="logo:" />
                 <div className="navdata flex items-baseline w-full mt-standard flex-col space-y-standard justify-start v-sm:items-center v-sm:justify-between md:w-full md:mt-0 v-sm:flex-row">
