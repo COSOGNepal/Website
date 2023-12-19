@@ -13,14 +13,14 @@ const partenersData = [
     "Hackademedia",
     "Sagarmatha Hacktoberfest"
 ]
-const slidesPerView = Math.round(Math.min(innerWidth, 1400) / 192) - 1
+const slidesPerView = Math.min(innerWidth - (partenersData.length * 20), 1400 - 20 * partenersData.length) / 192
 
 const Partners = () => {
     return (
         <main className="bg-gray-bg p-block space-y-block px-standard md:px-block brk-1400:px-0">
             <SectionTitle title="we've partnered with" />
-            <section className="flex space-x-standard justify-center max-w-[1400px] mx-auto overflow-hidden">
-                <Swiper spaceBetween={10} autoplay slidesPerView={slidesPerView}>
+            <section>
+                <Swiper spaceBetween={10} slidesPerView={slidesPerView} className="flex space-x-standard justify-center max-w-[1400px] mx-auto overflow-hidden">
                     {
                         partenersData.map((partnerName, index) =>
                             <SwiperSlide key={index}>
