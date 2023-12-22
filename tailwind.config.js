@@ -87,6 +87,7 @@ module.exports = {
                 heading: "52px",
                 title: "32px",
                 "sub-title": "24px",
+                "mid-title": "20px",
                 para: "18px",
                 "sub-para": "16px",
                 info: "12px",
