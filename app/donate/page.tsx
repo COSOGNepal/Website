@@ -22,8 +22,8 @@ const Donate = () => {
                     <div className="flex flex-wrap items-center gap-3 font-light">
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${ShownComponent.shown === "esewa"
-                                ? "bg-blue text-white"
-                                : "bg-slate-200 text-black"
+                                ? "bg-blue text-white font-normal"
+                                : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
                                 setShownComponent({ shown: "esewa" });
@@ -33,20 +33,20 @@ const Donate = () => {
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] overflow-hidden px-5 py-3 ${ShownComponent.shown === "fund"
-                                ? "bg-blue text-white"
-                                : "bg-slate-200 text-black"
+                                ? "bg-blue text-white font-normal"
+                                : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
                                 setShownComponent({ shown: "fund" });
                             }}
                         >
-                            {" "}
+
                             Fund Raise
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${ShownComponent.shown === "coffee"
-                                ? "bg-blue text-white"
-                                : "bg-slate-200 text-black"
+                                ? "bg-blue text-white font-normal"
+                                : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
                                 setShownComponent({ shown: "coffee" });
@@ -84,7 +84,7 @@ const EsewaDonation = () => {
     }
     return (
         <section className="space-y-block">
-            <div className="my-block text-title  text-faded mx-[0] md:mx-auto">
+            <div className="my-block text-title  text-faded mx-[0] md:mx-auto space-y-small ">
                 <h2 className="text-mid-title font-bold text-black-mid">
                     How can you donate us?
                 </h2>
@@ -93,7 +93,7 @@ const EsewaDonation = () => {
                     any e-banking service. And upload the below mentioned details.
                 </p>
             </div>
-            <div className="text-title  text-faded mx-[0] md:mx-auto">
+            <div className="text-title  text-faded mx-[0] md:mx-auto space-y-small">
                 <h2 className="text-mid-title font-bold text-black-mid">
                     Thank you for donating to CoSoG Nepal.
                 </h2>
@@ -110,7 +110,7 @@ const EsewaDonation = () => {
                 <div className="donationContents space-y-small">
                     <p className="text-sub-para">Amount</p>
                     <input
-                        className="rounded-sm w-full h-12 py-3 px-2 text-faded text-para border focus:outline "
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-gray-dark focus:border-primary focus-visible:outline-none"
                         type="text"
                         placeholder="Ex: 2000"
                         value={DonationAmount.shown}
@@ -118,8 +118,8 @@ const EsewaDonation = () => {
                     <div className="flex flex-wrap items-center gap-3 text-para font-light">
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${DonationAmount.shown === "Rs. 2,000"
-                                ? "bg-blue text-white"
-                                : "bg-slate-200 text-black"
+                                ? "bg-blue text-white font-normal"
+                                : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
                                 setDonationAmount({ shown: "Rs. 2,000" });
@@ -129,20 +129,20 @@ const EsewaDonation = () => {
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] overflow-hidden px-5 py-3 ${DonationAmount.shown === "Rs. 3,000"
-                                ? "bg-blue text-white"
-                                : "bg-slate-200 text-black"
+                                ? "bg-blue text-white font-normal"
+                                : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
                                 setDonationAmount({ shown: "Rs. 3,000" });
                             }}
                         >
-                            {" "}
+
                             Rs. 3,000
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${DonationAmount.shown === "Rs. 4,000"
-                                ? "bg-blue text-white"
-                                : "bg-slate-200 text-black"
+                                ? "bg-blue text-white font-normal"
+                                : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
                                 setDonationAmount({ shown: "Rs. 4,000" });
@@ -152,8 +152,8 @@ const EsewaDonation = () => {
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${DonationAmount.shown === "Rs. 5,000"
-                                ? "bg-blue text-white"
-                                : "bg-slate-200 text-black"
+                                ? "bg-blue text-white font-normal"
+                                : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
                                 setDonationAmount({ shown: "Rs. 5,000" });
@@ -176,7 +176,7 @@ const EsewaDonation = () => {
                 <div>
                     <p className="text-sub-para">Name</p>
                     <input
-                        className="rounded-sm w-full h-12 py-3 px-2 text-faded text-para border focus:outline "
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-gray-dark focus:border-primary focus-visible:outline-none"
                         type="text"
                         placeholder="Harry smith"
                         value={PersonalInfo.name}
@@ -188,7 +188,7 @@ const EsewaDonation = () => {
                 <div>
                     <p className="text-sub-para">Email</p>
                     <input
-                        className="rounded-sm w-full h-12 py-3 px-2 text-faded text-para border focus:outline "
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-gray-dark focus:border-primary focus-visible:outline-none"
                         type="text"
                         placeholder="harry@smith.com"
                         value={PersonalInfo.email}
@@ -200,7 +200,7 @@ const EsewaDonation = () => {
                 <div>
                     <p className="text-sub-para">Name</p>
                     <input
-                        className="rounded-sm w-full h-12 py-3 px-2 text-faded text-para border focus:outline "
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-gray-dark focus:border-primary focus-visible:outline-none"
                         type="text"
                         placeholder="985587*****"
                         value={PersonalInfo.phone}
@@ -226,15 +226,15 @@ const EsewaDonation = () => {
 const FundDonation = () => {
     return (
         <section>
-            <div className="my-block text-title  text-faded mx-[0] md:mx-auto mb-block">
-                <h2 className="text-title font-semibold pb-2">
+            <div className="my-block text-title  text-faded mx-[0] md:mx-auto space-y-small">
+                <h2 className="text-mid-title font-bold text-black-mid">
                     How can you donate us?
                 </h2>
                 <p className="text-sub-para">
                     Visit our official
                     <a
                         href="https://www.fundraisepage.com"
-                        className="underline text-blue"
+                        className="text-blue mx-[5px]"
                         target="blank"
                     >
                         fund raise
@@ -248,20 +248,20 @@ const FundDonation = () => {
 const CoffeeDonation = () => {
     return (
         <section>
-            {" "}
+
             <div className="my-block text-title  text-faded mx-[0] md:mx-auto mb-block">
-                <h2 className="text-title font-semibold pb-2">
+                <h2 className="text-mid-title font-bold text-black-mid">
                     How can you donate us?
                 </h2>
                 <p className="text-sub-para">
-                    Visit our official{" "}
+                    Visit our official
                     <a
                         href="https://www.buymeacoffee.com"
                         className="underline text-blue"
                         target="blank"
                     >
                         Buy me a Coffee
-                    </a>{" "}
+                    </a>
                     page and follow the instructions provided there.
                 </p>
             </div>
@@ -287,7 +287,7 @@ const InfoBannerLeftContent = () => {
             </div>
 
             <p className="text-info text-white-light ">
-                We are available 24/7 every single day of the week.{" "}
+                We are available 24/7 every single day of the week.
             </p>
         </div>
     );
