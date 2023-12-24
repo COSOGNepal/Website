@@ -8,8 +8,8 @@ const Donate = () => {
     const [ShownComponent, setShownComponent] = useState({ shown: "esewa" });
     return (
         <>
-            <main className="px-4 md:px-section mt-section space-y-block">
-                <div className="my-block md:w-8/12 text-faded mx-[0] md:mx-auto space-y-small">
+            <main className="px-standard w-full md:max-w-[750px] md:mx-auto md:px-0 mt-section space-y-block">
+                <div className="my-block text-faded mx-[0]  space-y-small">
                     <h2 className="text-mid-title font-bold text-black-mid">Why Donate Us?</h2>
                     <p className="text-sub-para font-medium text-black-light">
                         We are a non profit organization that is working hard to promote
@@ -17,13 +17,13 @@ const Donate = () => {
                         very reason why we encourage you to donate us.
                     </p>
                 </div>
-                <div className="my-block md:w-8/12 text-faded mx-[0] md:mx-auto space-y-small">
+                <div className="my-block text-faded mx-[0] space-y-small">
                     <h2 className="text-mid-title font-bold text-black-mid">Donate us via</h2>
                     <div className="flex flex-wrap items-center gap-3 font-light">
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${ShownComponent.shown === "esewa"
-                                ? "bg-blue text-white font-normal"
-                                : "text-black-light bg-slate-200 font-normal"
+                                ? "bg-blue text-white font-normal text-sub-para"
+                                : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
                                 setShownComponent({ shown: "esewa" });
@@ -31,9 +31,22 @@ const Donate = () => {
                         >
                             E-Sewa
                         </button>
+
+                        <button
+                            className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${ShownComponent.shown === "coffee"
+                                ? "bg-blue text-white font-normal  text-sub-para"
+                                : "text-black-light bg-slate-200 font-normal"
+                                }  `}
+                            onClick={() => {
+                                setShownComponent({ shown: "coffee" });
+                            }}
+                        >
+                            Buy me a coffee
+                        </button>
+
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] overflow-hidden px-5 py-3 ${ShownComponent.shown === "fund"
-                                ? "bg-blue text-white font-normal"
+                                ? "bg-blue text-white font-normal  text-sub-para"
                                 : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
@@ -42,17 +55,6 @@ const Donate = () => {
                         >
 
                             Fund Raise
-                        </button>
-                        <button
-                            className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${ShownComponent.shown === "coffee"
-                                ? "bg-blue text-white font-normal"
-                                : "text-black-light bg-slate-200 font-normal"
-                                }  `}
-                            onClick={() => {
-                                setShownComponent({ shown: "coffee" });
-                            }}
-                        >
-                            Buy me a coffee
                         </button>
                     </div>
                     {ShownComponent.shown === "esewa" && <EsewaDonation />}
@@ -70,6 +72,7 @@ const Donate = () => {
 };
 
 export default Donate;
+
 const EsewaDonation = () => {
     const [DonationAmount, setDonationAmount] = useState({ shown: "Rs. 2,000" });
     const [PersonalInfo, setPersonalInfo] = useState({
@@ -118,8 +121,8 @@ const EsewaDonation = () => {
                     <div className="flex flex-wrap items-center gap-3 text-para font-light">
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${DonationAmount.shown === "Rs. 2,000"
-                                ? "bg-blue text-white font-normal"
-                                : "text-black-light bg-slate-200 font-normal"
+                                ? "bg-blue text-white font-normal text-sub-para"
+                                : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
                                 setDonationAmount({ shown: "Rs. 2,000" });
@@ -129,8 +132,8 @@ const EsewaDonation = () => {
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] overflow-hidden px-5 py-3 ${DonationAmount.shown === "Rs. 3,000"
-                                ? "bg-blue text-white font-normal"
-                                : "text-black-light bg-slate-200 font-normal"
+                                ? "bg-blue text-white font-normal text-sub-para"
+                                : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
                                 setDonationAmount({ shown: "Rs. 3,000" });
@@ -141,8 +144,8 @@ const EsewaDonation = () => {
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${DonationAmount.shown === "Rs. 4,000"
-                                ? "bg-blue text-white font-normal"
-                                : "text-black-light bg-slate-200 font-normal"
+                                ? "bg-blue text-white font-normal text-sub-para"
+                                : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
                                 setDonationAmount({ shown: "Rs. 4,000" });
@@ -152,8 +155,8 @@ const EsewaDonation = () => {
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${DonationAmount.shown === "Rs. 5,000"
-                                ? "bg-blue text-white font-normal"
-                                : "text-black-light bg-slate-200 font-normal"
+                                ? "bg-blue text-white font-normal text-sub-para"
+                                : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
                                 setDonationAmount({ shown: "Rs. 5,000" });
@@ -210,7 +213,7 @@ const EsewaDonation = () => {
                     />
                 </div>
             </div>
-            <div className="btn w-full flex justify-center text-para">
+            <div className="btn w-full flex text-para">
                 <button
                     className={` h-12 rounded-md w-full md:w-[40%] overflow-hidden px-5 py-3 bg-blue text-white hover:bg-primary transition `}
                     onClick={() => {
@@ -245,11 +248,12 @@ const FundDonation = () => {
         </section>
     );
 };
+
 const CoffeeDonation = () => {
     return (
         <section>
 
-            <div className="my-block text-title  text-faded mx-[0] md:mx-auto mb-block">
+            <div className="my-block text-title  text-faded mx-[0] md:mx-auto mb-block space-y-small">
                 <h2 className="text-mid-title font-bold text-black-mid">
                     How can you donate us?
                 </h2>
@@ -257,7 +261,7 @@ const CoffeeDonation = () => {
                     Visit our official
                     <a
                         href="https://www.buymeacoffee.com"
-                        className="underline text-blue"
+                        className=" text-blue mx-[5px]"
                         target="blank"
                     >
                         Buy me a Coffee
