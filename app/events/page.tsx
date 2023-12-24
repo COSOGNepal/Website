@@ -56,7 +56,7 @@ export default function EventsPage() {
     }, [dates])
 
     return (
-        <section className="mt-section px-block flex justify-between max-w-[1400px] w-[90%] m-auto">
+        <section className="mt-section px-standard flex justify-center max-w-[1400px] w-full m-auto space-x-standard">
             <div className="events space-y-block" ref={events_container}>
                 {
                     events.map((event, index) => {
@@ -69,11 +69,11 @@ export default function EventsPage() {
                     })
                 }
             </div>
-            <div className="slider_container max-w-[400px] h-[80vh] p-standard flex flex-col space-y-standard items-center text-sub-para font-normal text-black-mid sticky top-block ">
+            <div className="slider_container w-[200px] min-w-max h-[90vh] p-standard flex flex-col space-y-standard items-center text-sub-para font-normal text-black-mid sticky top-section">
                 <div className="start_time">
                     {dates[0]}
                 </div>
-                <div className="slider relative h-[90%]  top-0">
+                <div className="slider relative h-[90%]  top-0 w-full left-1/2">
                     <div className="line h-full w-[2px] bg-gray-dark"></div>
                     <div className="active_container h-max w-full">
                         <div className="line_active w-[10px] bg-primary absolute top-0 left-[-3px] rounded-[4px]"

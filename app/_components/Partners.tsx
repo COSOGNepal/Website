@@ -2,7 +2,7 @@
 import SectionTitle from "@/components/SectionTitle";
 import Image from "next/image";
 import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
+//import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const partenersData = [
@@ -13,17 +13,18 @@ const partenersData = [
     "Hackademedia",
     "Sagarmatha Hacktoberfest"
 ]
-const slidesPerView = Math.min(innerWidth - (partenersData.length * 20), 1400 - 20 * partenersData.length) / 192
+
+// const slidesPerView = Math.min(innerWidth - (partenersData.length * 20), 1400 - 20 * partenersData.length) / 192
 
 const Partners = () => {
     return (
         <main className="bg-gray-bg p-block space-y-block px-standard md:px-block brk-1400:px-0">
             <SectionTitle title="we've partnered with" />
             <section>
-                <Swiper spaceBetween={10} slidesPerView={slidesPerView} className="flex space-x-standard justify-center max-w-[1400px] mx-auto overflow-hidden">
+                <div className="flex space-x-standard justify-center max-w-[1400px] mx-auto overflow-hidden">
                     {
                         partenersData.map((partnerName, index) =>
-                            <SwiperSlide key={index}>
+                            <div key={index}>
                                 <div className={`w-48 h-48 aspect-square relative grid place-items-center bg-white rounded-md`}>
                                     <Image
                                         src={`/images/Partners/${partnerName
@@ -36,11 +37,10 @@ const Partners = () => {
                                         alt={partnerName}
                                     />
                                 </div>
-                            </SwiperSlide>
+                            </div>
                         )
-
                     }
-                </Swiper>
+                </div>
             </section>
         </main>
     );
