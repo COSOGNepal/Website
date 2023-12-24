@@ -1,5 +1,5 @@
 "use client";
-import RouteHeading from "@/components/RouteHeading";
+
 import React from "react";
 import { useState } from "react";
 import FileInput from "./_components/FileInput";
@@ -91,7 +91,7 @@ const EsewaDonation = () => {
                 <h2 className="text-mid-title font-bold text-black-mid">
                     How can you donate us?
                 </h2>
-                <p className="text-sub-para">
+                <p className="text-sub-para font-medium text-black-light">
                     You can donate us by sending your money to the below given qr code via
                     any e-banking service. And upload the below mentioned details.
                 </p>
@@ -100,7 +100,7 @@ const EsewaDonation = () => {
                 <h2 className="text-mid-title font-bold text-black-mid">
                     Thank you for donating to CoSoG Nepal.
                 </h2>
-                <p className="text-sub-para">
+                <p className="text-sub-para font-medium text-black-light">
                     Please fill this below form so, that we can track your donation and
                     thank you for your contribution.
                 </p>
@@ -113,7 +113,7 @@ const EsewaDonation = () => {
                 <div className="donationContents space-y-small">
                     <p className="text-sub-para">Amount</p>
                     <input
-                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-gray-dark focus:border-primary focus-visible:outline-none"
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-primary focus-visible:outline-none"
                         type="text"
                         placeholder="Ex: 2000"
                         value={DonationAmount.shown}
@@ -179,7 +179,7 @@ const EsewaDonation = () => {
                 <div>
                     <p className="text-sub-para">Name</p>
                     <input
-                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-gray-dark focus:border-primary focus-visible:outline-none"
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-primary focus-visible:outline-none"
                         type="text"
                         placeholder="Harry smith"
                         value={PersonalInfo.name}
@@ -191,7 +191,7 @@ const EsewaDonation = () => {
                 <div>
                     <p className="text-sub-para">Email</p>
                     <input
-                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-gray-dark focus:border-primary focus-visible:outline-none"
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-primary focus-visible:outline-none"
                         type="text"
                         placeholder="harry@smith.com"
                         value={PersonalInfo.email}
@@ -203,7 +203,7 @@ const EsewaDonation = () => {
                 <div>
                     <p className="text-sub-para">Name</p>
                     <input
-                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-gray-dark focus:border-primary focus-visible:outline-none"
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-primary focus-visible:outline-none"
                         type="text"
                         placeholder="985587*****"
                         value={PersonalInfo.phone}
@@ -233,7 +233,7 @@ const FundDonation = () => {
                 <h2 className="text-mid-title font-bold text-black-mid">
                     How can you donate us?
                 </h2>
-                <p className="text-sub-para">
+                <p className="text-sub-para font-medium text-black-light">
                     Visit our official
                     <a
                         href="https://www.fundraisepage.com"
@@ -257,7 +257,7 @@ const CoffeeDonation = () => {
                 <h2 className="text-mid-title font-bold text-black-mid">
                     How can you donate us?
                 </h2>
-                <p className="text-sub-para">
+                <p className="text-sub-para font-medium text-black-light">
                     Visit our official
                     <a
                         href="https://www.buymeacoffee.com"
