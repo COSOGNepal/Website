@@ -274,25 +274,21 @@ const CoffeeDonation = () => {
 };
 const InfoBannerLeftContent = () => {
     return (
-        <div>
-            <div className="pb-2">
-                <h2 className="text-sub-title font-semibold ">
+        <div className="flex flex-col space-y-small">
+            <div className="">
+                <h2 className="text-sub-title font-bold ">
                     Experiencing any problems while donating?
                 </h2>
             </div>
-            <div className="pb-4 flex flex-col gap-0 font-para">
-                <p className="text-sub-para p-0 m-0 ">Contact us using</p>
-                <p className="text-sub-para ">
-                    Phone <span className="font-semibold">+977 9867676676</span>
-                </p>
-                <p className="text-sub-para p-0 m-0 ">
-                    Email <span className="font-semibold">contact@cosognepal.org</span>
-                </p>
-            </div>
+            <div className="text-para font-medium">
+                Contact us using<br />
+                Phone <span className="font-bold">+977 9867676676</span> <br />
+                Email < span className="font-bold" > contact@cosognepal.org</span >
+            </div >
 
-            <p className="text-info text-white-light ">
+            <p className="text-para font-medium ">
                 We are available 24/7 every single day of the week.
             </p>
-        </div>
+        </div >
     );
 };
