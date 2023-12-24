@@ -106,14 +106,14 @@ const EsewaDonation = () => {
                 </p>
             </div>
             {/* actually , the element just below should be a form tag (as of semantics) */}
-            <div className="my-block text-title  text-faded mx-[0] md:mx-auto space-y-standard">
+            <div className="my-block text-title  text-faded mx-[0] md:mx-auto space-y-small">
                 <h2 className="text-mid-title font-bold text-black-mid">
                     Donation Information
                 </h2>
                 <div className="donationContents space-y-small">
                     <p className="text-sub-para">Amount</p>
                     <input
-                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-primary focus-visible:outline-none"
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-blue focus-visible:outline-none"
                         type="text"
                         placeholder="Ex: 2000"
                         value={DonationAmount.shown}
@@ -172,14 +172,14 @@ const EsewaDonation = () => {
                 </div>
             </div>
 
-            <div className="my-block text-title text-faded mx-[0] md:mx-auto space-y-standard">
+            <div className="my-block text-title text-faded mx-[0] md:mx-auto space-y-small">
                 <h2 className="text-mid-title font-bold text-black-mid">
                     Personal Information
                 </h2>
                 <div>
                     <p className="text-sub-para">Name</p>
                     <input
-                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-primary focus-visible:outline-none"
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-blue focus-visible:outline-none"
                         type="text"
                         placeholder="Harry smith"
                         value={PersonalInfo.name}
@@ -191,7 +191,7 @@ const EsewaDonation = () => {
                 <div>
                     <p className="text-sub-para">Email</p>
                     <input
-                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-primary focus-visible:outline-none"
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-blue focus-visible:outline-none"
                         type="text"
                         placeholder="harry@smith.com"
                         value={PersonalInfo.email}
@@ -203,7 +203,7 @@ const EsewaDonation = () => {
                 <div>
                     <p className="text-sub-para">Name</p>
                     <input
-                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-primary focus-visible:outline-none"
+                        className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-blue focus-visible:outline-none"
                         type="text"
                         placeholder="985587*****"
                         value={PersonalInfo.phone}
