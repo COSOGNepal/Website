@@ -72,7 +72,7 @@ export default function EventsPage() {
             </div>
             <div className={`slider_container min-w-max p-standard flex flex-col items-baseline text-sub-para font-normal
                              text-black-mid sticky rotate-90 h-[90vw] w-[20px] xl:space-y-standard xl:items-center 
-                             xl:rotate-0 xl:top-section xl:h-[90vh] xl:w-[200px] bg-red-300`}>
+                             xl:rotate-0 xl:top-section xl:h-[90vh] xl:w-[200px]`}>
                 <div className="start_time -rotate-90 xl:rotate-0">
                     {dates[0]}
                 </div>
