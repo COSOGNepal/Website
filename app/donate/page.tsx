@@ -117,6 +117,7 @@ const EsewaDonation = () => {
                         type="text"
                         placeholder="Ex: 2000"
                         value={DonationAmount.shown}
+
                     />
                     <div className="flex flex-wrap items-center gap-3 text-para font-light">
                         <button
