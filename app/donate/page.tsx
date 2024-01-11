@@ -117,7 +117,7 @@ const EsewaDonation = () => {
                         type="text"
                         placeholder="Ex: 2000"
                         value={DonationAmount.shown}
-
+                        onChange={(e) => { setDonationAmount({ shown: e.target.value }) }}
                     />
                     <div className="flex flex-wrap items-center gap-3 text-para font-light">
                         <button
@@ -183,10 +183,7 @@ const EsewaDonation = () => {
                         className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-blue focus-visible:outline-none"
                         type="text"
                         placeholder="Harry smith"
-                        value={PersonalInfo.name}
-                        onChange={(e) => {
-                            setPersonalInfo((prev) => ({ ...prev, name: e.target.value }));
-                        }}
+                        name="userName"
                     />
                 </div>
                 <div>
@@ -195,22 +192,16 @@ const EsewaDonation = () => {
                         className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-blue focus-visible:outline-none"
                         type="text"
                         placeholder="harry@smith.com"
-                        value={PersonalInfo.email}
-                        onChange={(e) => {
-                            setPersonalInfo((prev) => ({ ...prev, email: e.target.value }));
-                        }}
+                        name="userEmail"
                     />
                 </div>
                 <div>
-                    <p className="text-sub-para">Name</p>
+                    <p className="text-sub-para">Phone Number</p>
                     <input
                         className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-blue focus-visible:outline-none"
                         type="text"
                         placeholder="985587*****"
-                        value={PersonalInfo.phone}
-                        onChange={(e) => {
-                            setPersonalInfo((prev) => ({ ...prev, phone: e.target.value }));
-                        }}
+                        name="phoneNumber"
                     />
                 </div>
             </div>
@@ -220,6 +211,7 @@ const EsewaDonation = () => {
                     onClick={() => {
                         handleSubmit();
                     }}
+                    name="submitButton"
                 >
                     Submit
                 </button>
