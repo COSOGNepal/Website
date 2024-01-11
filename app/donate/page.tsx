@@ -75,18 +75,23 @@ export default Donate;
 
 const EsewaDonation = () => {
     const [DonationAmount, setDonationAmount] = useState({ shown: "Rs. 2,000" });
-    const [PersonalInfo, setPersonalInfo] = useState({
-        name: "",
-        email: "",
-        phone: "",
-    });
 
     //todo later for backend stuff
-    function handleSubmit() {
-        console.log("submitted");
+    function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.stopPropagation();
+        e.preventDefault();
+        const userName = e.currentTarget["userName"].value
+        const email = e.currentTarget["userEmail"].value
+        const phoneNumber = e.currentTarget["phoneNumber"].value
+
+        console.log({
+            userName,
+            email,
+            phoneNumber
+        })
     }
     return (
-        <section className="space-y-block">
+        <form className="space-y-block" method="post" onSubmit={handleSubmit}>
             <div className="my-block text-title  text-faded mx-[0] md:mx-auto space-y-small ">
                 <h2 className="text-mid-title font-bold text-black-mid">
                     How can you donate us?
@@ -105,7 +110,7 @@ const EsewaDonation = () => {
                     thank you for your contribution.
                 </p>
             </div>
-            {/* actually , the element just below should be a form tag (as of semantics) */}
+
             <div className="my-block text-title  text-faded mx-[0] md:mx-auto space-y-small">
                 <h2 className="text-mid-title font-bold text-black-mid">
                     Donation Information
@@ -184,15 +189,17 @@ const EsewaDonation = () => {
                         type="text"
                         placeholder="Harry smith"
                         name="userName"
+                        required
                     />
                 </div>
                 <div>
                     <p className="text-sub-para">Email</p>
                     <input
                         className="rounded-md w-full h-12 py-3 px-2 text-black-light text-sub-para border-2 border-[#D9D9D9] focus:border-blue focus-visible:outline-none"
-                        type="text"
+                        type="email"
                         placeholder="harry@smith.com"
                         name="userEmail"
+                        required
                     />
                 </div>
                 <div>
@@ -202,21 +209,20 @@ const EsewaDonation = () => {
                         type="text"
                         placeholder="985587*****"
                         name="phoneNumber"
+                        required
                     />
                 </div>
             </div>
             <div className="btn w-full flex text-para">
                 <button
                     className={` h-12 rounded-md w-full md:w-[40%] overflow-hidden px-5 py-3 bg-blue text-white hover:bg-primary transition `}
-                    onClick={() => {
-                        handleSubmit();
-                    }}
                     name="submitButton"
+                    type="submit"
                 >
                     Submit
                 </button>
             </div>
-        </section>
+        </form>
     );
 };
 const FundDonation = () => {

@@ -6,11 +6,6 @@ import React, { useEffect, useState } from "react";
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false);
 
-    useEffect(() => {
-
-
-        console.log("Hey there")
-    }, [window.location.href])
     return (
         <>
             <div className="fixed hamcontainer z-50 p-standard  bg-[rgba(255,255,255,0.8)] backdrop-blur-[20px] m-standard rounded-full md:hidden">
