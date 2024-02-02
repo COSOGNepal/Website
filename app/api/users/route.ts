@@ -1,6 +1,8 @@
 import { TgResponseUser } from "&/users";
 import { NextRequest, NextResponse } from "next/server"
 import { fetchUserGApi } from "./_utils";
+import mongoClient from "@/lib/db";
+import { insertDataToDb } from "../db-utils";
 
 export const POST = async (req: NextRequest) => {
     try {
@@ -10,12 +12,23 @@ export const POST = async (req: NextRequest) => {
         const accessToken: string = data.accessToken;
         const userData: TgResponseUser = await fetchUserGApi(accessToken);
 
-        // check if the user exists in the db
-        // if so then return user
-        // if not add it.
-        //
+        // generate jwt 
 
-        return NextResponse.json({ userData, jwt: "yet to implement" },
+        //db operations
+        const client = await mongoClient;
+        const db = client.db("db");
+        const usersCollection = db.collection("users")
+
+
+        const existingUser = await usersCollection.findOne({ email: userData.email });
+        if (existingUser)
+            return NextResponse.json({ userData: existingUser, jwt: "yet to implement" },
+                { status: 200 })
+
+        // adding a user 
+        const newUser = await insertDataToDb(usersCollection, [userData])
+
+        return NextResponse.json({ userData: newUser, jwt: "yet to implement" },
             { status: 200 })
     }
     catch (e) {
@@ -24,4 +37,3 @@ export const POST = async (req: NextRequest) => {
     }
 }
 
-// with jwt Signin SignUp TODO
