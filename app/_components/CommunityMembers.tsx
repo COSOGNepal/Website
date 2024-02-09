@@ -9,9 +9,8 @@ const CommunityMembers = async () => {
     let members: Tmember[];
     try {
         members = await getMembers();
-
         return (
-            <main className="px-block space-y-block max-w-[1400px] mx-auto">
+            <main className="px-standard brk-1400:px-0 space-y-block max-w-[1400px] brk-1400:mx-auto w-full">
                 <SectionTitle title="Our Team" viewall="/about/#team" />
                 {/* members list */}
                 <div className="members grid gap-small complex-grid-members-section">

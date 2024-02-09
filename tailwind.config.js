@@ -29,6 +29,7 @@ module.exports = {
                 gray: "#F2F2F2",
                 "gray-dark": "#A1A1A1",
                 "white-light": "#E9E9E9",
+                "border-gray": "#D9D9D9",
 
                 border: "hsl(var(--border))",
                 input: "hsl(var(--input))",
@@ -87,6 +88,7 @@ module.exports = {
                 heading: "52px",
                 title: "32px",
                 "sub-title": "24px",
+                "mid-title": "20px",
                 para: "18px",
                 "sub-para": "16px",
                 info: "12px",
@@ -102,7 +104,8 @@ module.exports = {
                 "2-400": "repeat(2, 400px)",
             },
             screens: {
-                "brk-1400": "1400px"
+                "brk-1400": "1400px",
+                "v-sm": "480px"
             }
         },
     },
