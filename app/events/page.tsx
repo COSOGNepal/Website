@@ -57,7 +57,7 @@ export default function EventsPage() {
 
     return (
         <section className={`mt-section px-standard flex max-w-[1400px] w-full m-auto space-x-standard 
-                             flex-col items-center justify-between relative xl:static xl:items-start xl:justify-center xl:flex-row`}>
+                            justify-center items-start`}>
             <div className="events space-y-block" ref={events_container}>
                 {
                     events.map((event, index) => {
@@ -70,10 +70,10 @@ export default function EventsPage() {
                     })
                 }
             </div>
-            <div className={`slider_container min-w-max p-standard flex  flex-col  items-baseline text-sub-para font-normal
-                             text-black-mid  sticky  h-[90vw] w-[20px] xl:space-y-standard xl:items-center 
-                             xl:rotate-0 xl:top-section xl:h-[90vh] xl:w-[200px]`}>
-                <div className="start_time -rotate-90 xl:rotate-0">
+            <div className={`slider_container p-standard flex-col items-baseline text-sub-para font-normal
+                             text-black-mid hidden sticky lg:flex space-y-standard 
+                             top-section h-[90vh] w-[200px]`}>
+                <div className="start_time ">
                     {dates[0]}
                 </div>
                 <div className="slider relative h-[90%] top-0 w-full left-1/2">
@@ -89,7 +89,7 @@ export default function EventsPage() {
                         </div>
                     </div>
                 </div>
-                <div className="end_time -rotate-90 xl:rotate-0">
+                <div className="end_time">
                     {dates[dates.length - 1]}
                 </div>
             </div>
