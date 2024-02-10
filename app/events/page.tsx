@@ -70,8 +70,8 @@ export default function EventsPage() {
                     })
                 }
             </div>
-            <div className={`slider_container min-w-max p-standard flex flex-col items-baseline text-sub-para font-normal
-                             text-black-mid sticky rotate-90 h-[90vw] w-[20px] xl:space-y-standard xl:items-center 
+            <div className={`slider_container min-w-max p-standard flex  flex-col  items-baseline text-sub-para font-normal
+                             text-black-mid  sticky  h-[90vw] w-[20px] xl:space-y-standard xl:items-center 
                              xl:rotate-0 xl:top-section xl:h-[90vh] xl:w-[200px]`}>
                 <div className="start_time -rotate-90 xl:rotate-0">
                     {dates[0]}
@@ -83,7 +83,7 @@ export default function EventsPage() {
                             style={{ height: `${activeBarHeight}%` }}></div>
                         <div className="flex w-max space-x-small absolute left-[-7.95px]" style={{ top: `${activeBarHeight - 0.5}%` }}>
                             <div className="ball w-[20px] h-[20px] rounded-[10px] bg-primary"></div>
-                            <div className="current_date font-bold -rotate-90 xl:rotate-0 -mt-section">
+                            <div className="current_date font-bold h-min">
                                 {currentDate}
                             </div>
                         </div>
