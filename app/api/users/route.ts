@@ -19,14 +19,13 @@ export const POST = async (req: NextRequest) => {
         const db = client.db("db");
         const usersCollection = db.collection("users")
 
-
         const existingUser = await usersCollection.findOne({ email: userData.email });
         if (existingUser)
             return NextResponse.json({ userData: existingUser, jwt: "yet to implement" },
                 { status: 200 })
 
         // adding a user 
-        const newUser = await insertDataToDb(usersCollection, [userData])
+        const newUser = (await insertDataToDb(usersCollection, [userData]))[0]
 
         return NextResponse.json({ userData: newUser, jwt: "yet to implement" },
             { status: 200 })
