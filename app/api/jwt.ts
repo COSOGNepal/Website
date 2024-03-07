@@ -21,6 +21,7 @@ const toBase64 = (obj): string => {
 // + for -
 // and / for _
 // since they have different meaning in a url 
+//
 const replaceSpecialchars = (base64Str: string): string => {
     return base64Str.replace(/[=+/]/g, charToBeReplaced => {
         switch (charToBeReplaced) {
