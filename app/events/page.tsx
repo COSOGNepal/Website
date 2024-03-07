@@ -3,7 +3,7 @@
 import Event from "./_components/Event"
 import getEvents from "./getEvents"
 import { Tevent } from "./type";
-import { useEffect, useRef, useState } from "react"
+import { DragEvent, useEffect, useRef, useState } from "react"
 
 export default function EventsPage() {
     const [events, setEvents] = useState<Tevent[]>([]);
@@ -25,6 +25,12 @@ export default function EventsPage() {
             }
         })()
     }, [])
+
+    // handle the dragging of the slider ball
+    const handleDrag = (e: DragEvent<HTMLDivElement>) => {
+
+    }
+
 
     useEffect(() => {
         const scrollAction = () => {
@@ -82,7 +88,7 @@ export default function EventsPage() {
                         <div className="line_active w-[10px] bg-primary absolute top-0 left-[-3px] rounded-[4px]"
                             style={{ height: `${activeBarHeight}%` }}></div>
                         <div className="flex w-max space-x-small absolute left-[-7.95px]" style={{ top: `${activeBarHeight - 0.5}%` }}>
-                            <div className="ball w-[20px] h-[20px] rounded-[10px] bg-primary"></div>
+                            <div className="ball w-[20px] h-[20px] rounded-[10px] bg-primary" onDrag={handleDrag}></div>
                             <div className="current_date font-bold h-min">
                                 {currentDate}
                             </div>
