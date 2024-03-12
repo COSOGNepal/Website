@@ -1,7 +1,7 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
-  "private": true,
+  "name": "Cosog Nepal",
+  "description": "Coding for social good Nepal; Let the code you write change the things you want.",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,14 +10,12 @@
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
-    "@radix-ui/react-tabs": "^1.0.4",
     "@react-oauth/google": "^0.12.1",
     "@types/node": "20.5.6",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
     "awesome-image-viewer": "^1.0.60",
-    "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
@@ -25,17 +23,13 @@
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.292.0",
     "mongodb": "^6.3.0",
-    "next": "^13.4.19",
+    "next": "^14.1.0",
     "postcss": "8.4.28",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swiper": "^11.0.5",
     "tailwind-merge": "^2.0.0",
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "5.2.2"
-  },
-  "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.7.2"
   }
 }

@@ -2,8 +2,6 @@
 import SectionTitle from "@/components/SectionTitle";
 import Image from "next/image";
 import React from "react";
-//import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 
 const partenersData = [
     "AWS Cloud Club",

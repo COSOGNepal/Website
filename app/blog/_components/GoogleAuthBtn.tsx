@@ -6,12 +6,12 @@ const GoogleAuthBtn = () => {
         useGoogleLogin({
             onSuccess: async (response) => {
                 const accessToken = response.access_token;
-                const userData = await fetch("/api/users", {
+                const user = await fetch("/api/users", {
                     method: "POST",
                     body: JSON.stringify({ accessToken: accessToken })
                 }).then(res => res.json())
 
-                console.log(userData)
+                console.log(user)
 
                 // TODO:
                 // generating a jwt token and sending it here

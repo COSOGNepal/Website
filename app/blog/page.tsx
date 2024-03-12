@@ -8,9 +8,9 @@ const BlogPage = async () => {
     ).then(res => res.json())
 
     return (
-        <div className="mt-section">
+        <div className="mt-section min-h-screen">
             {
-                // <GoogleAuthProvider /> 
+                // TODO: Make the form responsive
             }
             <div className="HeroSection min-h-max flex justify-center items-center flex-col mt-section">
                 <h1 className="mainTitle text-title font-extrabold text-center ">
@@ -21,6 +21,8 @@ const BlogPage = async () => {
                 </h2>
                 <SubscribeForm />
             </div>
+
+            <GoogleAuthProvider />
         </div>
     )
 }
