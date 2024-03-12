@@ -8,12 +8,9 @@ const BlogPage = async () => {
     ).then(res => res.json())
 
     return (
-        <div className="mt-section min-h-screen">
-            {
-                // TODO: Make the form responsive
-            }
-            <div className="HeroSection min-h-max flex justify-center items-center flex-col mt-section">
-                <h1 className="mainTitle text-title font-extrabold text-center ">
+        <div className="mt-section min-h-screen max-w-[1400px] brk-1400:mx-auto">
+            <div className="HeroSection min-h-max flex justify-center items-center flex-col mt-section brk-1400:px-0 px-standard">
+                <h1 className="mainTitle text-title font-extrabold  leading-9">
                     Let your code be the change you want to see in the world.
                 </h1>
                 <h2 className="subtitle font-normal text-black-mid mt-small">
@@ -22,7 +19,6 @@ const BlogPage = async () => {
                 <SubscribeForm />
             </div>
 
-            <GoogleAuthProvider />
         </div>
     )
 }

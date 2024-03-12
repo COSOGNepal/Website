@@ -7,7 +7,8 @@ import Numbers from "./_components/Numbers";
 import CommunityMembers from "./_components/CommunityMembers";
 import Goals from "./_components/Goals";
 import CTABanner from "./_components/CTABanner";
-import FAQ from "./_components/FAQ";
+
+// import FAQ from "./_components/FAQ";
 
 export default function Home() {
     return (

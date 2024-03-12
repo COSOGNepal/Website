@@ -9,7 +9,6 @@ const GoogleAuthProvider = () => {
     if (!CLIENT_ID)
         return <h1>No client id found</h1>
 
-
     return (
         <GoogleOAuthProvider clientId={CLIENT_ID} >
             <GoogleAuthBtn />
