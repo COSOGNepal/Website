@@ -98,11 +98,12 @@ module.exports = {
                 "auto-fit-320": "repeat(auto-fit, 320px)",
                 "3-320": "repeat(3, 320px)",
                 "2-320": "repeat(2, 320px)",
-                "auto-fit-600": "repeat(auto-fit, minmax(400px,600px))"
+                "auto-fit-600": "repeat(auto-fit, minmax(400px,600px))",
             },
             gridTemplateRows: {
                 "2-250": "repeat(2, 250px)",
                 "2-400": "repeat(2, 400px)",
+                "af-blog-rows": "repeat(auto-fit, 200px)"
             },
             screens: {
                 "brk-1400": "1400px",

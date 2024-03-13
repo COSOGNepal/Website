@@ -1,4 +1,5 @@
 import { GoogleAuthProvider, SubscribeForm } from "./_components"
+import BlogCard from "./_components/BlogCard"
 
 const BlogPage = async () => {
     const data = await fetch(process.env.NEXT_PUBLIC_API_BASE + "/api/blog/",
@@ -17,6 +18,19 @@ const BlogPage = async () => {
                     Subscribe to our newsletter and get the latest updates on our work and the latest technologies.
                 </h2>
                 <SubscribeForm />
+            </div>
+            <div className="blogsContainer mt-[150px]">
+                <h1 className="title font-medium text-para text-black-dark ">
+                    Recent Blogs
+                </h1>
+                <div className="blogs grid grid-rows-af-blog-rows grid-cols-2 w-full mt-standard gap-standard">
+                    <BlogCard mostRecent={true} />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                </div>
+
+
             </div>
 
         </div>
