@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { GoogleAuthProvider, SubscribeForm } from "./_components"
 import BlogCard from "./_components/BlogCard"
 
@@ -9,7 +10,9 @@ const BlogPage = async () => {
     ).then(res => res.json())
 
     return (
-        <div className="mt-section min-h-screen max-w-[1400px] brk-1400:mx-auto">
+        <Link
+            href="/blog"
+            className="mt-section min-h-screen max-w-[1400px] brk-1400:mx-auto">
             <div className="HeroSection min-h-max flex justify-center items-center flex-col mt-section brk-1400:px-0 px-standard">
                 <h1 className="mainTitle text-title font-extrabold  leading-9">
                     Let your code be the change you want to see in the world.
@@ -23,17 +26,20 @@ const BlogPage = async () => {
                 <h1 className="title font-medium text-para text-black-dark ">
                     Recent Blogs
                 </h1>
-                <div className="blogs grid grid-rows-af-blog-rows grid-cols-2 w-full mt-standard gap-standard">
-                    <BlogCard mostRecent={true} />
-                    <BlogCard />
-                    <BlogCard />
-                    <BlogCard />
+                <div className="blogs grid grid-rows-af-blog-rows grid-cols-2 w-full mt-standard gap-small">
+                    {
+                        Array(10).fill(0).map((_, index) => {
+                            return (
+                                <BlogCard mostRecent={index === 0} index={index} />
+                            )
+                        })
+                    }
                 </div>
 
 
             </div>
 
-        </div>
+        </Link>
     )
 }
 

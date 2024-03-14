@@ -103,7 +103,7 @@ module.exports = {
             gridTemplateRows: {
                 "2-250": "repeat(2, 250px)",
                 "2-400": "repeat(2, 400px)",
-                "af-blog-rows": "repeat(auto-fit, 200px)"
+                "af-blog-rows": "repeat(auto-fit, 250px)"
             },
             screens: {
                 "brk-1400": "1400px",
