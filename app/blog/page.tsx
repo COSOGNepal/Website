@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { GoogleAuthProvider, SubscribeForm } from "./_components"
 import BlogCard from "./_components/BlogCard"
 
@@ -10,9 +9,7 @@ const BlogPage = async () => {
     ).then(res => res.json())
 
     return (
-        <Link
-            href="/blog"
-            className="mt-section min-h-screen max-w-[1400px] brk-1400:mx-auto">
+        <div className="mt-section min-h-screen max-w-[1400px] brk-1400:mx-auto">
             <div className="HeroSection min-h-max flex justify-center items-center flex-col mt-section brk-1400:px-0 px-standard">
                 <h1 className="mainTitle text-title font-extrabold  leading-9">
                     Let your code be the change you want to see in the world.
@@ -22,7 +19,7 @@ const BlogPage = async () => {
                 </h2>
                 <SubscribeForm />
             </div>
-            <div className="blogsContainer mt-[150px]">
+            <div className="blogsContainer mt-[150px] px-standard brk-1400:px-0">
                 <h1 className="title font-medium text-para text-black-dark ">
                     Recent Blogs
                 </h1>
@@ -30,17 +27,25 @@ const BlogPage = async () => {
                     {
                         Array(10).fill(0).map((_, index) => {
                             return (
-                                <BlogCard mostRecent={index === 0} index={index} />
+                                <BlogCard
+                                    id={"id-" + index}
+                                    mostRecent={index === 0}
+                                    key={index}
+                                    index={index}
+                                    coverImage={"/images/assets/about_banner.png"}
+                                    title={"Our first and biggest Event "}
+                                    description={` Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis. `}
+                                    author={"Saroj Regmi"}
+                                    published_date={"2079-8-10"}
+                                    link="somerandomlin"
+                                />
                             )
                         })
                     }
                 </div>
-
-
             </div>
-
-        </Link>
+        </div>
     )
 }
 
-export default BlogPage
+export default BlogPage;
