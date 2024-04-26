@@ -22,7 +22,7 @@ const Donate = () => {
                     <div className="flex flex-wrap items-center gap-3 font-light">
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${ShownComponent.shown === "esewa"
-                                ? "bg-blue text-white font-normal text-sub-para"
+                                ? "bg-blue-blue text-white font-normal text-sub-para"
                                 : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
@@ -34,7 +34,7 @@ const Donate = () => {
 
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${ShownComponent.shown === "coffee"
-                                ? "bg-blue text-white font-normal  text-sub-para"
+                                ? "bg-blue-blue text-white font-normal  text-sub-para"
                                 : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
@@ -46,7 +46,7 @@ const Donate = () => {
 
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] overflow-hidden px-5 py-3 ${ShownComponent.shown === "fund"
-                                ? "bg-blue text-white font-normal  text-sub-para"
+                                ? "bg-blue-blue text-white font-normal  text-sub-para"
                                 : "text-black-light bg-slate-200 font-normal"
                                 }  `}
                             onClick={() => {
@@ -127,7 +127,7 @@ const EsewaDonation = () => {
                     <div className="flex flex-wrap items-center gap-3 text-para font-light">
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${DonationAmount.shown === "Rs. 2,000"
-                                ? "bg-blue text-white font-normal text-sub-para"
+                                ? "bg-blue-blue text-white font-normal text-sub-para"
                                 : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
@@ -138,7 +138,7 @@ const EsewaDonation = () => {
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] overflow-hidden px-5 py-3 ${DonationAmount.shown === "Rs. 3,000"
-                                ? "bg-blue text-white font-normal text-sub-para"
+                                ? "bg-blue-blue text-white font-normal text-sub-para"
                                 : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
@@ -150,7 +150,7 @@ const EsewaDonation = () => {
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${DonationAmount.shown === "Rs. 4,000"
-                                ? "bg-blue text-white font-normal text-sub-para"
+                                ? "bg-blue-blue text-white font-normal text-sub-para"
                                 : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
@@ -161,7 +161,7 @@ const EsewaDonation = () => {
                         </button>
                         <button
                             className={`w-fit h-12 rounded-md min-w-[145px] px-5 py-3 ${DonationAmount.shown === "Rs. 5,000"
-                                ? "bg-blue text-white font-normal text-sub-para"
+                                ? "bg-blue-blue text-white font-normal text-sub-para"
                                 : "text-black-light bg-slate-200 font-normal text-sub-para"
                                 }  `}
                             onClick={() => {
@@ -215,7 +215,7 @@ const EsewaDonation = () => {
             </div>
             <div className="btn w-full flex text-para">
                 <button
-                    className={` h-12 rounded-md w-full md:w-[40%] overflow-hidden px-5 py-3 bg-blue text-white hover:bg-primary transition `}
+                    className={` h-12 rounded-md w-full md:w-[40%] overflow-hidden px-5 py-3 bg-blue-blue text-white hover:bg-primary transition `}
                     name="submitButton"
                     type="submit"
                 >
@@ -236,7 +236,7 @@ const FundDonation = () => {
                     Visit our official
                     <a
                         href="https://www.fundraisepage.com"
-                        className="text-blue mx-[5px]"
+                        className="text-blue-blue mx-[5px]"
                         target="blank"
                     >
                         fund raise
@@ -260,7 +260,7 @@ const CoffeeDonation = () => {
                     Visit our official
                     <a
                         href="https://www.buymeacoffee.com"
-                        className=" text-blue mx-[5px]"
+                        className=" text-blue-blue mx-[5px]"
                         target="blank"
                     >
                         Buy me a Coffee

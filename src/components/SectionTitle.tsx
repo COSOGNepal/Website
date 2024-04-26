@@ -11,7 +11,7 @@ export default function SectionTitle({ title, viewall }: TSectionTitleProps) {
             <h1 className="font-bold sm:text-sub-title text-para text-black-mid uppercase">
                 {title}
             </h1>
-            {viewall && <Link href={viewall} className="text-blue text-sub-para font-medium sm:text-para uppercase"> View all</Link> || ""}
+            {viewall && <Link href={viewall} className="text-blue-blue text-sub-para font-medium sm:text-para uppercase"> View all</Link> || ""}
         </div >
     )
 }

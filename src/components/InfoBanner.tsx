@@ -18,7 +18,7 @@ const InfoBanner = ({
                 </div>
                 <div className="">
                     <Link href={CTALink} className="w-full md:w-auto min-w-max max-w-[480px]">
-                        <button className="bg-gray-bg w-full px-12 rounded-sm text-faded text-para font-medium uppercase py-3 hover:bg-blue hover:text-white transition">
+                        <button className="bg-gray-bg w-full px-12 rounded-sm text-faded text-para font-medium uppercase py-3 hover:bg-blue-blue hover:text-white transition">
                             {rightContent}
                         </button>
                     </Link>

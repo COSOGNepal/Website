@@ -38,7 +38,7 @@ const ContactPage = () => {
 
                 <div className="btn w-full flex text-para">
                     <button
-                        className={` h-12 rounded-md w-full md:w-[40%] overflow-hidden px-5 py-3 bg-blue text-white hover:bg-primary transition `}
+                        className={` h-12 rounded-md w-full md:w-[40%] overflow-hidden px-5 py-3 bg-blue-blue text-white hover:bg-primary transition `}
                     >
                         Submit
                     </button>
@@ -52,21 +52,21 @@ const ContactPage = () => {
                     You can connect with us via our&nbsp;
                     <a
                         href="https://www.facebook.com/cosognepal"
-                        className="text-blue"
+                        className="text-blue-blue"
                         target="blank"
                     >
                         Facebook
                     </a>
                     <a
                         href="https://www.instagram.com/cosognepal"
-                        className=" text-blue"
+                        className=" text-blue-blue"
                         target="blank"
                     >
                         Instagram
                     </a>
                     <a
                         href="https://www.linkedin.com/company/cosognepal/"
-                        className=" text-blue"
+                        className=" text-blue-blue"
                         target="blank"
                     >
                         Linkedin
@@ -74,7 +74,7 @@ const ContactPage = () => {
                     &nbsp;and
                     <a
                         href="https://mail.google.com/mail/?view=cm&fs=1&to=cosognepal@gmail.com"
-                        className="text-blue"
+                        className="text-blue-blue"
                         target="_blank"
                     >
                         Gmail
@@ -90,7 +90,7 @@ const ContactPage = () => {
                     You can connect with us via our&nbsp;
                     <a
                         href="tel:+9779863196247"
-                        className="text-blue"
+                        className="text-blue-blue"
                         target="blank"
                     >
                         +977 9863196247
@@ -108,7 +108,7 @@ const ContactPage = () => {
                     You can get in touch by mailing us at:
                     <a
                         href="mailto:contact@cosognepal.org"
-                        className="text-blue"
+                        className="text-blue-blue"
                         target="blank"
                     >
                         &nbsp;contact@cosognepal.org
