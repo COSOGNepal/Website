@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./_components/Footer";
+import { EventNavTopBar } from "@/components/NavTopBar";
 
 export const metadata: Metadata = {
     title: "Coding for Social Good (CoSoG) Nepal",
@@ -21,6 +22,15 @@ export default function RootLayout({
             <meta property="og:image:width" content="386" />
             <meta property="og:image:height" content="386" />
             <body className="flex flex-col justify-between  overflow-x-hidden">
+                { // <EventNavTopBar
+                    //     title="Cosog Nepal Presents tech after 10."
+                    //     description="Where students after the see will meet the profesnals to learn more about the real advantages of choosing tech as their main carrier"
+                    //     eventData="2024-05-04 11:59pm"
+                    //     countDown={true}
+                    //     EventLink="/events/techaftersee"
+                    //     CTA={{ label: "Go to Event", status: true }}
+                    // />
+                }
                 <Navbar />
                 {children}
                 <Footer />
