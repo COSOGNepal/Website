@@ -1,5 +1,6 @@
 import FAQ from "../../_components/FAQ";
 import { Speaker } from "./_components/Speaker";
+import TimeLine from "./_components/TimeLine";
 
 const Page = () => {
     return (
@@ -45,6 +46,7 @@ const Page = () => {
                 <h1 className="title text-2xl font-semibold">
                     Speakers
                 </h1>
+
                 <div className="speakersContainer grid  gap-small py-standard place-items-center [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
                     <Speaker
                         name="Saroj Regmi"
@@ -65,6 +67,37 @@ const Page = () => {
                         image="/images/Members/Saroj_Regmi.jpg"
                     />
                 </div>
+            </section>
+
+            <section className="timeline">
+                <TimeLine datas={
+                    [
+                        {
+                            description: "Event starting and event details discussion",
+                            icon: "starting", title: "Intro to the event"
+                        },
+                        {
+                            description: "Cs stream in mgmnt and science  ko description",
+                            icon: "stream", title: "Stream Description"
+                        },
+                        {
+                            description: "Speaker 1 time",
+                            icon: "speaker", title: "Speaker 1"
+                        },
+                        {
+                            description: "Speaker 2 time",
+                            icon: "speaker", title: "Speaker 2"
+                        },
+                        {
+                            description: "Speaker 3 time",
+                            icon: "speaker", title: "Speaker 3"
+                        },
+                        {
+                            description: "Summary of the event and resource distrubution",
+                            icon: "summary", title: "Summary"
+                        },
+                    ]
+                } />
             </section>
 
             <section className="faq">
