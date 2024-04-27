@@ -1,6 +1,6 @@
 import FAQ from "../../_components/FAQ";
-import { Speaker } from "./_components/Speaker";
 import TimeLine from "./_components/TimeLine";
+import { SpeakersSection } from "./_components/Speaker";
 
 const Page = () => {
     return (
@@ -42,32 +42,48 @@ const Page = () => {
 
             </section>
 
-            <section className="speakers_section">
-                <h1 className="title text-2xl font-semibold">
-                    Speakers
-                </h1>
-
-                <div className="speakersContainer grid  gap-small py-standard place-items-center [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
-                    <Speaker
-                        name="Saroj Regmi"
-                        designation="Software Engineer"
-                        tagline="A single line of code can always decide my future!"
-                        image="/images/Members/Saroj_Regmi.jpg"
-                    />
-                    <Speaker
-                        name="Saroj Regmi"
-                        designation="Software Engineer"
-                        tagline="A single line of code can always decide my future!"
-                        image="/images/Members/Saroj_Regmi.jpg"
-                    />
-                    <Speaker
-                        name="Saroj Regmi"
-                        designation="Software Engineer"
-                        tagline="A single line of code can always decide my future!"
-                        image="/images/Members/Saroj_Regmi.jpg"
-                    />
-                </div>
-            </section>
+            <SpeakersSection data={[
+                {
+                    id: "1",
+                    name: "Saroj Regmi",
+                    designation: "Software Developer",
+                    image: "/images/Members/Saroj_Regmi.jpg",
+                    socials: [
+                        {
+                            name: "Facebook",
+                            icon: "facebook",
+                            link: "https://www.facebook.com/sarojregmi"
+                        },
+                        {
+                            name: "Linkedin",
+                            icon: "linkedin",
+                            link: "https://www.linkedin.com/in/sarojregmi"
+                        },
+                        {
+                            name: "Twitter",
+                            icon: "twitter",
+                            link: "https://www.twitter.com/sarojregmi"
+                        },
+                    ],
+                    short_intro: [
+                        "Saroj Regmi is a seasoned software developer with over 10 years of experience in the industry.",
+                        "He specializes in web development, mobile app development, and cloud computing.",
+                        "Saroj is passionate about open-source technologies and enjoys contributing to various projects in his free time.",
+                    ],
+                },
+                {
+                    id: "2",
+                    name: "Aashish Panthi",
+                    designation: "Cybersecurity Analyst",
+                    image: "/images/Members/Aashish_Panthi.jpeg"
+                },
+                {
+                    id: "3",
+                    name: "Sushil Bhattarai",
+                    designation: "Telecommunications Engineer",
+                    image: "/images/Members/Sushil_Bhattarai.png"
+                },
+            ]} />
 
             <section className="timeline">
                 <TimeLine datas={
@@ -141,3 +157,5 @@ const Page = () => {
 }
 
 export default Page;
+
+
