@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Close from "@assets/gmail_logo.svg";
 
 type TSpeakerParams = {
     id: string,
@@ -40,7 +41,7 @@ const SpeakerModal = (data: TSpeakerModalParam) => {
                 className="close cursor-pointer"
                 onClick={data.closeModal}
             >
-                close
+                <Close />
             </div>
             <div className="speakerDetails flex justify-between flex-wrap-reverse gap-small mt-5">
                 <div className="textdetails flex-1 space-y-small min-w-96">

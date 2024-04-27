@@ -9,6 +9,11 @@ const nextConfig = {
 
       fs: false, // the solution
     };
+    // adding rules for svgs using the svgr
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
 
     return config;
   },
