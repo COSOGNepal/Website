@@ -27,9 +27,15 @@ export default function FAQ(
                 className="mt-standard text-faded px-small"
             >
                 {data.map((faq) => (
-                    <AccordionItem value={faq.value} key={faq.value}
-                        className="border-b-[#e8e8e8] border-b-2 hover:bg-gray-bg">
-                        <AccordionTrigger className="">{faq.question}</AccordionTrigger>
+                    <AccordionItem
+                        value={faq.value}
+                        key={faq.value}
+                        className="border-b-[#e8e8e8] border-b-2 hover:bg-gray-bg px-small">
+                        <AccordionTrigger className="no-underline hover:no-underline text-left space-x-2">
+                            <span>
+                                {faq.question}
+                            </span>
+                        </AccordionTrigger>
                         <AccordionContent>{faq.answer}</AccordionContent>
                     </AccordionItem>
                 ))}
