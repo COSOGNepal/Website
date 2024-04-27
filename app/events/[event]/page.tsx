@@ -90,27 +90,33 @@ const Page = () => {
                     [
                         {
                             description: "Event starting and event details discussion",
-                            icon: "starting", title: "Intro to the event"
+                            icon: "star",
+                            title: "Intro to the event"
                         },
                         {
                             description: "Cs stream in mgmnt and science  ko description",
-                            icon: "stream", title: "Stream Description"
+                            icon: "description",
+                            title: "Stream Description"
                         },
                         {
                             description: "Speaker 1 time",
-                            icon: "speaker", title: "Speaker 1"
+                            icon: "speaker",
+                            title: "Speaker 1"
                         },
                         {
                             description: "Speaker 2 time",
-                            icon: "speaker", title: "Speaker 2"
+                            icon: "speaker",
+                            title: "Speaker 2"
                         },
                         {
                             description: "Speaker 3 time",
-                            icon: "speaker", title: "Speaker 3"
+                            icon: "speaker",
+                            title: "Speaker 3"
                         },
                         {
                             description: "Summary of the event and resource distrubution",
-                            icon: "summary", title: "Summary"
+                            icon: "report",
+                            title: "Summary"
                         },
                     ]
                 } />

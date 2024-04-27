@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import Close from "@assets/gmail_logo.svg";
+import Icons from "@assets/index";
+import { Icon } from "@/components/Icon";
 
 type TSpeakerParams = {
     id: string,
@@ -10,7 +11,7 @@ type TSpeakerParams = {
     short_intro?: string[], // each string is a paragraph
     socials?: {
         name: string,
-        icon: string,
+        icon: keyof typeof Icons,
         link: string,
     }[],
     tagline?: string
@@ -41,7 +42,7 @@ const SpeakerModal = (data: TSpeakerModalParam) => {
                 className="close cursor-pointer"
                 onClick={data.closeModal}
             >
-                <Close />
+                <Icon iconName="close" className="h-5 w-5 text-black-dark" />
             </div>
             <div className="speakerDetails flex justify-between flex-wrap-reverse gap-small mt-5">
                 <div className="textdetails flex-1 space-y-small min-w-96">
@@ -62,10 +63,10 @@ const SpeakerModal = (data: TSpeakerModalParam) => {
                 <div className="imageSocials">
                     <div className="socials">
                         <img src={data.image} alt={data.name} className="image max-w-52 aspect-square object-cover rounded-md" />
-                        <div className="links flex gap-2 flex-wrap mt-2">
+                        <div className="links flex gap-3 flex-wrap mt-3 items-center justify-center">
                             {data.socials?.map((social, index) => (
                                 <a key={index} href={social.link} >
-                                    <img src={social.icon} alt={social.name} />
+                                    <Icon iconName={social.icon} className="text-gray-dark w-8 h-8 hover:text-primary" />
                                 </a>
                             ))}
                         </div>

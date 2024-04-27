@@ -1,9 +1,11 @@
-import React from "react"
+import React from "react";
+import Icons from "@assets/index";
+import { Icon } from "@/components/Icon";
 
 type TtimeLineProp = {
     title: string,
     description: string,
-    icon: string
+    icon: keyof typeof Icons
 }[]
 
 const TimeLine = ({ datas }: { datas: TtimeLineProp }) => {
@@ -24,7 +26,7 @@ const TimeLine = ({ datas }: { datas: TtimeLineProp }) => {
                                     className={`grid gap-standard items-start relative md:[grid-template-columns:1fr_40px_1fr] [grid-template-columns:40px_1fr]  `}
                                 >
                                     <div className={`icon h-10 aspect-square rounded-full bg-primary flex justify-center items-center text-white border-white border-2 md:[grid-column:2/3]`}>
-                                        {index}
+                                        <Icon iconName={icon} />
                                     </div>
                                     <div className={`details
                             ${index % 2 === 0
