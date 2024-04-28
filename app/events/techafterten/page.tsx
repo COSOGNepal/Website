@@ -19,16 +19,24 @@ const Page = () => {
                     </div>
                 </div>
                 <div className="actionsContainer flex flex-wrap *:w-full *:sm:w-max *:sm:px-5 *:rounded-md *:p-[10px] gap-3 text-center">
-                    <div className="action1 bg-primary text-white">
+                    <a
+                        href="https://forms.gle/QkaAimGAq48kg8Ri7"
+                        className="action1 bg-primary text-white"
+                        target="_blank"
+                    >
                         Count Me In
-                    </div>
-                    <div className="action2 bg-gray-bg text-gray-dark ">
+                    </a>
+                    <a
+                        className="action2 bg-gray-bg text-gray-dark "
+                        href="#learnMore"
+                        id="learnMore"
+                    >
                         Learn More
-                    </div>
+                    </a>
                 </div>
             </section>
 
-            <section className="about  space-y-5  snap-end bg-gray-bg py-block">
+            <section className="about  space-y-5  snap-end bg-gray-bg py-block" >
                 <h1 className="heading text-2xl font-semibold">
                     About the Event
                 </h1>
