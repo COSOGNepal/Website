@@ -9,7 +9,7 @@ export default async function AboutPage() {
     return (
         <div className="main_container h-max flex flex-col space-y-section w-full px-standard sm:px-block mt-section max-w-[1400px] m-auto">
             <div className="aboutSection w-full">
-                <Image src="/images/assets/about_banner.png" width={1400} height={550} alt="banner_about_section"
+                <Image src="/assets/images/assets/about_banner.png" width={1400} height={550} alt="banner_about_section"
                     className="banner max-h-[550px] h-auto object-cover m-auto" />
                 <div className="description flex flex-col space-y-standard mt-block sm:space-y-block">
                     <Descriptor title="Who we are?"

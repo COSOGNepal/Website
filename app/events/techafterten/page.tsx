@@ -47,7 +47,7 @@ const Page = () => {
                     id: "1",
                     name: "Saroj Regmi",
                     designation: "Software Developer",
-                    image: "/images/Members/Saroj_Regmi.jpg",
+                    image: "/assets/images/Members/Saroj_Regmi.jpg",
                     socials: [
                         {
                             name: "Facebook",
@@ -75,13 +75,13 @@ const Page = () => {
                     id: "2",
                     name: "Aashish Panthi",
                     designation: "Cybersecurity Analyst",
-                    image: "/images/Members/Aashish_Panthi.jpeg"
+                    image: "/assets/images/Members/Aashish_Panthi.jpeg"
                 },
                 {
                     id: "3",
                     name: "Sushil Bhattarai",
                     designation: "Telecommunications Engineer",
-                    image: "/images/Members/Sushil_Bhattarai.png"
+                    image: "/assets/images/Members/Sushil_Bhattarai.png"
                 },
             ]} />
 

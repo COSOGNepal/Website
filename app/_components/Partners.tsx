@@ -27,7 +27,7 @@ const Partners = () => {
                             <div key={index}>
                                 <div className={`w-48 h-48 aspect-square relative grid place-items-center bg-white rounded-md`}>
                                     <Image
-                                        src={`/images/Partners/${partnerName
+                                        src={`/assets/images/Partners/${partnerName
                                             .split(" ")
                                             .map(token => token.toLowerCase())
                                             .join("_")}.png`
