@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
+  output: "export",
   webpack(config) {
     config.resolve.fallback = {
       // if you miss it, all the other options in fallback, specified
