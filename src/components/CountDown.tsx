@@ -40,8 +40,8 @@ export const CountDown = (data: TCountDownParams) => {
     }, [data.date]);
 
 
-    return <div className="countDown">
-        <div className="countDownCon">
+    return <div className="countDown text-black-dark flex items-center justify-center w-full">
+        <div className="countDownCon *:flex flex *:gap-2 gap-3">
             <div className="countDownItem">
                 <span>{countDown.days}</span>
                 <p>Days</p>

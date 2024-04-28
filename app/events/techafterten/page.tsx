@@ -7,7 +7,7 @@ const Page = () => {
         <div className="mainContainer mt-section snap-mandatory snap-y space-y-section *:w-full *:max-w-[1400px] *:px-standard *:brk-1400:mx-auto *:sm:px-block">
             <section className="gap-5 herosection   flex flex-col snap-start">
                 <div className="imageContainer bg-fixed">
-                    <img src="/assets/testing.jpg" alt="something" className="w-full max-h-[50vh] object-cover" />
+                    <img src="/assets/techafter10.png" alt="something" className="w-full max-h-[50vh] object-cover" />
                 </div>
                 <div className="textContainer space-y-standard">
                     <div className="title text-black-dark  text-2xl font-bold">

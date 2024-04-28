@@ -1,37 +1,60 @@
 "use client";
-import img from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { Icon } from "./Icon";
+import { EventNavTopBar } from "./NavTopBar";
 
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false);
 
+    useEffect(() => {
+        if (!navActive) {
+            window.document.body.style.overflow = "auto";
+            return
+        }
+
+        window.document.body.style.overflow = "hidden";
+    }, [navActive])
+
     return (
         <>
-            <div className="fixed hamcontainer z-50 p-standard  bg-[rgba(255,255,255,0.8)] backdrop-blur-[20px] m-standard rounded-full md:hidden">
-                <div className="relative w-full h-full cursor-pointer"
-                    onClick={() => {
-                        setNavActive(!navActive);
-                    }}
-                >
-                    <img
-                        src={navActive ? "/assets/crossIcon.svg" : "/assets/hamIcon.svg"}
-                        width={navActive ? 30 : 50}
-                        height={navActive ? 30 : 50}
-                        className="z-30"
-                        alt="Nav Icon"
-                    />
-                </div>
+            <div
+                className={`fixed hamcontainer z-50 bg-white/80 backdrop-blur-[20px] m-standard rounded-full md:hidden cursor-pointer hover:bg-gray-bg h-10 aspect-square flex items-center justify-center `}
+                onClick={() => {
+                    setNavActive(!navActive);
+                }}
+            >
+                {
+                    !navActive
+                        ? <Icon
+                            iconName="navopen"
+                            className="h-5 w-5"
+                        />
+                        : <Icon
+                            iconName="close"
+                            className="h-5 w-5"
+                        />
+                }
             </div>
+            <EventNavTopBar
+                title="Get to know the tech before you know the result of ten"
+                countDown={true}
+                CTA={{ status: true, label: "Learn More" }}
+                EventLink="/events/techafterten"
+                description="What to learn where to learn and how to learn? Tech after ten join the conf to know more!!"
+                eventDate="2024-05-05 11:59 am"
+            />
+
             <nav
-                className={`fixed left-0 overflow-hidden min-h-screen md:min-h-[100px] h-[100px] z-40 md:pointer-events-auto
+                className={`sticky left-0 top-0 overflow-hidden  z-40 md:pointer-events-auto
                 ${!navActive ? "pointer-events-none" : "pointer-events-auto"}
                 w-screen`}
             >
+
                 <main
                     className={`${!navActive ? "-translate-y-full " : "translate-y-0"
                         } relative w-full h-full grid place-content-center duration-500 transition md:w-full md:h-[100px]
-                        md:translate-y-0 border-bottom-black border-bottom-2  `}
+                        md:translate-y-0 border-bottom-black border-bottom-2 md:min-h-[100px] `}
                 >
                     <div className={`
                     backdrop-blur-[20px] absolute inset-0 -z-10 bg-[rgba(255,255,255,0.5)]

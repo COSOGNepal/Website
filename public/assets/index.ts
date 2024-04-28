@@ -6,6 +6,7 @@ import report from "./report.svg";
 import facebook from "./facebook.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
+import navopen from "./navopen.svg";
 
 
 let Icons;
@@ -18,4 +19,5 @@ export default Icons = {
     facebook,
     linkedin,
     twitter,
+    navopen
 }

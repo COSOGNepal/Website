@@ -4,7 +4,7 @@ import { CountDown } from "./CountDown"
 type TEventNavTopBar = {
     title: string,
     description: string,
-    eventData: string,
+    eventDate: string,
     countDown?: boolean,
     CTA?: {
         status: boolean,
@@ -13,28 +13,18 @@ type TEventNavTopBar = {
     EventLink?: string
 }
 export const EventNavTopBar = (data: TEventNavTopBar) => {
-    return <nav className="w-screen bg-red-100">
-        <div className="detailsCon">
-            <div className="textContent">
-                <h1 className="titleCon">
-                    {data.title}
-                </h1>
-                <p className="description">
-                    {data.description}
-                </p>
-            </div>
-            {
-                data?.countDown && <CountDown date={data.eventData} className="" />
-            }
-
+    return <nav className="bg-primary  w-full brk-1400:px-[calc((100%-1400px)/2)] p-standard  text-center">
+        <div className="titleCon text-white ">
+            <span >
+                {data.title} &nbsp;
+            </span>
+            <a href={data.EventLink} className="underline">
+                Learn More
+            </a>
         </div>
         {
-            data?.CTA?.status &&
-            <button className="cta">
-                {data?.CTA?.label}
-            </button>
+            data?.countDown && <CountDown date={data.eventDate} className="" />
         }
     </nav>
-
 }
 
