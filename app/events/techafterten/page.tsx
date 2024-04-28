@@ -8,7 +8,7 @@ const Page = () => {
       <section className="gap-5 herosection   flex flex-col snap-start">
         <div className="imageContainer bg-fixed">
           <img
-            src="/assets/testing.jpg"
+            src="/assets/techafter10.png"
             alt="something"
             className="w-full max-h-[50vh] object-cover"
           />
@@ -30,8 +30,20 @@ const Page = () => {
           </div>
         </div>
         <div className="actionsContainer flex flex-wrap *:w-full *:sm:w-max *:sm:px-5 *:rounded-md *:p-[10px] gap-3 text-center">
-          <div className="action1 bg-primary text-white">Count Me In</div>
-          <div className="action2 bg-gray-bg text-gray-dark ">Learn More</div>
+          <a
+            href="https://forms.gle/QkaAimGAq48kg8Ri7"
+            className="action1 bg-primary text-white"
+            target="_blank"
+          >
+            Count Me In
+          </a>
+          <a
+            className="action2 bg-gray-bg text-gray-dark "
+            href="#learnMore"
+            id="learnMore"
+          >
+            Learn More
+          </a>
         </div>
       </section>
 
@@ -132,7 +144,8 @@ const Page = () => {
               title: "Aashish Panthi",
             },
             {
-              description: "Lay out the differences between Computer Science in science and management in +2 level.",
+              description:
+                "Lay out the differences between Computer Science in science and management in +2 level.",
               icon: "description",
               title: "Stream Description",
             },
