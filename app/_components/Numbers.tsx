@@ -23,7 +23,7 @@ const Numbers = () => {
                         key={index}
                     >
                         <div className="w-14 v-sm-12 md:w-20 aspect-square relative">
-                            <img src={data.icon} fill alt={data.title} />
+                            <img src={data.icon} alt={data.title} />
                         </div>
                         <div className="text_context">
                             <h2 className="text-center text-sub-title font-bold v-sm:text-gray-bg v-sm:text-para v-sm:font-medium">
