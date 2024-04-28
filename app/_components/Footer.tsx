@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="navdata flex items-baseline w-full mt-standard flex-col space-y-standard justify-start v-sm:items-center v-sm:justify-between md:w-full md:mt-0 v-sm:flex-row">
                     <aside className="space-y-small">
                         <h1 className="font-semibold text-lg">
-                            Coding for Social Good <span className="hidden sm:inline-block">(CoSoG) </span>Nepal
+                            Coding for Social Good <span className="hidden sm:inline-block">(CoSoG) </span> Nepal
                         </h1>
                         <div className="navlist flex space-x-standard text-faded">
                             <ul className="text-sm flex space-y-v-small flex-col">
@@ -79,7 +79,7 @@ const Footer = () => {
                         <div className="text_contents">
                             <h4 className="text-sm text-faded">contact@cosognepal.org</h4>
                             <h4 className="text-sm text-faded">
-                                ©2023 cosognepal.org <br /> All rights are reserved.
+                                ©202y cosognepal.org <br /> All rights are reserved.
                             </h4>
                         </div>
                     </aside>
