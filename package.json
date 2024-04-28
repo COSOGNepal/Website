@@ -34,6 +34,7 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.7.2"
+    "@cloudflare/next-on-pages": "^1.7.2",
+    "@svgr/webpack": "^8.1.0"
   }
 }
