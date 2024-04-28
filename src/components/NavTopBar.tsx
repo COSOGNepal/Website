@@ -13,7 +13,7 @@ type TEventNavTopBar = {
     EventLink?: string
 }
 export const EventNavTopBar = (data: TEventNavTopBar) => {
-    return <nav className="container fixed top-0 left-0">
+    return <nav className="w-screen bg-red-100">
         <div className="detailsCon">
             <div className="textContent">
                 <h1 className="titleCon">

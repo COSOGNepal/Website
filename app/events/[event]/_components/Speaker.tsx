@@ -37,7 +37,7 @@ const Speaker = (data: TSpeakerParams & { onClick: () => void }) => {
 type TSpeakerModalParam = TSpeakerParams & { modalState: boolean, closeModal: () => void };
 const SpeakerModal = (data: TSpeakerModalParam) => {
     return (
-        <div className="p-small py-standard w-full max-w-[1400px] px-standard brk-1400:mx-auto sm:px-block">
+        <div className="text-center md:text-left p-small py-standard w-full max-w-[1400px] px-standard brk-1400:mx-auto sm:px-block">
             <div
                 className="close cursor-pointer"
                 onClick={data.closeModal}
@@ -60,9 +60,9 @@ const SpeakerModal = (data: TSpeakerModalParam) => {
                         ))}
                     </div>
                 </div>
-                <div className="imageSocials">
+                <div className="imageSocials w-auto flex flex-col justify-center items-center md:items-start mx-auto md:mx-0">
+                    <img src={data.image} alt={data.name} className="image max-w-52 aspect-square object-cover rounded-md" />
                     <div className="socials">
-                        <img src={data.image} alt={data.name} className="image max-w-52 aspect-square object-cover rounded-md" />
                         <div className="links flex gap-3 flex-wrap mt-3 items-center justify-center">
                             {data.socials?.map((social, index) => (
                                 <a key={index} href={social.link} >

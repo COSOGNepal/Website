@@ -30,10 +30,10 @@ const TimeLine = ({ datas }: { datas: TtimeLineProp }) => {
                                     </div>
                                     <div className={`details
                             ${index % 2 === 0
-                                            ? "md:[grid-column:1/2] text-right md:[grid-row:1/2]"
+                                            ? "md:[grid-column:1/2] md:text-right md:[grid-row:1/2]"
                                             : "md:[grid-column:3/4]"
                                         }`}>
-                                        <div className="text-black-mid  text-2xl font-bold">
+                                        <div className="text-black-mid  text-xl font-bold">
                                             {title}
                                         </div>
                                         <div className="text-black-mid">
