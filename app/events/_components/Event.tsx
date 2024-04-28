@@ -1,9 +1,9 @@
 'use client'
 
-import Image from "next/image"
+import img from "next/image"
 import type { Tevent } from "../type";
 import React, { useEffect, useRef } from "react";
-import ImageViewer from 'awesome-image-viewer'
+import imgViewer from 'awesome-image-viewer'
 
 type Tparam = {
     data: Tevent,
@@ -43,32 +43,32 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
             <div className="imagesContainer grid grid-cols-2 grid-rows-2-250 gap-small w-full">
                 <div className="image col-span-2 overflow-hidden relative group cursor-pointer"
                     onClick={() => {
-                        new ImageViewer({
+                        new imgViewer({
                             images: imageData,
                             currentSelected: 0
                         })
                     }}>
-                    <Image src={images[0]} height={250} width={680} alt={title}
+                    <img src={images[0]} height={250} width={680} alt={title}
                         className="event w-full h-max absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:scale-105  transition-all ease-in-out duration-150 " />
                 </div>
                 <div className="image group relative overflow-hidden cursor-pointer"
                     onClick={() => {
-                        new ImageViewer({
+                        new imgViewer({
                             images: imageData,
                             currentSelected: 0
                         })
                     }}>
-                    <Image src={images[1]} height={250} width={680} alt={title}
+                    <img src={images[1]} height={250} width={680} alt={title}
                         className="image group-hover:scale-105 transition-all ease-in-out duration-150 h-full object-cover" />
                 </div>
                 <div className="image overflow-hidden relative group cursor-pointer"
                     onClick={() => {
-                        new ImageViewer({
+                        new imgViewer({
                             images: imageData,
                             currentSelected: 0
                         })
                     }}>
-                    <Image src={images[2]} height={250} width={680} alt={title}
+                    <img src={images[2]} height={250} width={680} alt={title}
                         className="image group-hover:scale-105 transition-all ease-in-out duration-150 h-full object-cover" />
                 </div>
             </div >

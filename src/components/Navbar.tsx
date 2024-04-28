@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import img from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -14,7 +14,7 @@ const Navbar = () => {
                         setNavActive(!navActive);
                     }}
                 >
-                    <Image
+                    <img
                         src={navActive ? "/assets/crossIcon.svg" : "/assets/hamIcon.svg"}
                         width={navActive ? 30 : 50}
                         height={navActive ? 30 : 50}
@@ -38,7 +38,7 @@ const Navbar = () => {
                         md:bg-[rgba(255,255,255,0.8)] 
                         `}></div>
                     <Link href="/">
-                        <Image
+                        <img
                             src={"/assets/logo.png"}
                             height={50}
                             width={50}

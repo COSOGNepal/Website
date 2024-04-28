@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image";
+import img from "next/image";
 import React from "react";
 
 const Herosection = () => {
@@ -8,12 +8,12 @@ const Herosection = () => {
             <main className="relative flex z-10 w-full h-full">
                 <div className="item1 absolute">
                     <div className="relative w-40 h-52  md:w-56 md:h-64 ">
-                        <Image src={"/assets/bgShape1.svg"} fill alt={"background"} />
+                        <img src={"/assets/bgShape1.svg"} alt={"background"} />
                     </div>
                 </div>
                 <div className="item2 absolute -bottom-20 left-1/2 -translate-x-1/2">
                     <div className="relative w-52 h-64  md:w-72 md:h-96 ">
-                        <Image src={"/assets/bgShape2.svg"} fill alt={"background"} />
+                        <img src={"/assets/bgShape2.svg"} alt={"background"} />
                     </div>
                 </div>
                 <div className="socialmedia z-[100] h-fit w-fit absolute bottom-standard right-standard md:right-standard flex sm:flex-col gap-small">
@@ -22,7 +22,7 @@ const Herosection = () => {
                         target="blank"
                         className="cursor-pointer"
                     >
-                        <Image
+                        <img
                             src={"/assets/facebook_logo.svg"}
                             width={40}
                             height={40}
@@ -30,7 +30,7 @@ const Herosection = () => {
                         />
                     </a>
                     <a href="https://www.instagram.com/cosognepal" target="blank">
-                        <Image
+                        <img
                             src={"/assets/instagram_logo.svg"}
                             width={40}
                             height={40}
@@ -39,7 +39,7 @@ const Herosection = () => {
                         />
                     </a>
                     <a href="https://www.linkedin.com/company/cosognepal/" target="blank">
-                        <Image
+                        <img
                             src={"/assets/linkedin_logo.svg"}
                             width={40}
                             height={40}
@@ -79,7 +79,7 @@ const Herosection = () => {
                     </div>
                     <div className="flex justify-center items-center">
                         <div className="relative w-64 h-64">
-                            <Image src={"/assets/logo.png"} fill alt="logo" />
+                            <img src={"/assets/logo.png"} alt="logo" />
                         </div>
                     </div>
                 </main>

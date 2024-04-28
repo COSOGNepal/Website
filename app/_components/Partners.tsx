@@ -1,6 +1,6 @@
 "use client"
 import SectionTitle from "@/components/SectionTitle";
-import Image from "next/image";
+import img from "next/image";
 import React from "react";
 //import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -26,7 +26,7 @@ const Partners = () => {
                         partenersData.map((partnerName, index) =>
                             <div key={index}>
                                 <div className={`w-48 h-48 aspect-square relative grid place-items-center bg-white rounded-md`}>
-                                    <Image
+                                    <img
                                         src={`/assets/images/Partners/${partnerName
                                             .split(" ")
                                             .map(token => token.toLowerCase())
