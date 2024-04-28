@@ -162,37 +162,47 @@ const Page = () => {
         <FAQ
           data={[
             {
-              question: "What has keys but can't open locks?",
-              answer: "A piano",
+              question: `What is the "Computer Science in +2" program?`,
+              answer:
+                "The program is designed to help recent 10th-grade graduates in Nepal make informed decisions about their future in the field of computer science.",
               value: "item-1",
             },
             {
-              question:
-                "What comes once in a minute, twice in a moment, but never in a thousand years?",
-              answer: "The letter 'M'",
+              question: "Who should attend this event?",
+              answer:
+                "Reacent SEE graduates who are considering computer science for their further studies and want to learn about potential career paths and opportunities should attend.",
               value: "item-2",
             },
             {
-              question: "What has a heart that doesn't beat?",
-              answer: "An artichoke",
+              question: "What topics will the speakers cover?",
+              answer:
+                "Speakers will discuss career paths in computer science, differences between computer science in science and management streams, and educational and job opportunities in Nepal and abroad.",
               value: "item-3",
             },
             {
               question:
-                "What has an endless supply of letters but starts empty?",
-              answer: "A mailbox",
+                "Will there be opportunities to ask questions to the speakers?",
+              answer:
+                "Yes, there will be a Q&A session where participants can engage directly with the speakers.",
               value: "item-4",
             },
             {
-              question: "What has a head, a tail, is brown, and has no legs?",
-              answer: "A penny",
+              question: "How can I join the event?",
+              answer:
+                "Details will be provided on how to join the online event via email after you fill the registration form. Event will be on Google Meet.",
               value: "item-5",
             },
             {
-              question:
-                "What has cities but no houses, forests but no trees, and rivers but no water?",
-              answer: "A map",
+              question: "Is there any fee to attend the event?",
+              answer:
+                "No, the event is free to attend for all interested participants.",
               value: "item-6",
+            },
+            {
+              question: "Can non-SEE graduates attend the event?",
+              answer:
+                "While the event is targeted at recent SEE graduates, those with an interest in computer science education are welcome, subject to the event's capacity.",
+              value: "item-7",
             },
           ]}
         />
