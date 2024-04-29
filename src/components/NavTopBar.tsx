@@ -30,7 +30,7 @@ export const EventNavTopBar = (data: TEventNavTopBar) => {
             <span >
                 {data.title} &nbsp;
             </span>
-            <a href={data.EventLink} className="underline">
+            <a href={data.EventLink} className="underline underline-offset-4">
                 Learn More
             </a>
         </div>

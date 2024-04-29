@@ -47,7 +47,7 @@ const Page = () => {
                 </div>
             </section>
 
-            <section className="about  space-y-5  snap-end bg-gray-bg py-block">
+            <section className="about  space-y-5  snap-end bg-gray-bg py-block ">
                 <h1 className="heading text-2xl font-semibold">About the Event</h1>
                 <div className="descirption text-black-mid">
                     <p>
