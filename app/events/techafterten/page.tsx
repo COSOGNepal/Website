@@ -92,7 +92,7 @@ const Page = () => {
           {
             id: "2",
             name: "Aashish Panthi",
-            designation: "SWE at Apple",
+            designation: "SWE intern at Apple",
             image:
               "/assets/images/Events/CS_in_high_school/Aashish_Panthi.jpeg",
             socials: [
@@ -135,7 +135,7 @@ const Page = () => {
               description:
                 "Pratiksha Pandey will talk about the educational and job opportunities in Nepal.",
               icon: "speaker",
-              title: "Prakisha Pandey",
+              title: "Pratiksha Pandey",
             },
             {
               description:
