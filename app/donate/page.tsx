@@ -80,15 +80,9 @@ const EsewaDonation = () => {
     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.stopPropagation();
         e.preventDefault();
-        const userName = e.currentTarget["userName"].value
-        const email = e.currentTarget["userEmail"].value
-        const phoneNumber = e.currentTarget["phoneNumber"].value
-
-        console.log({
-            userName,
-            email,
-            phoneNumber
-        })
+        {/* const userName = e.currentTarget["userName"].value */ }
+        {/* const email = e.currentTarget["userEmail"].value */ }
+        {/* const phoneNumber = e.currentTarget["phoneNumber"].value */ }
     }
     return (
         <form className="space-y-block" method="post" onSubmit={handleSubmit}>

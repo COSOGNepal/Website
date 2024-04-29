@@ -7,19 +7,18 @@ import { EventNavTopBar } from "./NavTopBar";
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false);
 
-    useEffect(() => {
-        if (!navActive) {
-            window.document.body.style.overflow = "auto";
-            return
-        }
-
-        window.document.body.style.overflow = "hidden";
-    }, [navActive])
-
     return (
         <>
+            <EventNavTopBar
+                title="Get to know the tech before you know the result of ten"
+                countDown={true}
+                CTA={{ status: true, label: "Learn More" }}
+                EventLink="/events/techafterten"
+                description="What to learn where to learn and how to learn? Tech after ten join the conf to know more!!"
+                eventDate="2024-05-05 11:59 am"
+            />
             <div
-                className={`fixed hamcontainer z-50 bg-white/80 backdrop-blur-[20px] m-standard rounded-full md:hidden cursor-pointer hover:bg-gray-bg h-10 aspect-square flex items-center justify-center `}
+                className={`sticky top-small left-small hamcontainer z-50 bg-white/80 backdrop-blur-[20px] rounded-full md:hidden cursor-pointer hover:bg-gray-bg h-10 w-10 flex items-center justify-center `}
                 onClick={() => {
                     setNavActive(!navActive);
                 }}
@@ -36,24 +35,16 @@ const Navbar = () => {
                         />
                 }
             </div>
-            <EventNavTopBar
-                title="Get to know the tech before you know the result of ten"
-                countDown={true}
-                CTA={{ status: true, label: "Learn More" }}
-                EventLink="/events/techafterten"
-                description="What to learn where to learn and how to learn? Tech after ten join the conf to know more!!"
-                eventDate="2024-05-05 11:59 am"
-            />
 
             <nav
-                className={`sticky left-0 top-0 overflow-hidden  z-40 md:pointer-events-auto
+                className={`md:sticky fixed  left-0 top-0 overflow-hidden  z-40 md:pointer-events-auto
                 ${!navActive ? "pointer-events-none" : "pointer-events-auto"}
                 w-screen`}
             >
 
                 <main
                     className={`${!navActive ? "-translate-y-full " : "translate-y-0"
-                        } relative w-full h-full grid place-content-center duration-500 transition md:w-full md:h-[100px]
+                        } relative w-full h-screen  grid place-content-center duration-500 transition md:w-full md:h-[100px]
                         md:translate-y-0 border-bottom-black border-bottom-2 md:min-h-[100px] `}
                 >
                     <div className={`
@@ -76,40 +67,40 @@ const Navbar = () => {
                         `}>
                         <Link href="/">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 Home
                             </li>
                         </Link>
                         <Link href="/about">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 About us
                             </li>
                         </Link>
                         <Link href="/events">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 Events
                             </li>
                         </Link>
                         <Link href="https://blog.cosognepal.org">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 Blog
                             </li>
                         </Link>
                         <Link href="/contact">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 Contact
                             </li>
@@ -117,7 +108,7 @@ const Navbar = () => {
                         <Link href="/donate">
                             <li
                                 className="link-underline"
-                                onClick={() => setNavActive(!navActive)}
+                                onClick={() => setNavActive(false)}
                             >
                                 Donate
                             </li>
