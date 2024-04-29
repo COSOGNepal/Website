@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { CountDown } from "./CountDown"
+import { usePathname, useRouter } from "next/navigation";
 
 type TEventNavTopBar = {
     title: string,
@@ -15,12 +16,13 @@ type TEventNavTopBar = {
 }
 export const EventNavTopBar = (data: TEventNavTopBar) => {
     const [eventPage, setEventPage] = useState<boolean>(false);
-    useEffect(() => {
-        if (!window) return;
 
-        if (window.location.pathname.includes('techafterten')) setEventPage(true)
-    }, [])
-    console.log(eventPage)
+    const pathname = usePathname();
+
+    useEffect(() => {
+        if (pathname?.includes('techafterten')) return setEventPage(true)
+    }, [pathname])
+
 
     return !eventPage && <nav className="bg-primary  w-full brk-1400:px-[calc((100%-1400px)/2)] p-standard  text-center">
         <div className="titleCon text-white pb-small ">
