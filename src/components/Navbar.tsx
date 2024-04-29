@@ -7,18 +7,18 @@ import { EventNavTopBar } from "./NavTopBar";
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false);
 
-    useEffect(() => {
-        if (!navActive) {
-            window.document.body.style.overflow = "auto";
-            return
-        }
-        window.document.body.style.overflow = "hidden";
-    }, [navActive])
-
     return (
         <>
+            <EventNavTopBar
+                title="Get to know the tech before you know the result of ten"
+                countDown={true}
+                CTA={{ status: true, label: "Learn More" }}
+                EventLink="/events/techafterten"
+                description="What to learn where to learn and how to learn? Tech after ten join the conf to know more!!"
+                eventDate="2024-05-05 11:59 am"
+            />
             <div
-                className={`fixed hamcontainer z-50 bg-white/80 backdrop-blur-[20px] m-standard rounded-full md:hidden cursor-pointer hover:bg-gray-bg h-10 aspect-square flex items-center justify-center `}
+                className={`sticky top-small left-small hamcontainer z-50 bg-white/80 backdrop-blur-[20px] rounded-full md:hidden cursor-pointer hover:bg-gray-bg h-10 w-10 flex items-center justify-center `}
                 onClick={() => {
                     setNavActive(!navActive);
                 }}
@@ -35,14 +35,6 @@ const Navbar = () => {
                         />
                 }
             </div>
-            <EventNavTopBar
-                title="Get to know the tech before you know the result of ten"
-                countDown={true}
-                CTA={{ status: true, label: "Learn More" }}
-                EventLink="/events/techafterten"
-                description="What to learn where to learn and how to learn? Tech after ten join the conf to know more!!"
-                eventDate="2024-05-05 11:59 am"
-            />
 
             <nav
                 className={`md:sticky fixed  left-0 top-0 overflow-hidden  z-40 md:pointer-events-auto
@@ -76,6 +68,7 @@ const Navbar = () => {
                         <Link href="/">
                             <li
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 Home
                             </li>
@@ -83,6 +76,7 @@ const Navbar = () => {
                         <Link href="/about">
                             <li
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 About us
                             </li>
@@ -90,6 +84,7 @@ const Navbar = () => {
                         <Link href="/events">
                             <li
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 Events
                             </li>
@@ -97,6 +92,7 @@ const Navbar = () => {
                         <Link href="https://blog.cosognepal.org">
                             <li
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 Blog
                             </li>
@@ -104,6 +100,7 @@ const Navbar = () => {
                         <Link href="/contact">
                             <li
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 Contact
                             </li>
@@ -111,6 +108,7 @@ const Navbar = () => {
                         <Link href="/donate">
                             <li
                                 className="link-underline"
+                                onClick={() => setNavActive(false)}
                             >
                                 Donate
                             </li>

@@ -5,7 +5,7 @@ import React from "react";
 const Herosection = () => {
     return (
         <section className="w-screen max-w-[1400px] brk-1400:mx-auto h-screen">
-            <main className="relative flex z-10 w-full h-full">
+            <main className="relative top-0  flex z-10 w-full h-full">
                 <div className="item1 absolute">
                     <div className="relative w-40 h-52  md:w-56 md:h-64 ">
                         <img src={"/assets/bgShape1.svg"} alt={"background"} />
