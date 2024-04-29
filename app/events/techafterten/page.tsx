@@ -124,6 +124,23 @@ const Page = () => {
               "He has completed his bachelor's in Business Computing from the University of Central Lancashire and completed a master's degree in Big Data Systems from the Higher School of Economics. Mr. Siddhartha is a Data Enthusiast and has worked in the past as a Database Administrator at LLC PAK PROJECT, Moscow Russia.",
             ],
           },
+          {
+            id: "4",
+            name: "Saroj Dahal",
+            designation: "CTO, 28Softwares",
+            image: "/assets/images/Events/CS_in_high_school/Saroj_Dahal.jpeg",
+            socials: [
+              {
+                name: "Linkedin",
+                icon: "linkedin",
+                link: "https://www.linkedin.com/in/isarojdahal/",
+              },
+            ],
+            short_intro: [
+              "Saroh Dahal is the founder and CTO of 28Softwares Pvt. Ltd. With 6+ years of experience in the Tech field, Saroj Dahal is equipped with knowledge of Web Development, Mobile App Development, DevOps and Cloud.",
+              `In free time, He teaches programming at a YouTube Channel called "EverydayKarma" with a vision to produce millions of Nepali Developers.`,
+            ],
+          },
         ]}
       />
 
@@ -140,28 +157,28 @@ const Page = () => {
               description:
                 "Siddhartha Neupane will talk about the career paths in computer science that are available in Nepal and abroad.",
               icon: "speaker",
-              title: "Siddhartha Neupane",
+              title: "Career Paths in Computer Science",
             },
             {
               description:
                 "Pratiksha Pandey will talk about the educational and job opportunities in Nepal.",
               icon: "speaker",
-              title: "Pratiksha Pandey",
+              title: "Opportunities in Nepal",
             },
             {
               description:
                 "Aashish Panthi will talk about the educational and job opportunities abroad, especially in the United States.",
               icon: "speaker",
-              title: "Aashish Panthi",
+              title: "Opportunities Abroad",
             },
             {
               description:
-                "Lay out the differences between Computer Science in science and management in +2 level.",
+                "Saroj Dahal will lay out the differences between Computer Science in science and management in +2 level.",
               icon: "description",
-              title: "Stream Description",
+              title: "CS in Science vs Management",
             },
             {
-              description: "Conclude the event and distrubution of resources.",
+              description: "Conclude the event and distrubution of resources talked about in the event.",
               icon: "report",
               title: "Conclude the event",
             },
