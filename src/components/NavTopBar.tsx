@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { CountDown } from "./CountDown"
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 type TEventNavTopBar = {
     title: string,
@@ -18,9 +18,11 @@ export const EventNavTopBar = (data: TEventNavTopBar) => {
     const [eventPage, setEventPage] = useState<boolean>(false);
 
     const pathname = usePathname();
+    console.log(`route changed ${pathname}`)
 
     useEffect(() => {
         if (pathname?.includes('techafterten')) return setEventPage(true)
+        setEventPage(false)
     }, [pathname])
 
 
