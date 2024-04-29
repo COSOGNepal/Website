@@ -109,9 +109,20 @@ const Page = () => {
           },
           {
             id: "3",
-            name: "TBD",
-            designation: "",
-            image: "/assets/images/Events/CS_in_high_school/unknown.png",
+            name: "Siddhartha Neupane",
+            designation: "HoD BSc. CS and AI at Softwarica College",
+            image: "/assets/images/Events/CS_in_high_school/Siddhartha_Neupane.jpg",
+            socials: [
+              {
+                name: "Linkedin",
+                icon: "linkedin",
+                link: "https://www.linkedin.com/in/siddhartha-neupane-310a2a162/",
+              },
+            ],
+            short_intro: [
+              "Siddhartha Neupane is a Head of the Department of BSc (Hons) Computer Science with Artificial Intelligence at Softwarica College, Kathmandu Nepal.",
+              "He has completed his bachelor's in Business Computing from the University of Central Lancashire and completed a master's degree in Big Data Systems from the Higher School of Economics. Mr. Siddhartha is a Data Enthusiast and has worked in the past as a Database Administrator at LLC PAK PROJECT, Moscow Russia.",
+            ],
           },
         ]}
       />
@@ -127,9 +138,9 @@ const Page = () => {
             },
             {
               description:
-                "Speaker 1 will talk about the career paths in computer science that are available in Nepal and abroad.",
+                "Siddhartha Neupane will talk about the career paths in computer science that are available in Nepal and abroad.",
               icon: "speaker",
-              title: "TBD",
+              title: "Siddhartha Neupane",
             },
             {
               description:
