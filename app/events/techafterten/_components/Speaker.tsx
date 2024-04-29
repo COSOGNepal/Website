@@ -37,7 +37,7 @@ const Speaker = (data: TSpeakerParams & { onClick: () => void }) => {
 type TSpeakerModalParam = TSpeakerParams & { modalState: boolean, closeModal: () => void };
 const SpeakerModal = (data: TSpeakerModalParam) => {
     return (
-        <div className="text-center md:text-left p-small py-standard w-full max-w-[1400px] px-standard brk-1400:mx-auto sm:px-block">
+        <div className="text-center md:text-left p-small  py-standard w-full max-w-[1400px] md:px-standard brk-1400:mx-auto sm:px-block">
             <div
                 className="close cursor-pointer"
                 onClick={data.closeModal}
@@ -56,7 +56,7 @@ const SpeakerModal = (data: TSpeakerModalParam) => {
                     </div>
                     <div className="short_intro text-black-mid space-y-2">
                         {data.short_intro?.map((intro) => (
-                            <p key={intro}>{intro}</p>
+                            <p key={intro} className="text-wrap px-5 md:px-0">{intro}</p>
                         ))}
                     </div>
                 </div>

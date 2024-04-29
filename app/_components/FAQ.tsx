@@ -19,12 +19,12 @@ export default function FAQ(
 
     // const FAQs = ;
     return (
-        <main className="w-full max-w-[1400px] mx-auto px-standard brk-1400:px-0">
+        <main className="w-full max-w-[1400px] mx-auto md:px-standard brk-1400:px-0">
             <SectionTitle title="Frequently Asked Questions (FAQ)" />
             <Accordion
                 type="single"
                 collapsible
-                className="mt-standard text-faded px-small"
+                className="mt-standard text-faded md:px-small"
             >
                 {data.map((faq) => (
                     <AccordionItem

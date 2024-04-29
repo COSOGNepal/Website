@@ -12,7 +12,6 @@ const Navbar = () => {
             window.document.body.style.overflow = "auto";
             return
         }
-
         window.document.body.style.overflow = "hidden";
     }, [navActive])
 
@@ -46,14 +45,14 @@ const Navbar = () => {
             />
 
             <nav
-                className={`sticky left-0 top-0 overflow-hidden  z-40 md:pointer-events-auto
+                className={`md:sticky fixed  left-0 top-0 overflow-hidden  z-40 md:pointer-events-auto
                 ${!navActive ? "pointer-events-none" : "pointer-events-auto"}
                 w-screen`}
             >
 
                 <main
                     className={`${!navActive ? "-translate-y-full " : "translate-y-0"
-                        } relative w-full h-full grid place-content-center duration-500 transition md:w-full md:h-[100px]
+                        } relative w-full h-screen  grid place-content-center duration-500 transition md:w-full md:h-[100px]
                         md:translate-y-0 border-bottom-black border-bottom-2 md:min-h-[100px] `}
                 >
                     <div className={`
@@ -76,7 +75,6 @@ const Navbar = () => {
                         `}>
                         <Link href="/">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
                             >
                                 Home
@@ -84,7 +82,6 @@ const Navbar = () => {
                         </Link>
                         <Link href="/about">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
                             >
                                 About us
@@ -92,7 +89,6 @@ const Navbar = () => {
                         </Link>
                         <Link href="/events">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
                             >
                                 Events
@@ -100,7 +96,6 @@ const Navbar = () => {
                         </Link>
                         <Link href="https://blog.cosognepal.org">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
                             >
                                 Blog
@@ -108,7 +103,6 @@ const Navbar = () => {
                         </Link>
                         <Link href="/contact">
                             <li
-                                onClick={() => setNavActive(!navActive)}
                                 className="link-underline"
                             >
                                 Contact
@@ -117,7 +111,6 @@ const Navbar = () => {
                         <Link href="/donate">
                             <li
                                 className="link-underline"
-                                onClick={() => setNavActive(!navActive)}
                             >
                                 Donate
                             </li>
