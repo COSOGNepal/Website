@@ -69,63 +69,6 @@ const Page = () => {
                 </div>
             </section>
 
-            <SpeakersSection
-                data={[
-                    {
-                        id: "1",
-                        name: "Pratiksha Pandey",
-                        designation: "CEO at Smart Cheli",
-                        image:
-                            "/assets/images/Events/CS_in_high_school/Pratiksha_Pandey.jpg",
-                        socials: [
-                            {
-                                name: "Linkedin",
-                                icon: "linkedin",
-                                link: "https://www.linkedin.com/in/pratiksha-pandey-608361ba/",
-                            },
-                        ],
-                        short_intro: [
-                            "Pratiksha Pandey is currently serving as a CEO of Smart Cheli which work to create gender balance in the STEM by providing playful learning.",
-                            "She is electronic and communication engineer.Under her leadership smart Cheli has been worked with Bank of America,HEC Paris,One young world ,Bristol Myers Squibb and other global organisation.",
-                        ],
-                    },
-                    {
-                        id: "2",
-                        name: "Aashish Panthi",
-                        designation: "SWE intern at Apple",
-                        image:
-                            "/assets/images/Events/CS_in_high_school/Aashish_Panthi.jpeg",
-                        socials: [
-                            {
-                                name: "Linkedin",
-                                icon: "linkedin",
-                                link: "https://www.linkedin.com/in/panthiaashish/",
-                            },
-                        ],
-                        short_intro: [
-                            "Aashish Panthi is a freshman at Fisk University located at Tenessee, the United States.",
-                            "This summer he will be joining Apple as a Software Engineering Intern with the Apple Services Engineering team in Culver City, Los Angeles, California.",
-                        ],
-                    },
-                    {
-                        id: "3",
-                        name: "Siddhartha Neupane",
-                        designation: "HoD BSc. CS and AI at Softwarica College",
-                        image: "/assets/images/Events/CS_in_high_school/Siddhartha_Neupane.jpg",
-                        socials: [
-                            {
-                                name: "Linkedin",
-                                icon: "linkedin",
-                                link: "https://www.linkedin.com/in/siddhartha-neupane-310a2a162/",
-                            },
-                        ],
-                        short_intro: [
-                            "Siddhartha Neupane is a Head of the Department of BSc (Hons) Computer Science with Artificial Intelligence at Softwarica College, Kathmandu Nepal.",
-                            "He has completed his bachelor's in Business Computing from the University of Central Lancashire and completed a master's degree in Big Data Systems from the Higher School of Economics. Mr. Siddhartha is a Data Enthusiast and has worked in the past as a Database Administrator at LLC PAK PROJECT, Moscow Russia.",
-                        ],
-                    },
-                ]}
-            />
       <SpeakersSection
         data={[
           {
@@ -206,9 +149,9 @@ const Page = () => {
           datas={[
             {
               description:
-                "Briefly explain the purpose of the program and how it can benefit the recent SEE graduates. Briefly introduce the speakers and the topics they will be covering.",
+                "Explain the purpose of the program and how it can benefit the recent SEE graduates. Briefly introduce the speakers and the topics they will be covering.",
               icon: "star",
-              title: "Introducation to the event",
+              title: "Introduction to the event",
             },
             {
               description:
