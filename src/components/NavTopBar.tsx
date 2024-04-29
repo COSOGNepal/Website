@@ -18,7 +18,6 @@ export const EventNavTopBar = (data: TEventNavTopBar) => {
     const [eventPage, setEventPage] = useState<boolean>(false);
 
     const pathname = usePathname();
-    console.log(`route changed ${pathname}`)
 
     useEffect(() => {
         if (pathname?.includes('techafterten')) return setEventPage(true)
