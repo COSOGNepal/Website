@@ -65,7 +65,7 @@ const SpeakerModal = (data: TSpeakerModalParam) => {
                     <div className="socials">
                         <div className="links flex gap-3 flex-wrap mt-3 items-center justify-center">
                             {data.socials?.map((social, index) => (
-                                <a key={index} href={social.link} >
+                                <a key={index} href={social.link} target="_blank">
                                     <Icon iconName={social.icon} className="text-gray-dark w-8 h-8 hover:text-primary" />
                                 </a>
                             ))}
