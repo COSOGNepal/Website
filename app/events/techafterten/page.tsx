@@ -86,7 +86,7 @@ const Page = () => {
             ],
             short_intro: [
               "Pratiksha Pandey is currently serving as a CEO of Smart Cheli which work to create gender balance in the STEM by providing playful learning.",
-              "She is electronic and communication engineer.Under her leadership smart Cheli has been worked with Bank of America,HEC Paris,One young world ,Bristol Myers Squibb and other global organisation.",
+              "She is an electronic and communication engineer. Under her leadership, Smart Cheli has worked with Bank of America, HEC Paris, One Young World, Bristol Myers Squibb, and other global organizations.",
             ],
           },
           {
@@ -137,7 +137,7 @@ const Page = () => {
               },
             ],
             short_intro: [
-              "Saroh Dahal is the founder and CTO of 28Softwares Pvt. Ltd. With 6+ years of experience in the Tech field, Saroj Dahal is equipped with knowledge of Web Development, Mobile App Development, DevOps and Cloud.",
+              "Saroj Dahal is the founder and CTO of 28Softwares Pvt. Ltd. With 6+ years of experience in the Tech field, Saroj Dahal is equipped with knowledge of Web Development, Mobile App Development, DevOps and Cloud.",
               `In free time, He teaches programming at a YouTube Channel called "EverydayKarma" with a vision to produce millions of Nepali Developers.`,
             ],
           },
