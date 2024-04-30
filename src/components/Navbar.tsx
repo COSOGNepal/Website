@@ -15,7 +15,7 @@ const Navbar = () => {
                 CTA={{ status: true, label: "Learn More" }}
                 EventLink="/events/techafterten"
                 description="What to learn where to learn and how to learn? Tech after ten join the conf to know more!!"
-                eventDate="2024-05-05 11:59 am"
+                eventDate="2024-05-04 11:59 am"
             />
             <div
                 className={`sticky top-small left-small hamcontainer z-50 bg-white/80 backdrop-blur-[20px] rounded-full md:hidden cursor-pointer hover:bg-gray-bg h-10 w-10 flex items-center justify-center `}
