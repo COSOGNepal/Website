@@ -6,6 +6,7 @@ import Footer from "./_components/Footer";
 export const metadata: Metadata = {
     title: "Coding for Social Good (CoSoG) Nepal",
     description: "Cosog Nepal (Coding for Social Good) is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Sec/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal's digitalization.",
+    metadataBase: new URL("https://cosognepal.org/"),
     openGraph: {
         images: [{
             url: "/assets/logo.png",

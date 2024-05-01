@@ -17,6 +17,7 @@ export const metadata: Metadata = {
         "Aashish Panthi",
         "Siddhartha Neupane"
     ],
+    metadataBase: new URL("https://cosognepal.org/"),
     authors: [
         {
             name: "Saroj Regmi",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
             height: 1600,
             width: 628
         }
-    }
+    },
 }
 export default function TechAfterTenLayout({ children }: { children: React.ReactNode }) {
     return (children);
