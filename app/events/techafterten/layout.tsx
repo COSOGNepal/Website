@@ -32,7 +32,11 @@ export const metadata: Metadata = {
         },
     ],
     twitter: {
-        images: "/assets/images/Events/CS_in_high_school/og.png",
+        images: {
+            url: "/assets/images/Events/CS_in_high_school/og.png",
+            height: 1600,
+            width: 628
+        },
         title: "Tech After Ten",
         description: "Learn about CS from the professionals and their experiences",
         card: "summary_large_image",
@@ -44,6 +48,13 @@ export const metadata: Metadata = {
         index: true,
         nocache: true,
         notranslate: true,
+    },
+    openGraph: {
+        images: {
+            url: "/assets/images/Events/CS_in_high_school/og.png",
+            height: 1600,
+            width: 628
+        }
     }
 }
 export default function TechAfterTenLayout({ children }: { children: React.ReactNode }) {
