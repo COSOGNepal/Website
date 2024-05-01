@@ -15,7 +15,8 @@ type TEventNavTopBar = {
     EventLink?: string
 }
 export const EventNavTopBar = (data: TEventNavTopBar) => {
-    const [eventPage, setEventPage] = useState<boolean>(false);
+    // default is made true to remove the flash in the events page 
+    const [eventPage, setEventPage] = useState<boolean>(true);
 
     const pathname = usePathname();
 
