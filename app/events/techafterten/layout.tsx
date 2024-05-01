@@ -39,6 +39,12 @@ export const metadata: Metadata = {
         site: "https://www.cosognepal.org/events/techafterten/",
         creator: "Cosog Nepal",
     },
+    robots: {
+        follow: true,
+        index: true,
+        nocache: true,
+        notranslate: true,
+    }
 }
 export default function TechAfterTenLayout({ children }: { children: React.ReactNode }) {
     return (children);
