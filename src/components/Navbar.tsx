@@ -1,22 +1,22 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Icon } from "./Icon";
-import { EventNavTopBar } from "./NavTopBar";
+{/* import { EventNavTopBar } from "./NavTopBar"; */ }
 
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false);
 
     return (
         <>
-            <EventNavTopBar
+            {/* <EventNavTopBar
                 title="Get to know the tech before you know the result of ten"
                 countDown={true}
                 CTA={{ status: true, label: "Learn More" }}
                 EventLink="/events/techafterten"
                 description="What to learn where to learn and how to learn? Tech after ten join the conf to know more!!"
                 eventDate="2024-05-04 11:59 am"
-            />
+            /> */}
             <div
                 className={`sticky top-small left-small hamcontainer z-50 bg-white/80 backdrop-blur-[20px] rounded-full md:hidden cursor-pointer hover:bg-gray-bg h-10 w-10 flex items-center justify-center `}
                 onClick={() => {
