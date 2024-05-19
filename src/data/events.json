@@ -1,10 +1,9 @@
 [
   {
     "id": "1",
-    "title": "CoSoG Nepal Presentation",
+    "title": "Presentation at Green Village English Boarding Secondary School",
     "descriptions": [
-      "Green Village English Boarding School, Kathmandu",
-      "We had an amazing day at Green Village English Boarding School, where we discussed the various opportunities in the field of Computer Science. We also shared insights from our previous projects and CS club experiences."
+      "It was an exciting day at Green Village English Boarding Secondary School as CoSoG Nepal organized  a conversation on the wide range of career options in computer science. We shared a lot of lessons learned from our past initiatives and we shed light on the significant impact of CS clubs. Thank you to everyone involved!"
     ],
     "date": "17th June 2023",
     "images": [
@@ -15,10 +14,9 @@
   },
   {
     "id": "2",
-    "title": "CoSoG Nepal Presentation",
+    "title": "Talk on Computer Science Opportunities in Nepal at Magus Secondary School, Kirtipur",
     "descriptions": [
-      "Magus Secondary School, Kirtipur",
-      "We had an amazing day at Magus Secondary School, where we discussed the various opportunities in the field of Computer Science. We also shared insights from our previous projects and CS club experiences."
+      "At Magus Secondary School in Kirtipur, we had an insightful session. We discussed the wealth of opportunities present in the field of computer science within Nepal. Furthermore, we provided an overview of CS club operations, covering key aspects to think about when establishing and running a club, along with strategies for implementing impactful initiatives within the school. A sincere thank you to all who contributed to the success of this event, and a special appreciation to Magus Secondary School."
     ],
     "date": "10th July 2023",
     "images": [
@@ -29,10 +27,9 @@
   },
   {
     "id": "3",
-    "title": "CoSoG Nepal Presentation",
+    "title": "Workshop on Computer Science Opportunities at Everest Boarding School, Kathmandu",
     "descriptions": [
-      "CoSoG Nepal at Everest boarding school, Kathmandu",
-      "We had an amazing day at Everest boarding school, where we discussed the various opportunities in the field of Computer Science. We also shared insights from our previous projects and CS club experiences."
+      "CoSoG Nepal conducted an informative session at Everest Boarding School, Kathmandu. We discussed the wide array of opportunities within the field of computer science in Nepal. Additionally, we provided insights into the functioning of CS clubs, offering guidance on starting and structuring clubs effectively. We express gratitude to all who supported us in organizing this event."
     ],
     "date": "10th August 2023",
     "images": [
@@ -43,10 +40,9 @@
   },
   {
     "id": "4",
-    "title": "CoSoG Nepal Presentation",
+    "title": "CoSoG Nepal at Constellation Secondary English Boarding School",
     "descriptions": [
-      "CoSoG Nepal at Constellation Secondary English Boarding School",
-      "We had an amazing day at Constellation Secondary English Boarding School, where we discussed the various opportunities in the field of Computer Science. We also shared insights from our previous projects and CS club experiences."
+      "It was a remarkable day at Constellation Secondary English Boarding School as CoSoG Nepal engaged with students in a discussion on the diverse prospects within the realm of Computer Science. Drawing from our of experience, we shared valuable insights from our past projects and shed light on the transformative role of CS clubs."
     ],
     "date": "28th August 2023",
     "images": [
@@ -57,9 +53,8 @@
   },
   {
     "id": "5",
-    "title": "CoSoG Nepal Presentation",
+    "title": "Seminar at Hathausa Little Star English Boarding School",
     "descriptions": [
-      "Hathausa Little Star English Boarding School",
       "We had an amazing day at Hathausa Little Star English Boarding School, where we discussed the various opportunities in the field of Computer Science. We also shared insights from our previous projects and CS club experiences."
     ],
     "date": "15th September 2023",
@@ -71,9 +66,8 @@
   },
   {
     "id": "6",
-    "title": "CoSoG Nepal Presentation",
+    "title": "CoSoG Nepal at Skylark Secondary English Boarding School, Kapilvastu",
     "descriptions": [
-      "CoSoG Nepal at Skylark Secondary English Boarding School, Kapilvastu",
       "We conducted an engaging session with the grade 8 and 9 students, where Aashish took the stage to discuss the various CS opportunities in Nepal. We had a blast dicussing how to form a CS club, how to organize events and sharing insights from our previous CS club experiences."
     ],
     "date": "25th September 2023",
@@ -85,10 +79,9 @@
   },
   {
     "id": "7",
-    "title": "CoSoG Nepal Presentation",
+    "title": "Computer Science Seminar at Deep Boarding High School, Kathmandu",
     "descriptions": [
-      "Deep Boarding High School, Kathmandu.",
-      "CoSoG Nepal team delved into exciting opportunities, abundant resources, and our mission to foster a thriving CS culture. Plus, we shared insights from our previous projects and CS club experiences."
+      "Our CoSoG Nepal team recently hosted an informative seminar at Deep Boarding High School in Kathmandu, where we talked about the ever-evolving field of technology, specifically computer science. We examined the wide range of opportunities available and discussed ways in which students can capitalize on them. Furthermore, we offered valuable insights into improving the school's CS culture, stressing the significance of CS clubs in nurturing interest and improving skills. We provided strategies for starting and managing CS clubs effectively, so that students can  engage actively with the CS community at their school. We express our sincere gratitude to all who contributed to the success of this event."
     ],
     "date": "3rd October 2023",
     "images": [
@@ -99,10 +92,9 @@
   },
   {
     "id": "8",
-    "title": "CoSoG Nepal Presentation",
+    "title": "Opportunities in CS & Workings of CS Clubs: A Presentation at The Rolling Stones School",
     "descriptions": [
-      "CoSoG Nepal at The Rolling Stones School, Butwal.",
-      "We delved into exciting opportunities, abundant resources, and our mission to foster a thriving CS culture. Plus, we shared insights from our previous projects and CS club experiences."
+      "We recently hosted a seminar at The Rolling Stones School, where we talked about the exciting opportunities, abundant resources, and our mission to foster a thriving CS culture. Plus, we shared insights from our previous projects and CS club experiences."
     ],
     "date": "10th October 2023",
     "images": [
@@ -113,9 +105,8 @@
   },
   {
     "id": "9",
-    "title": "CoSoG Nepal Presentation",
+    "title": "CoSoG Nepal at  LB Namuna Academy, Butwal.",
     "descriptions": [
-      "CoSoG Nepal at LB Namuna Academy, Butwal.",
       "We delved into exciting opportunities, abundant resources, and our mission to foster a thriving CS culture. Plus, we shared insights from our previous projects and CS club experiences."
     ],
     "date": "24th November 2023",
@@ -127,9 +118,8 @@
   },
   {
     "id": "10",
-    "title": "CoSoG Nepal Presentation",
+    "title":  "CoSoG Nepal had an amazing day at Butwal Madina School, Butwal.",
     "descriptions": [
-      "CoSoG Nepal had an amazing day at Butwal Madina School, Butwal.",
       "We took the stage to unfold the various opportunities in the field of Computer Science. Additionally, we discussed the hierarchy of a CS club, how to form a CS club, and how to organize events."
     ],
     "date": "28th November 2023",
@@ -141,10 +131,9 @@
   },
   {
     "id": "11",
-    "title": "CoSoG Nepal Presentation",
+    "title": "CoSoG Nepal recently organized a mini-event at Gyanodaya Secondary School, Kathmandu.",
     "descriptions": [
-      "CoSoG Nepal recently organized a mini-event at Gyanodaya Secondary School, Kathmandu.",
-      "We took the stage to unfold the myriad opportunities in the dynamic field of Computer Science💻 in Nepal. Furthermore, we discussed the hierarchy of a CS club, how to form a CS club, and how to organize events."
+      "We took the stage to unfold the myriad opportunities in the dynamic field of Computer Science💻 in Nepal. Furthermore, we discussed the hierarchy of a CS club, how to form a CS club, and how to organize events. We thank everyone who helped us organize this event, especially to all the students at Gyanodaya who gave their valuable time for this event."
     ],
     "date": "13th December 2023",
     "images": [
