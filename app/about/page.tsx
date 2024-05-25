@@ -1,4 +1,3 @@
-import img from "next/image";
 import { Descriptor } from "./_components";
 import SectionTitle from "@/components/SectionTitle";
 import Member from "@/components/Member";
