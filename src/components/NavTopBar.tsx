@@ -11,32 +11,33 @@ type TEventNavTopBar = {
     CTA?: {
         status: boolean,
         label: string,
+        link: string,
     },
-    EventLink?: string
+    EventLink?: string,
+    excludeRoute?: string[],
 }
 export const EventNavTopBar = (data: TEventNavTopBar) => {
-    // default is made true to remove the flash in the events page 
-    const [eventPage, setEventPage] = useState<boolean>(true);
-
     const pathname = usePathname();
+    const shouldRender = !data?.excludeRoute?.includes(pathname) || false;
 
-    useEffect(() => {
-        if (pathname?.includes('techafterten')) return setEventPage(true)
-        setEventPage(false)
-    }, [pathname])
-
-
-    return !eventPage && <nav className="bg-primary  w-full brk-1400:px-[calc((100%-1400px)/2)] p-standard  text-center">
+    return shouldRender && <nav className="bg-primary  w-full brk-1400:px-[calc((100%-1400px)/2)] p-standard flex justify-between items-center">
         <div className="titleCon text-white pb-small ">
-            <span >
+            <h2 className="font-bold text-lg">
                 {data.title} &nbsp;
-            </span>
-            <a href={data.EventLink} className="underline underline-offset-4">
-                Learn More
-            </a>
+            </h2>
+            {
+                data?.description && <p className="text-white">
+                    {data?.description}
+                </p>
+            }
         </div>
-        {
-            data?.countDown && <CountDown date={data.eventDate} className="" />
+
+        {data?.CTA?.status &&
+            <a href={data.CTA?.link}>
+                <button className="bg-white-light p-3 rounded-md text-blue-700">
+                    {data.CTA?.label}
+                </button>
+            </a>
         }
     </nav>
 }
