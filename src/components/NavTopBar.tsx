@@ -1,15 +1,12 @@
 "use client";
-import { useEffect, useState } from "react";
-import { CountDown } from "./CountDown"
 import { usePathname } from "next/navigation";
 
 type TEventNavTopBar = {
     title: string,
     description: string,
-    eventDate: string,
+    eventDate?: string,
     countDown?: boolean,
     CTA?: {
-        status: boolean,
         label: string,
         link: string,
     },
@@ -32,7 +29,7 @@ export const EventNavTopBar = (data: TEventNavTopBar) => {
             }
         </div>
 
-        {data?.CTA?.status &&
+        {data?.CTA &&
             <a href={data.CTA?.link}>
                 <button className="bg-white-light p-3 rounded-md text-blue-700">
                     {data.CTA?.label}

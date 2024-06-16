@@ -10,15 +10,13 @@ const Navbar = () => {
     return (
         <>
             <EventNavTopBar
-                title="We are looking for passionate individuals to be part of CoSoG Nepal."
+                title="Are you an IOE aspirant?"
                 CTA={{
-                    status: true,
                     label: "Learn More",
                     link: "https://forms.gle/kWXjcmrd2WWvFZvV8"
                 }}
-                EventLink="/events/techafterten"
-                description="Are you ready to make some impact! that changes many lives?"
-                eventDate="2024-05-04 11:59 am"
+                EventLink="https://forms.gle/Utbxng9oBSMpRGkF9"
+                description="We're excited to support aspiring engineers with our IOE Entrance Preparation Book Donation initiative!"
             />
 
             <div

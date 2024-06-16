@@ -99,7 +99,7 @@ const Herosection = () => {
                             <a
                                 href="https://forms.gle/gRPEzxmbL9febVuMA"
                                 target="_blank"
-                                className="bg-primary cursor-pointer h-12 text-white text-center py-2 mt-block rounded-[5px] font-medium w-full sm:w-48" >
+                                className="bg-primary cursor-pointer py-3 text-white text-center   rounded-[5px] font-medium w-full sm:w-48" >
                                 Join our community
                             </a>
                         </div>
