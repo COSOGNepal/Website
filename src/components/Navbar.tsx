@@ -14,10 +14,10 @@ const Navbar = () => {
                 CTA={{
                     status: true,
                     label: "Learn More",
-                    link: ""
+                    link: "https://forms.gle/Utbxng9oBSMpRGkF9"
                 }}
                 EventLink="https://forms.gle/Utbxng9oBSMpRGkF9"
-                description="CoSoG Nepal is excited to support aspiring engineers with our IOE Entrance Preparation Book Donation initiative! We believe in the power of education and your potential to shine. We're offering IOE prep books to deserving +2 pass students based on need, enthusiasm, and passion for learning, not just GPA."
+                description="We're excited to support aspiring engineers with our IOE Entrance Preparation Book Donation initiative!"
                 eventDate="2024-06-20 11:59 am"
             />
 
