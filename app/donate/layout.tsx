@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Cosog Nepal || About",
-    description: "Cosog Nepal (Coding for Social Good) is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Sec/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal's digitalization.",
+    title: "Cosog Nepal || Donation",
+    description: "Your donation to Cosog Nepal will help us change many students life. Donate to improve Cs in Nepal.",
     metadataBase: new URL("https://cosognepal.org/"),
     openGraph: {
         images: [{
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary",
         site: "@cosognepal",
-        title: "Cosog Nepal || About",
-        description: "Cosog Nepal (Coding for Social Good) is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Sec/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal's digitalization.",
+        title: "Cosog Nepal || Donation",
+        description: "Your donation to Cosog Nepal will help us change many students life. Donate to improve Cs in Nepal.",
         images: [{
             url: "/assets/about_banner.png",
             width: 1600,

@@ -6,7 +6,7 @@ import getMembers from "./getMembersInfo";
 export default async function AboutPage() {
     const members = await getMembers();
     return (
-        <div className="main_container h-max flex flex-col space-y-section w-full px-standard sm:px-block mt-section max-w-[1400px] m-auto">
+        <div className="main_container h-max flex flex-col space-y-section w-full px-standard sm:px-block  max-w-[1400px] m-auto">
             <div className="aboutSection w-full">
                 <img src="/assets/images/assets/about_banner.png" width={1400} height={550} alt="banner_about_section"
                     className="banner max-h-[550px] h-auto object-cover m-auto" />
@@ -37,17 +37,6 @@ export default async function AboutPage() {
                     {
                         members.map((member, index) => {
                             if (member.post != "Community Leader")
-                                return <Member key={index} data={member} />
-                        })
-                    }
-                </div>
-            </div>
-            <div className="community_leaders space-y-block ">
-                <SectionTitle title="Community Leaders" />
-                <div className="members grid lg:grid-cols-3-320 grid-cols-auto-fit-320 grid-rows-max gap-standard justify-center">
-                    {
-                        members.map((member, index) => {
-                            if (member.post === "Community Leader")
                                 return <Member key={index} data={member} />
                         })
                     }
