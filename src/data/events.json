@@ -118,7 +118,7 @@
   },
   {
     "id": "10",
-    "title":  "CoSoG Nepal had an amazing day at Butwal Madina School, Butwal.",
+    "title": "CoSoG Nepal had an amazing day at Butwal Madina School, Butwal.",
     "descriptions": [
       "We took the stage to unfold the various opportunities in the field of Computer Science. Additionally, we discussed the hierarchy of a CS club, how to form a CS club, and how to organize events."
     ],
@@ -140,6 +140,20 @@
       "/assets/images/Events/Gyanodaya_Secondary_School/photo1.png",
       "/assets/images/Events/Gyanodaya_Secondary_School/photo2.png",
       "/assets/images/Events/Gyanodaya_Secondary_School/photo3.png"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Computer Science in +2 (high school)",
+    "descriptions": [
+      "Computer Science in +2 program was a virtual career guidance program designed to help the SEE graduates make informed decision about their career by choosing right stream after 10th grade. We're successful to help over 75 students directly and many more through our recorded session.",
+      "We laid out the differences between Computer Science in science and management stream; we explored different career paths within Computer Science; we explored the job and educational opportunities in Nepal and abroad, and discovered the boundless potential that awaits you in this ever-evolving landscape."
+    ],
+    "date": "4th May 2024",
+    "images": [
+      "/assets/images/Events/CS_in_high_school/CS_in_school1.jpg",
+      "/assets/images/Events/CS_in_high_school/CS_in_school2.jpg",
+      "/assets/images/Events/CS_in_high_school/CS_in_school3.jpg"
     ]
   }
 ]
