@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <>
-            <EventNavTopBar
+            {/* <EventNavTopBar
                 title="Are you an IOE aspirant?"
                 CTA={{
                     label: "Learn More",
@@ -17,7 +17,7 @@ const Navbar = () => {
                 }}
                 EventLink="https://forms.gle/Utbxng9oBSMpRGkF9"
                 description="We're excited to support aspiring engineers with our IOE Entrance Preparation Book Donation initiative!"
-            />
+            /> */}
 
             <div
                 className={`sticky top-small left-small hamcontainer z-50 bg-white/80 backdrop-blur-[20px] rounded-full md:hidden cursor-pointer hover:bg-gray-bg h-10 w-10 flex items-center justify-center `}
