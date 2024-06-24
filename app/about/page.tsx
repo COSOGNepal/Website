@@ -60,7 +60,7 @@ export default async function AboutPage() {
 
                     </article>
                 }
-                cta={{ text: "Join Now", link: "https://forms.gle/nKwtAMG2Q4rL57QW7" }}
+                cta={{ text: "Join Now", link: " https://forms.gle/euosQkdUW45P8mYc9" }}
             />
         </>
     )
