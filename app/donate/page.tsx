@@ -4,6 +4,7 @@ import React from "react";
 import { useState } from "react";
 import FileInput from "./_components/FileInput";
 import InfoBanner from "@/components/InfoBanner";
+
 const Donate = () => {
     const [ShownComponent, setShownComponent] = useState({ shown: "esewa" });
     return (
@@ -53,7 +54,6 @@ const Donate = () => {
                                 setShownComponent({ shown: "fund" });
                             }}
                         >
-
                             Fund Raise
                         </button>
                     </div>
@@ -64,8 +64,10 @@ const Donate = () => {
             </main>
             <InfoBanner
                 leftContent={<InfoBannerLeftContent />}
-                rightContent={"Mail Us"}
-                CTALink={"mailto:contact@cosognepal.org"}
+                cta={{
+                    text: "Mail Us",
+                    link: "mailto:contact@cosognepal.org",
+                }}
             />
         </>
     );
@@ -253,18 +255,20 @@ const CoffeeDonation = () => {
                 <p className="text-sub-para font-medium text-black-light">
                     Visit our official
                     <a
-                        href="https://www.buymeacoffee.com"
+                        href="https://www.buymeacoffee.com/cosognepal"
                         className=" text-blue-blue mx-[5px]"
                         target="blank"
                     >
                         Buy me a Coffee
                     </a>
                     page and follow the instructions provided there.
+                    To buy us some helping hands(Volunteers).
                 </p>
             </div>
         </section>
     );
 };
+
 const InfoBannerLeftContent = () => {
     return (
         <div className="flex flex-col space-y-small">
