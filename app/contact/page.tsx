@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactPage = () => {
     return (
-        <main className="px-standard w-full md:max-w-[750px] md:mx-auto md:px-0 mt-section space-y-block">
+        <main className="px-standard w-full md:max-w-[750px] md:mx-auto md:px-0  space-y-block">
             <div className="text-faded space-y-small">
                 <h2 className="text-mid-title font-bold text-black-mid">
                     Send a message

@@ -35,9 +35,15 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
     useEffect(() => {
         if (!main_container.current) return
         observer.observe(main_container.current)
-    }, [])
 
-    const imageData = data.images.map((imageUrl, index) => ({ mainUrl: imageUrl, description: data.title }))
+        // cleanup
+        return () => {
+            main_container.current &&
+                observer.unobserve(main_container.current);
+        }
+    }, []);
+
+    const imageData = data.images.map((imageUrl) => ({ mainUrl: imageUrl, description: data.title }))
     return (
         <div className="main_container max-w-[680px] h-max flex flex-col border-white-light border-2" ref={main_container}>
             <div className="imagesContainer grid grid-cols-2 grid-rows-2-250 gap-small w-full">
