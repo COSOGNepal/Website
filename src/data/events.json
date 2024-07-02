@@ -155,5 +155,35 @@
       "/assets/images/Events/CS_in_high_school/CS_in_school2.jpg",
       "/assets/images/Events/CS_in_high_school/CS_in_school3.jpg"
     ]
+  },
+  {
+    "id": "13",
+    "title": "CoSoG Nepal opened a CS Club at Annapurna Vidhya Mandir",
+    "descriptions": [
+      "On the 25th of June, 2024 Aashish Panthi, the vice-president of Cosog Nepal took the stage to discuss the opportunities in the field of Computer Science💻 in Nepal. Furthermore, he discussed the hierarchy of a CS club, how to form a CS club, and how to organize events.",
+      "The session was concluded by forming a CS club at Shree Annapurna Vidhya Mandir Secondary School, Kapuwa Kapilvastu.",
+      "The participation of 60+ students really motivated us to work more on this kind of project. We are so thankful to the school administration and all students."
+    ],
+    "date": "25th June 2024",
+    "images": [
+      "/assets/images/Events/Annapurna_Vidhya_Mandir/photo1.jpeg",
+      "/assets/images/Events/Annapurna_Vidhya_Mandir/photo2.jpeg",
+      "/assets/images/Events/Annapurna_Vidhya_Mandir/photo3.jpeg"
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Sharing Opportunities in Computer Science at Shree Mahendra Secondary School",
+    "descriptions": [
+      "During the session, students of grade 9, 10 and 11 were introduced to the opportunities in Computer Scinece. Also, they got familiar with the terms like Hackathons, Olympiads, Minutes, Proposals and many more. Mr. Aashish Panthi also shared how to form a CS club and how to organize events.",
+      "Further, Aashish Panthi shared his journey and experiences in the field of Computer Science and motivated the students to take part in the upcoming events and competitions.",
+      "The session was interactive and students were very enthusiastic to learn more about the field of Computer Science. We are thankful to the school administration and all the students of Shree Paanch Mahendra Secondary School, Kapuwa Kapilvastu for their active participation."
+    ],
+    "date": "26th June 2024",
+    "images": [
+      "/assets/images/Events/Mahendra_Secondary_School/photo1.jpeg",
+      "/assets/images/Events/Mahendra_Secondary_School/photo2.jpeg",
+      "/assets/images/Events/Mahendra_Secondary_School/photo3.jpeg"
+    ]
   }
 ]
