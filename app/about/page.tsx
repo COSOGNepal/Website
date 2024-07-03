@@ -57,10 +57,12 @@ export default async function AboutPage() {
                             Let's change it together,
                             Join Cosog Nepal.
                         </p>
-
                     </article>
                 }
-                cta={{ text: "Join Now", link: " https://forms.gle/euosQkdUW45P8mYc9" }}
+                cta={{
+                    text: "Join Now",
+                    link: " https://forms.gle/euosQkdUW45P8mYc9"
+                }}
             />
         </>
     )
