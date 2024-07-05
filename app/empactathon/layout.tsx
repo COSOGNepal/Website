@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Empactathon",
+    title: "Empactathon || First National level highschool hackathon",
     description: `Empactathon is a national- level high school hackathon that offers students a unique opportunity to showcase their skills and creativity.
                  It is designed to tackle three main SSGs defined by the United Nations: E (environment), C(Climate action), and H(Health & well - being).`,
     metadataBase: new URL("https://cosognepal.org/"),
     openGraph: {
         images: [{
-            url: "/assets/empactathon_banner.png",
+            url: "/assets/images/Events/Empactathon/empactathon_banner.png",
             width: 1600,
             height: 680,
             type: "image/png"
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary",
         site: "@cosognepal",
-        title: "Empactathon",
+        title: "Empactathon || First National level highschool hackathon",
         description: `Empactathon is a national- level high school hackathon that offers students a unique opportunity to showcase their skills and creativity.
                  It is designed to tackle three main SSGs defined by the United Nations: E (environment), C(Climate action), and H(Health & well - being).`,
         images: [{
-            url: "/assets/empactathon_banner.png",
+            url: "/assets/images/Events/Empactathon/empactathon_banner.png",
             width: 1600,
             height: 680,
             type: "image/png"
