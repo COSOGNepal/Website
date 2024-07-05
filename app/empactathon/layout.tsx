@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     openGraph: {
         images: [{
             url: "/assets/images/Events/Empactathon/empactathon_banner.png",
-            width: 1600,
+            width: 1200,
             height: 680,
             type: "image/png"
         }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
                  It is designed to tackle three main SSGs defined by the United Nations: E (environment), C(Climate action), and H(Health & well - being).`,
         images: [{
             url: "/assets/images/Events/Empactathon/empactathon_banner.png",
-            width: 1600,
+            width: 1200,
             height: 680,
             type: "image/png"
         }],
