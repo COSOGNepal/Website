@@ -1,6 +1,5 @@
 const EmpactathonPage = () => {
     return <>
-        Empactathon on the way.
     </>
 };
 
