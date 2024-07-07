@@ -175,7 +175,7 @@
     "id": "14",
     "title": "Sharing Opportunities in Computer Science at Shree Mahendra Secondary School",
     "descriptions": [
-      "During the session, students of grade 9, 10 and 11 were introduced to the opportunities in Computer Scinece. Also, they got familiar with the terms like Hackathons, Olympiads, Minutes, Proposals and many more. Mr. Aashish Panthi also shared how to form a CS club and how to organize events.",
+      "During the session, students of grade 9, 10 and 11 were introduced to the opportunities in Computer Science. Also, they got familiar with the terms like Hackathons, Olympiads, Minutes, Proposals and many more. Mr. Aashish Panthi also shared how to form a CS club and how to organize events.",
       "Further, Aashish Panthi shared his journey and experiences in the field of Computer Science and motivated the students to take part in the upcoming events and competitions.",
       "The session was interactive and students were very enthusiastic to learn more about the field of Computer Science. We are thankful to the school administration and all the students of Shree Paanch Mahendra Secondary School, Kapuwa Kapilvastu for their active participation."
     ],
@@ -184,6 +184,20 @@
       "/assets/images/Events/Mahendra_Secondary_School/photo1.jpeg",
       "/assets/images/Events/Mahendra_Secondary_School/photo2.jpeg",
       "/assets/images/Events/Mahendra_Secondary_School/photo3.jpeg"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Opened new CS Club at Kapilvastu Gyanjyoti Shiksha Sadan",
+    "descriptions": [
+      "On the 26th of June, 2024 Aashish Panthi, the vice-president of Cosog Nepal shared the opportunities in the field of Computer Science in Nepal. Furthermore, he discussed the hierarchy of a CS club, how to form a CS club, and how to organize events at Kapilvastu Gyanjyoti Shiksha Sadan. Cosog Nepal concluded the session by opening the Computer Science club at the school.",
+      "The participation of over 40 students from classes 8 and 10 really motivated us to work more on this kind of project. We are so thankful to the school administration and all students."
+    ],
+    "date": "26th June 2024",
+    "images": [
+      "/assets/images/Events/Kapilvastu_Gyanjyoti_Secondary_School/photo1.jpg",
+      "/assets/images/Events/Kapilvastu_Gyanjyoti_Secondary_School/photo2.jpg",
+      "/assets/images/Events/Kapilvastu_Gyanjyoti_Secondary_School/photo3.jpg"
     ]
   }
 ]
