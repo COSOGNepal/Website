@@ -63,6 +63,11 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        empactathon: {
+          "bg-green": "#DFECD2",
+          primary: "#14A250",
+          dark: "#002F23",
+        },
       },
 
       keyframes: {
