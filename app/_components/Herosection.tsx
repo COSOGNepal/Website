@@ -48,7 +48,7 @@ const Herosection = () => {
                         </svg>
                     </div>
                 </div>
-                <div className="socialmedia z-[100] h-fit w-fit absolute bottom-standard right-standard md:right-standard flex sm:flex-col gap-small">
+                <div className="socialmedia z-[100] h-fit w-fit absolute bottom-standard right-standard md:right-standard sm:flex sm:flex-col hidden gap-small">
                     <a
                         href="https://www.facebook.com/Cosognepal"
                         target="blank"
@@ -105,7 +105,7 @@ const Herosection = () => {
                         </div>
                     </div>
                     <div className="flex justify-center items-center">
-                        <div className="relative w-64 h-64">
+                        <div className="relative md:w-64 aspect-square w-48 top-20 sm:top-auto  ">
                             <img src={"/assets/logo.png"} alt="logo" />
                         </div>
                     </div>

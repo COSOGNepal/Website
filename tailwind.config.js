@@ -20,7 +20,12 @@ module.exports = {
         faded: "#555555",
         "dark-transparent": "rgba(0, 0, 0, 0.7)",
         "dark-primary": "#01010A",
-        "gray-bg": "#F2F2F2",
+        gray: {
+          primary: "#F2F2F2",
+          bg: "#F2F2F2",
+          dark: "#A1A1A1",
+          border: "#D9D9D9",
+        },
         primary: "#278EED",
         "black-dark": "#01010A",
         "black-mid": "#555555",
@@ -28,10 +33,7 @@ module.exports = {
         blue: {
           blue: "#3771C8",
         },
-        gray: "#F2F2F2",
-        "gray-dark": "#A1A1A1",
         "white-light": "#E9E9E9",
-        "border-gray": "#D9D9D9",
 
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

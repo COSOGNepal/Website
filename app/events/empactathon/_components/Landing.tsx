@@ -3,17 +3,19 @@ import React from 'react'
 
 function Landing() {
     return (
-        <section className='h-[calc(100vh-120px)] bg-empactathon-bg-green flex  justify-center w-full items-center flex-col'>
+        <section className='h-[calc(100vh-120px)] bg-empactathon-bg-green flex  justify-center w-full items-center flex-col gap-3 md:gap-0'>
+            <h1 className='md:text-title text-sub-title text-empactathon-dark font-bold'>
+                First High School Hackathon
+            </h1>
 
-            <h1 className={`heading ${rubik_wet_paint.className} text-empactathon-primary text-[80px] text-center stroke-white `}
+            <h1 className={`heading ${rubik_wet_paint.className} text-empactathon-primary md:text-[80px] text-[40px] text-center stroke-white  `}
                 style={{
                     textShadow: "0px -6px white, 0px 10px white"
-                }}
-            >
+                }}>
                 Empactathon
             </h1>
 
-            <p className={`space-x-2 text-empactathon-dark text-sub-title font-medium `}>
+            <p className={`space-x-2 text-empactathon-dark md:text-sub-title text-para font-medium `}>
                 <span className={`${margarine.className}`}>
                     Education,
                 </span>
