@@ -5,7 +5,7 @@ import TimeLine from "../techafterten/_components/TimeLine";
 import FAQ from "../../_components/FAQ";
 
 const EmpactathonPage = () => {
-    return <>
+    return <div className="space-y-section">
         <Landing />
 
         {/* About */}
@@ -27,7 +27,7 @@ const EmpactathonPage = () => {
                     potential that awaits you in this ever-evolving landscape. `,
             ]}
             className={{
-                container: " brk-1400:px-[calc((100%-1400px)/2)] px-standard "
+                container: " brk-1400:px-[calc((100%-1400px)/2)] px-standard"
             }}
         />
         {/* Time line */}
@@ -37,7 +37,7 @@ const EmpactathonPage = () => {
             className={{
                 notPublicYetCard: "",
                 sectionContainer: {
-                    container: "w-full max-w-[1400px] mx-auto px-standard",
+                    container: "w-full max-w-[1400px] mx-auto px-standard brk-1400:px-0 ",
                 },
             }}
             guestData={[
@@ -106,7 +106,12 @@ const EmpactathonPage = () => {
 
         {/* Time line */}
         <TimeLine
-            datas={[
+            timelineTitle="Schedule of the Event"
+            className={{
+                iconContainer: "w-10 h-10 bg-empactathon-bg-green text-black-mid",
+                container: "brk-1400:px-0 px-standard w-full max-w-[1400px] mx-auto"
+            }}
+            tasks={[
                 {
                     description:
                         "Explain the purpose of the program and how it can benefit the recent SEE graduates. Briefly introduce the speakers and the topics they will be covering.",
@@ -194,7 +199,7 @@ const EmpactathonPage = () => {
             ]}
         />
 
-    </>
+    </div>
 };
 
 export default EmpactathonPage;

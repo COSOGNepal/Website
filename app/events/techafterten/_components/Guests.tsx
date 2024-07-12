@@ -131,7 +131,7 @@ const GuestsSection = ({ guestData, sectionTitle, className }: GuestSectionProps
             )}>
                 {!!guestData?.length && guestData?.map((guest) =>
                     guest.notPublicYet
-                        ? <NotPublicYetGuestCard placeholder={guest.placeholder} className={className?.notPublicYetCard} />
+                        ? <NotPublicYetGuestCard placeholder={guest.placeholder} className={className?.notPublicYetCard} key={guest.id} />
                         : <GuestCard
                             key={guest.id}
                             {...guest}
