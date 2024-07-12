@@ -119,12 +119,15 @@ const GuestsSection = ({ guestData, sectionTitle, className }: GuestSectionProps
     const [guestModal, setGuestModal] = useState<{ visible: boolean, active: string }>({ visible: false, active: "" });
 
     return (
-        <section className="speakers_section ">
+        <section className={cn("speakers_section ",
+            className?.sectionContainer?.container,
+        )}>
             <h1 className={cn("title text-2xl font-semibold", className?.sectionContainer?.title)}>
                 {sectionTitle}
             </h1>
-            <div className={cn("speakersContainer grid  gap-small py-standard place-items-center [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]",
-                typeof className?.sectionContainer?.speakersContainer
+            <div className={cn(
+                "speakersContainer grid  gap-small py-standard place-items-center [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]",
+                className?.sectionContainer?.guestsContainer
             )}>
                 {!!guestData?.length && guestData?.map((guest) =>
                     guest.notPublicYet

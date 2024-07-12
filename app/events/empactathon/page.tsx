@@ -1,6 +1,8 @@
 import EventDescripter from "@/components/ui/EventAbout";
 import Landing from "./_components/Landing";
 import { GuestsSection } from "../techafterten/_components/Guests";
+import TimeLine from "../techafterten/_components/TimeLine";
+import FAQ from "../../_components/FAQ";
 
 const EmpactathonPage = () => {
     return <>
@@ -32,7 +34,12 @@ const EmpactathonPage = () => {
         {/* Judges */}
         <GuestsSection
             sectionTitle="Judges"
-            className={{ notPublicYetCard: "" }}
+            className={{
+                notPublicYetCard: "",
+                sectionContainer: {
+                    container: "w-full max-w-[1400px] mx-auto px-standard",
+                },
+            }}
             guestData={[
                 {
                     id: "1",
@@ -96,7 +103,97 @@ const EmpactathonPage = () => {
 
         {/* prizes */}
 
+
+        {/* Time line */}
+        <TimeLine
+            datas={[
+                {
+                    description:
+                        "Explain the purpose of the program and how it can benefit the recent SEE graduates. Briefly introduce the speakers and the topics they will be covering.",
+                    icon: "star",
+                    title: "Introduction to the event",
+                },
+                {
+                    description:
+                        "Siddhartha Neupane will talk about the career paths in computer science that are available in Nepal and abroad.",
+                    icon: "speaker",
+                    title: "Career Paths in Computer Science",
+                },
+                {
+                    description:
+                        "Pratiksha Pandey will talk about the educational and job opportunities in Nepal.",
+                    icon: "speaker",
+                    title: "Opportunities in Nepal",
+                },
+                {
+                    description:
+                        "Aashish Panthi will talk about the educational and job opportunities abroad, especially in the United States.",
+                    icon: "speaker",
+                    title: "Opportunities Abroad",
+                },
+                {
+                    description:
+                        "Saroj Dahal will lay out the differences between Computer Science in science and management in +2 level.",
+                    icon: "description",
+                    title: "CS in Science vs Management",
+                },
+                {
+                    description: "Conclude the event and distrubution of resources talked about in the event.",
+                    icon: "report",
+                    title: "Conclude the event",
+                },
+            ]}
+        />
+
         {/* faq */}
+        <FAQ
+            data={[
+                {
+                    question: `What is the "Computer Science in +2" program?`,
+                    answer:
+                        "The program is designed to help recent 10th-grade graduates in Nepal make informed decisions about their future in the field of computer science.",
+                    value: "item-1",
+                },
+                {
+                    question: "Who should attend this event?",
+                    answer:
+                        "Reacent SEE graduates who are considering computer science for their further studies and want to learn about potential career paths and opportunities should attend.",
+                    value: "item-2",
+                },
+                {
+                    question: "What topics will the speakers cover?",
+                    answer:
+                        "Speakers will discuss career paths in computer science, differences between computer science in science and management streams, and educational and job opportunities in Nepal and abroad.",
+                    value: "item-3",
+                },
+                {
+                    question:
+                        "Will there be opportunities to ask questions to the speakers?",
+                    answer:
+                        "Yes, there will be a Q&A session where participants can engage directly with the speakers.",
+                    value: "item-4",
+                },
+                {
+                    question: "How can I join the event?",
+                    answer:
+                        "Details will be provided on how to join the online event via email after you fill the registration form. Event will be on Google Meet.",
+                    value: "item-5",
+                },
+                {
+                    question: "Is there any fee to attend the event?",
+                    answer:
+                        "No, the event is free to attend for all interested participants.",
+                    value: "item-6",
+                },
+                {
+                    question: "Can non-SEE graduates attend the event?",
+                    answer:
+                        "While the event is targeted at recent SEE graduates, those with an interest in computer science education are welcome, subject to the event's capacity.",
+                    value: "item-7",
+                },
+            ]}
+        />
+
     </>
 };
 
