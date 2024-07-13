@@ -39,7 +39,7 @@ const EmpactathonPage = () => {
         <GuestsSection
             sectionTitle="Judges"
             className={{
-                notPublicYetCard: "",
+                notPublicYetCard: "bg-gradient-to-br to-empactathon-primary/45",
                 sectionContainer: {
                     container: "w-full max-w-[1400px] mx-auto px-standard brk-1400:px-0 ",
                 },
@@ -187,7 +187,8 @@ const EmpactathonPage = () => {
             className={{
                 section: {
                     container: `w-full min-h-screen px-standard brk-1400:px-[calc((100%-1400px)/2)] bg-gradient-to-br from-white to-empactathon-primary/25 
-                                flex flex-col justify-center items-center space-y-standard `,
+                                flex flex-col justify-center items-center space-y-section 
+                                `,
                     title: "text-black-dark"
                 },
             }}
