@@ -3,6 +3,10 @@ import Landing from "./_components/Landing";
 import { GuestsSection } from "../techafterten/_components/Guests";
 import TimeLine from "../techafterten/_components/TimeLine";
 import FAQ from "../../_components/FAQ";
+import { PrizeSection } from "./_components/Prizes";
+import { cn } from "@/lib/utils";
+import { inter, lora } from "@/lib/fonts";
+import { Icon } from "@/components/Icon";
 
 const EmpactathonPage = () => {
     return <div className="space-y-section">
@@ -100,8 +104,95 @@ const EmpactathonPage = () => {
                 },
             ]}
         />
-
         {/* prizes */}
+
+        <PrizeSection
+            sectionComp={
+                <div className={cn(
+                    "title text-heading font-bold  text-center",
+                )}>
+                    <span className={`${lora.className} text-empactathon-dark`}>
+                        Stand a chance to win from a prize pool of over
+                    </span>
+                    <br />
+                    <span className={`${lora.className} bg-yellow-100 p-1 px-3 text-empactathon-dark`}>
+                        Nrs. 100,000
+                    </span>
+                </div>
+            }
+            prizeData={
+                [
+                    {
+                        prizeTitle: "Mega Winner",
+                        prizeDescription: <div className={" text-gray-500"}>
+                            <span className="flex gap-2">
+                                <Icon iconName="userStar" />
+                                <span>
+                                    1
+                                </span>
+                            </span>
+                            <span className="flex gap-2">
+                                <span>
+                                    RS.
+                                </span>
+                                <span>
+                                    20,000
+                                </span>
+                            </span>
+                        </div>,
+                        prizeIcon: "trophy"
+                    },
+                    {
+                        prizeTitle: "Omega Winner",
+                        prizeDescription: <div className={" text-gray-500"}>
+                            <span className="flex gap-2">
+                                <Icon iconName="userStar" />
+                                <span>
+                                    1
+                                </span>
+                            </span>
+                            <span className="flex gap-2">
+                                <span>
+                                    RS.
+                                </span>
+                                <span>
+                                    30,000
+                                </span>
+                            </span>
+                        </div>,
+                        prizeIcon: "trophy"
+                    },
+                    {
+                        prizeTitle: "Alpha Winner",
+                        prizeDescription: <div className={" text-gray-500"}>
+                            <span className="flex gap-2">
+                                <Icon iconName="userStar" />
+                                <span>
+                                    1
+                                </span>
+                            </span>
+                            <span className="flex gap-2">
+                                <span>
+                                    RS.
+                                </span>
+                                <span>
+                                    10,000
+                                </span>
+                            </span>
+                        </div>,
+                        prizeIcon: "trophy"
+                    },
+
+                ]}
+            className={{
+                section: {
+                    container: `w-full min-h-screen px-standard brk-1400:px-[calc((100%-1400px)/2)] bg-gradient-to-br from-white to-empactathon-primary/25 
+                                flex flex-col justify-center items-center space-y-standard `,
+                    title: "text-black-dark"
+                },
+            }}
+
+        />
 
 
         {/* Time line */}
@@ -199,7 +290,7 @@ const EmpactathonPage = () => {
             ]}
         />
 
-    </div>
+    </div >
 };
 
 export default EmpactathonPage;

@@ -1,7 +1,6 @@
 import Icons from "@assets/index";
 import { HTMLAttributes, ReactNode } from "react";
 
-
 type TIconProps = {
     iconName: keyof typeof Icons,
     className?: string,

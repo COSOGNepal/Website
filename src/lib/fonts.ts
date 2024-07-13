@@ -1,4 +1,9 @@
-import { Inter, Margarine, Rubik_Wet_Paint } from "next/font/google"
+import {
+    Inter,
+    Margarine,
+    Rubik_Wet_Paint,
+    Lora,
+} from "next/font/google"
 
 export const inter = Inter({
     weight: "variable",
@@ -11,6 +16,11 @@ export const rubik_wet_paint = Rubik_Wet_Paint({
 })
 
 export const margarine = Margarine({
+    weight: "400",
+    subsets: ["latin"]
+})
+
+export const lora = Lora({
     weight: "400",
     subsets: ["latin"]
 })
