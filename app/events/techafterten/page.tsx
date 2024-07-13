@@ -145,7 +145,7 @@ const Page = () => {
 
             <section className="timeline">
                 <TimeLine
-                    datas={[
+                    tasks={[
                         {
                             description:
                                 "Explain the purpose of the program and how it can benefit the recent SEE graduates. Briefly introduce the speakers and the topics they will be covering.",
