@@ -10,6 +10,11 @@ import navopen from "./navopen.svg";
 import trophy from "./svg/trophy.svg";
 import userStar from "./svg/userstar.svg";
 import Rs from "./svg/rs.svg";
+import grass from "./svg/Grass.svg";
+import leaf from "./svg/Leaf top.svg";
+import cloud from "./svg/cloud.svg";
+import drippingCloud from "./svg/cloud Dripping.svg";
+
 
 let Icons;
 
@@ -26,4 +31,8 @@ export default Icons = {
     trophy,
     userStar,
     Rs,
+    cloud,
+    grass,
+    leaf,
+    drippingCloud,
 }

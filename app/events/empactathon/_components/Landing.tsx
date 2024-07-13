@@ -1,10 +1,32 @@
+import { Icon } from '@/components/Icon'
 import { margarine, rubik_wet_paint } from '@/lib/fonts'
 import React from 'react'
 
 function Landing() {
     return (
-        <section className='h-[calc(100vh-120px)] bg-empactathon-bg-green flex  justify-center w-full items-center flex-col gap-3 md:gap-0'>
-            <h1 className='md:text-title text-sub-title text-empactathon-dark font-bold'>
+        <section className="h-[calc(100vh-120px)] bg-empactathon-bg-green flex  justify-center w-full items-center flex-col gap-3 md:gap-0">
+
+            {/* cloud  leaf */}
+            <Icon iconName="drippingCloud" className="absolute top-1/3 left-0 h-[20vw] -scale-x-100" />
+
+            {/* cloud  right */}
+            <Icon iconName="drippingCloud" className="absolute top-1/3 right-0 h-[20vw] -scale-x-100" />
+
+            {/* right bottom grass */}
+            <Icon iconName="grass" className="absolute bottom-0 right-0  h-[30vw]" />
+
+            {/* left bottom  grass */}
+            <Icon iconName="grass" className="absolute bottom-0 left-0 -scale-x-100 h-[30vw]" />
+
+            {/* Top left  leaf */}
+            <Icon iconName="leaf" className="absolute top-10 left-0 h-[10vw] " />
+
+            {/* Top right  leaf */}
+            <Icon iconName="leaf" className="absolute top-10 right-0 h-[10vw] -scale-x-100" />
+
+
+
+            <h1 className="md:text-title text-sub-title text-empactathon-dark font-bold">
                 First High School Hackathon
             </h1>
 

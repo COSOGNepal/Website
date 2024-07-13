@@ -5,12 +5,13 @@ import TimeLine from "../techafterten/_components/TimeLine";
 import FAQ from "../../_components/FAQ";
 import { PrizeSection } from "./_components/Prizes";
 import { cn } from "@/lib/utils";
-import { inter, lora } from "@/lib/fonts";
+import { lora } from "@/lib/fonts";
 import { Icon } from "@/components/Icon";
 
 const EmpactathonPage = () => {
     return <div className="space-y-section">
         <Landing />
+
 
         {/* About */}
         <EventDescripter
@@ -31,7 +32,8 @@ const EmpactathonPage = () => {
                     potential that awaits you in this ever-evolving landscape. `,
             ]}
             className={{
-                container: " brk-1400:px-[calc((100%-1400px)/2)] px-standard"
+                container: ` brk-1400:px-[calc((100%-1400px)/2)] px-standard
+                            `
             }}
         />
         {/* Time line */}
@@ -118,7 +120,7 @@ const EmpactathonPage = () => {
                     <span className={`${lora.className} bg-yellow-100 p-1 px-3 text-empactathon-dark`}>
                         Nrs. 100,000
                     </span>
-                </div>
+                </div >
             }
             prizeData={
                 [
