@@ -145,6 +145,7 @@ const Page = () => {
 
             <section className="timeline">
                 <TimeLine
+timelineTitle={"Event Timeline"}
                     tasks={[
                         {
                             description:
