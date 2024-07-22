@@ -5,19 +5,22 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
+import { cn } from "@/lib/utils";
 
-type TFaqParams = {
+interface faqData {
     question: string,
     answer: string,
     value: string
-}[]
+}
+type TFaqParams = {
+    data: faqData[],
+    className?: {
+        containerStyle?: string,
+        accordionItem?: string,
+    },
+}
 
-export default function FAQ(
-    { data }:
-        { data: TFaqParams }
-) {
-
-    // const FAQs = ;
+export default function FAQ(props: TFaqParams) {
     return (
         <main className="w-full max-w-[1400px] mx-auto md:px-standard brk-1400:px-0">
             <SectionTitle title="Frequently Asked Questions (FAQ)" />
@@ -26,11 +29,11 @@ export default function FAQ(
                 collapsible
                 className="mt-standard text-faded md:px-small"
             >
-                {data.map((faq) => (
+                {props.data.map((faq) => (
                     <AccordionItem
                         value={faq.value}
                         key={faq.value}
-                        className="border-b-[#e8e8e8] border-b-2 hover:bg-gray-bg px-small">
+                        className={cn("border-b-[#e8e8e8] border-b-2 hover:bg-gray-bg px-small", props.className?.accordionItem)}>
                         <AccordionTrigger className="no-underline hover:no-underline text-left space-x-2">
                             <span>
                                 {faq.question}

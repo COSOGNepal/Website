@@ -12,7 +12,6 @@ const EmpactathonPage = () => {
     return <div className="space-y-section">
         <Landing />
 
-
         {/* About */}
         <EventDescripter
             eventTitle="About the Event"
@@ -246,6 +245,9 @@ const EmpactathonPage = () => {
 
         {/* faq */}
         <FAQ
+            className={{
+                accordionItem: "hover:bg-empactathon-bg-green"
+            }}
             data={[
                 {
                     question: `What is the "Computer Science in +2" program?`,

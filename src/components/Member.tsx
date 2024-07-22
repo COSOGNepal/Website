@@ -1,4 +1,3 @@
-import img from "next/image"
 import type { Tmember } from "../../app/about/type";
 
 export default function Member({ data }: { data: Tmember }) {
