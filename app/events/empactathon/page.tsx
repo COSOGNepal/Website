@@ -7,7 +7,7 @@ import { PrizeSection } from "./_components/Prizes";
 import { cn } from "@/lib/utils";
 import { lora } from "@/lib/fonts";
 import { Icon } from "@/components/Icon";
-import { SupportersSection } from "@/components/Sponsors";
+import { SupportersSection } from "@/components/Supporters";
 
 const EmpactathonPage = () => {
     return <div className="space-y-section">
