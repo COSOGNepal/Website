@@ -7,6 +7,7 @@ import { PrizeSection } from "./_components/Prizes";
 import { cn } from "@/lib/utils";
 import { lora } from "@/lib/fonts";
 import { Icon } from "@/components/Icon";
+import { SupportersSection } from "@/components/Sponsors";
 
 const EmpactathonPage = () => {
     return <div className="space-y-section">
@@ -35,6 +36,58 @@ const EmpactathonPage = () => {
                             `
             }}
         />
+
+        {/* sponsors */}
+        <SupportersSection
+            sectionTitle="Sponsors And supporters"
+            sectionDescription="Thank you all for the support without you our event would have been impossible to organize."
+            supportersData={[
+                {
+                    name: "infosys",
+                    logo: "https://static.vecteezy.com/system/resources/previews/020/336/451/non_2x/infosys-logo-infosys-icon-free-free-vector.jpg",
+                    supportTitle: "Title Sponsor",
+                    socials: {
+                        facebook: "https://facebook.com",
+                        twitter: "https://twitter.com",
+                        linkedin: "https://linkedin.com"
+                    }
+                },
+                {
+                    name: "google",
+                    logo: "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+                    supportTitle: "Supporter",
+                    socials: {
+                        facebook: "https://facebook.com",
+                        twitter: "https://twitter.com",
+                        linkedin: "https://linkedin.com"
+                    }
+                },
+                {
+                    name: "microsoft",
+                    logo: "https://www.microsoft.com/en-us/sites/default/files/inline-images/MSFT_logo_1920x1080_CIA.png",
+                    supportTitle: "Supporter",
+                    socials: {
+                        facebook: "https://facebook.com",
+                        twitter: "https://twitter.com",
+                        linkedin: "https://linkedin.com"
+                    }
+                },
+                {
+                    name: "apple",
+                    logo: "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202106030739",
+                    supportTitle: "Supporter",
+                    socials: {
+                        facebook: "https://facebook.com",
+                        twitter: "https://twitter.com",
+                        linkedin: "https://linkedin.com"
+                    }
+                }
+
+
+            ]}
+        />
+
+
         {/* Time line */}
         {/* Judges */}
         <GuestsSection
