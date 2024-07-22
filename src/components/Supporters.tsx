@@ -60,7 +60,7 @@ const SupporterCard = (props: supporterCardParams) => {
         <div className={cn("supporterCard w-96 h-auto p-2  border border-gray-200 rounded-md flex flex-col gap-standard",
             // hover style
             "hover:border-gray-400",
-            props.className?.supporterCard)}>
+            props.className?.supporterCard?.contianer)}>
             <div className="imageSection">
                 <img src={props.logo} alt="sponsorsimage" className="rounded-md w-full" />
 

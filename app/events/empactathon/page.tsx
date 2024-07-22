@@ -39,6 +39,11 @@ const EmpactathonPage = () => {
 
         {/* sponsors */}
         <SupportersSection
+            className={{
+                supporterCard: {
+                    contianer: "bg-gradient-to-br from-transparent to-empactathon-bg-green"
+                }
+            }}
             sectionTitle="Sponsors And supporters"
             sectionDescription="Thank you all for the support without you our event would have been impossible to organize."
             supportersData={[
