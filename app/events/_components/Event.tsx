@@ -1,6 +1,5 @@
 'use client'
 
-import img from "next/image"
 import type { Tevent } from "../type";
 import React, { useEffect, useRef } from "react";
 import imgViewer from 'awesome-image-viewer'
@@ -44,6 +43,7 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
     }, []);
 
     const imageData = data.images.map((imageUrl) => ({ mainUrl: imageUrl, description: data.title }))
+
     return (
         <div className="main_container max-w-[680px] h-max flex flex-col border-white-light border-2" ref={main_container}>
             <div className="imagesContainer grid grid-cols-2 grid-rows-2-250 gap-small w-full">
@@ -51,7 +51,7 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
                     onClick={() => {
                         new imgViewer({
                             images: imageData,
-                            currentSelected: 0
+                            currentSelected: 0,
                         })
                     }}>
                     <img src={images[0]} height={250} width={680} alt={title}
@@ -61,7 +61,7 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
                     onClick={() => {
                         new imgViewer({
                             images: imageData,
-                            currentSelected: 0
+                            currentSelected: 1
                         })
                     }}>
                     <img src={images[1]} height={250} width={680} alt={title}
@@ -71,7 +71,7 @@ export default function Event({ data, index, states, activeBarHeightPerEvent }: 
                     onClick={() => {
                         new imgViewer({
                             images: imageData,
-                            currentSelected: 0
+                            currentSelected: 2
                         })
                     }}>
                     <img src={images[2]} height={250} width={680} alt={title}

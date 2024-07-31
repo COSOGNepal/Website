@@ -93,5 +93,11 @@
     .complex-grid-members-section .member-container:nth-child(7) {
         grid-area: br;
     }
+
 }
 
+
+.imageViewer.visible>.container {
+    /* Since in tailwind container has a defined style. It interfers with the packages style  */
+    max-width: none;
+}
