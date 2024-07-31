@@ -97,7 +97,7 @@
 }
 
 
-.imageViewer.visible>.container {
+.imageViewer>.container {
     /* Since in tailwind container has a defined style. It interfers with the packages style  */
     max-width: none;
 }
