@@ -16,7 +16,7 @@ const CommunityMembers = async () => {
                 <div className="members grid gap-small complex-grid-members-section">
                     {
                         members.map((member, index) => {
-                            if (member.post != "Community Leader")
+                            if (member.post != "Executive Member" && member.post != "Outreach Coordinator")
                                 return <Member key={index} data={member} />
                         })
                     }
