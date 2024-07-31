@@ -11,5 +11,5 @@ export type Tmember = {
     insta_link?: string,
     linkedin_link?: string,
     image: string,
-    post: "President" | "Vice President" | "Secretary" | "Treasurer" | "IT Head" | "Program Manager" | "Community Outreach Officer" | "Community Leader"
+    post: "President" | "Vice President" | "Secretary" | "Treasurer" | "IT Head" | "Program Manager" | "Community Outreach Officer" | "Community Leader" | "Executive Member" | "Outreach Coordinator"
 }

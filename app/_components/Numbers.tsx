@@ -4,11 +4,11 @@ type Tdata = { title: string; number: number; icon: string };
 
 const NumbersData: Tdata[] = [
     { title: "Schools Reached", number: 25, icon: "/assets/School_logo.svg" },
-    { title: "Districts Reached", number: 5, icon: "/assets/District_logo.svg" },
-    { title: "Events Organized", number: 12, icon: "/assets/Events_logo.svg" },
+    { title: "Districts Reached", number: 6, icon: "/assets/District_logo.svg" },
+    { title: "Events Organized", number: 30, icon: "/assets/Events_logo.svg" },
     {
         title: "Students Impacted",
-        number: 1200,
+        number: 3000,
         icon: "/assets/Students_logo.svg",
     },
 ];
