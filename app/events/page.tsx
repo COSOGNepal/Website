@@ -63,21 +63,19 @@ export default function EventsPage() {
     }, [dates])
 
     return (
-        <section className={`mt-section px-standard flex max-w-[1400px] w-full m-auto space-x-standard 
+        <section className={`mt-section px-standard flex min-w-[100vw] w-full m-auto space-x-standard 
                             justify-center items-start`}>
             <div className="events space-y-block" ref={events_container}>
-                <Suspense fallback={<> Loading...</>}>
-                    {
-                        events.map((event, index) => {
-                            return <Event
-                                data={event}
-                                key={index}
-                                index={index}
-                                states={{ setCurrentDate, setActiveBarHeight }}
-                                activeBarHeightPerEvent={activeBarHeightPerEvent} />
-                        })
-                    }
-                </Suspense>
+                {
+                    events.map((event, index) => {
+                        return <Event
+                            data={event}
+                            key={index}
+                            index={index}
+                            states={{ setCurrentDate, setActiveBarHeight }}
+                            activeBarHeightPerEvent={activeBarHeightPerEvent} />
+                    })
+                }
             </div>
             <div className={`slider_container p-standard flex-col items-baseline text-sub-para font-normal
                              text-black-mid hidden sticky lg:flex space-y-standard 
