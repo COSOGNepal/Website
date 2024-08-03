@@ -124,5 +124,23 @@
     "linkedin_link": "#",
     "image": "/assets/images/Members/Aayush_Marasini.jpg",
     "post": "Executive Member"
+  },
+  {
+    "name": "Prajwal Das",
+    "email": "dasprajwal050@gmail.com",
+    "fb_link": "#",
+    "insta_link": "#",
+    "linkedin_link": "#",
+    "image": "/assets/images/Members/Prajwal_Das.jpg",
+    "post": "Executive Member"
+  },
+  {
+    "name": "Sudesh Acharya",
+    "email": "sudeshacharya110@gmail.com",
+    "fb_link": "https://www.facebook.com/sudesh2356",
+    "insta_link": "#",
+    "linkedin_link": "https://www.linkedin.com/in/sudesh333",
+    "image": "/assets/images/Members/Sudesh_Acharya.png",
+    "post": "Executive Member"
   }
 ]
