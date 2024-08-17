@@ -199,5 +199,20 @@
       "/assets/images/Events/Kapilvastu_Gyanjyoti_Secondary_School/photo2.jpg",
       "/assets/images/Events/Kapilvastu_Gyanjyoti_Secondary_School/photo3.jpg"
     ]
+  },
+  {
+    "id": "15",
+    "title": "Git, GitHub and GitHub Education session at Kalika Manavgyan School, Butwal",
+    "descriptions": [
+      "On the 16th of August, Coding for Social Good Nepal organized an in-depth session where we explored different topics such as Git, GitHub, GitHub Student Developer Pack, GitHub Copilot, Domain, Hosting, and hackathon.",
+      "We loved the enthusiasm shown by the Computer Engineering Students of Kalika Manavgyan School Butwal. The event was attended by over 200 students studying in 9th, 10th, 11th, and 12th grade. During the session, we also distributed GitHub Stickers and Cheat Sheets provided by GitHub Education.",
+      "We thank our executive members and faculty at Kalika Manavagyan Secondary School, Butwal who made this session possible."
+    ],
+    "date": "16th August 2024",
+    "images": [
+      "/assets/images/Events/GitHub_Education_Kalika/photo1.jpg",
+      "/assets/images/Events/GitHub_Education_Kalika/photo2.jpg",
+      "/assets/images/Events/GitHub_Education_Kalika/photo3.jpg"
+    ]
   }
 ]
