@@ -46,7 +46,6 @@ export const quickSortByDate = <T>(params: z.infer<typeof quickSortByDateParamsS
         ? quickSort<Record<string, any>>(params.data, params.sortKey)
         : quickSort<Date>(params.data as Date[]);
 
-    console.log(sortedData.map(item => item.id))
     return params.direction === "Asc"
         ? sortedData as quickSortByDataReturnType<T>
         : [...sortedData].reverse() as quickSortByDataReturnType<T>;
