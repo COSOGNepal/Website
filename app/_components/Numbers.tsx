@@ -4,7 +4,7 @@ type Tdata = { title: string; number: number; icon: string };
 
 const NumbersData: Tdata[] = [
     { title: "Schools Reached", number: 25, icon: "/assets/School_logo.svg" },
-    { title: "Districts Reached", number: 6, icon: "/assets/District_logo.svg" },
+    { title: "Districts Reached", number: 30, icon: "/assets/District_logo.svg" },
     { title: "Events Organized", number: 30, icon: "/assets/Events_logo.svg" },
     {
         title: "Students Impacted",
