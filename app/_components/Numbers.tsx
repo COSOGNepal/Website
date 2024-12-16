@@ -8,7 +8,7 @@ const NumbersData: Tdata[] = [
     { title: "Events Organized", number: 120, icon: "/assets/Events_logo.svg" },
     {
         title: "Students Impacted",
-        number: 3000,
+        number: 10000,
         icon: "/assets/Students_logo.svg",
     },
 ];
