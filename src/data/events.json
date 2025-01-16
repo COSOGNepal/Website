@@ -1,18 +1,5 @@
 [
   {
-    "id": "1",
-    "title": "Presentation at Green Village English Boarding Secondary School",
-    "descriptions": [
-      "It was an exciting day at Green Village English Boarding Secondary School as CoSoG Nepal organized  a conversation on the wide range of career options in computer science. We shared a lot of lessons learned from our past initiatives and we shed light on the significant impact of CS clubs. Thank you to everyone involved!"
-    ],
-    "date": "17th June 2023",
-    "images": [
-      "/assets/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
-      "/assets/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
-      "/assets/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
-    ]
-  },
-  {
     "id": "2",
     "title": "Talk on Computer Science Opportunities in Nepal at Magus Secondary School, Kirtipur",
     "descriptions": [
@@ -88,6 +75,19 @@
       "/assets/images/Events/Deep_Boarding_High_school/photo1.jpg",
       "/assets/images/Events/Deep_Boarding_High_school/photo2.jpg",
       "/assets/images/Events/Deep_Boarding_High_school/photo3.jpg"
+    ]
+  },
+  {
+    "id": "1",
+    "title": "Presentation at Green Village English Boarding Secondary School",
+    "descriptions": [
+      "It was an exciting day at Green Village English Boarding Secondary School as CoSoG Nepal organized  a conversation on the wide range of career options in computer science. We shared a lot of lessons learned from our past initiatives and we shed light on the significant impact of CS clubs. Thank you to everyone involved!"
+    ],
+    "date": "17th June 2023",
+    "images": [
+      "/assets/images/Events/Green_Village_English_Boarding_school/photo1.jpeg",
+      "/assets/images/Events/Green_Village_English_Boarding_school/photo2.jpeg",
+      "/assets/images/Events/Green_Village_English_Boarding_school/photo3.jpeg"
     ]
   },
   {
@@ -169,6 +169,21 @@
       "/assets/images/Events/Annapurna_Vidhya_Mandir/photo1.jpeg",
       "/assets/images/Events/Annapurna_Vidhya_Mandir/photo2.jpeg",
       "/assets/images/Events/Annapurna_Vidhya_Mandir/photo3.jpeg"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Git, GitHub and GitHub Education session at Kalika Manavgyan School, Butwal",
+    "descriptions": [
+      "On the 16th of August, Coding for Social Good Nepal organized an in-depth session where we explored different topics such as Git, GitHub, GitHub Student Developer Pack, GitHub Copilot, Domain, Hosting, and hackathon.",
+      "We loved the enthusiasm shown by the Computer Engineering Students of Kalika Manavgyan School Butwal. The event was attended by over 200 students studying in 9th, 10th, 11th, and 12th grade. During the session, we also distributed GitHub Stickers and Cheat Sheets provided by GitHub Education.",
+      "We thank our executive members and faculty at Kalika Manavagyan Secondary School, Butwal who made this session possible."
+    ],
+    "date": "16th August 2024",
+    "images": [
+      "/assets/images/Events/GitHub_Education_Kalika/photo1.jpg",
+      "/assets/images/Events/GitHub_Education_Kalika/photo2.jpg",
+      "/assets/images/Events/GitHub_Education_Kalika/photo3.jpg"
     ]
   },
   {

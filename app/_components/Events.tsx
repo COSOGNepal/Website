@@ -2,7 +2,11 @@ import SectionTitle from "@/components/SectionTitle";
 import getEvents from "../events/getEvents"
 
 const Events = async () => {
-    const EventsData = await getEvents();
+    const EventsData = await getEvents({
+        numberOfEvents: 5,
+        order: "Des"
+    });
+
     return (
         <main className="px-standard brk-1400:px-0 w-screen mx-auto space-y-block">
             <SectionTitle title="Events" viewall="/events" />
