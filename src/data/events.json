@@ -201,7 +201,7 @@
     ]
   },
   {
-    "id": "15",
+    "id": "16",
     "title": "Git, GitHub and GitHub Education session at Kalika Manavgyan School, Butwal",
     "descriptions": [
       "On the 16th of August, Coding for Social Good Nepal organized an in-depth session where we explored different topics such as Git, GitHub, GitHub Student Developer Pack, GitHub Copilot, Domain, Hosting, and hackathon.",
@@ -213,6 +213,35 @@
       "/assets/images/Events/GitHub_Education_Kalika/photo1.jpg",
       "/assets/images/Events/GitHub_Education_Kalika/photo2.jpg",
       "/assets/images/Events/GitHub_Education_Kalika/photo3.jpg"
+    ]
+  },
+  {
+    "id": "17",
+    "title": "Day 1: Computer Science awareness session at Arniko School",
+    "descriptions": [
+      "On the 25th of August 2024, Our Biratnagar team shared the opportunities in the field of Computer Science💻 in Nepal. Furthermore, they discussed the hierarchy of a CS club, how to form a CS club, and how to organize events at Arniko Awasiya Secondary School, Biratnagar.",
+      "It was a great success with over 50 students from classes 8 and 9. We also had a great Q&A session with the students.",
+      "We thank our executive members Mr. Prajwal Das and Ms. Prakriti Mishra and faculty at Arniko Secondary School Biratnagar who made it possible."
+    ],
+    "date": "25th August 2024",
+    "images": [
+      "/assets/images/Events/Arniko_School_Day_1/photo1.jpg",
+      "/assets/images/Events/Arniko_School_Day_1/photo2.jpg",
+      "/assets/images/Events/Arniko_School_Day_1/photo3.jpeg"
+    ]
+  },
+  {
+    "id": "18",
+    "title": "Day 2: Sharing Opportunities in Computer Science at Arniko School, Biratnagar",
+    "descriptions": [
+      "On the 29th of August 2024, Mr. Prajwal and Ms. Prakriti shared the opportunities in the field of Computer Science in Nepal.",
+      "The participation of over 40 students from class 10 really motivated us to work more on this kind of project. We are so thankful to the school administration and all students."
+    ],
+    "date": "29th August 2024",
+    "images": [
+      "/assets/images/Events/Arniko_School_Day_2/photo1.jpg",
+      "/assets/images/Events/Arniko_School_Day_2/photo2.jpeg",
+      "/assets/images/Events/Arniko_School_Day_2/photo3.jpg"
     ]
   }
 ]
