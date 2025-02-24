@@ -6,7 +6,7 @@ import Events from "./_components/Events";
 import Numbers from "./_components/Numbers";
 import CommunityMembers from "./_components/CommunityMembers";
 import Goals from "./_components/Goals";
-import FAQ from "./_components/FAQ";
+// import FAQ from "./_components/FAQ";
 import InfoBanner from "@/components/InfoBanner";
 
 export default function Home() {

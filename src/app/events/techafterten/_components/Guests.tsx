@@ -123,9 +123,16 @@ interface GuestSectionProps {
 
   // props for passing styles to the component
   className?: {
-    sectionContainer?: Record<string, any>;
-    guestModal?: Record<string, any>;
-    guestCard?: Record<string, any>;
+    sectionContainer?: {
+      container?: string;
+      title?: string;
+      guestsContainer?: string;
+    };
+    guestModal?: {
+      visible: boolean;
+      active: string;
+    };
+    guestCard?: Record<string, string | number | boolean>;
     notPublicYetCard?: string;
   };
 }

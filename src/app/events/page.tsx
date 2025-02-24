@@ -3,7 +3,7 @@
 import Event from "./_components/Event"
 import getEvents from "./getEvents"
 import { Tevent } from "./type";
-import { DragEvent, Suspense, useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 export default function EventsPage() {
     const [events, setEvents] = useState<Tevent[]>([]);
@@ -26,16 +26,10 @@ export default function EventsPage() {
         })()
     }, [])
 
-    // handle the dragging of the slider ball
-    // TODO: Add a drag event and a mouse move event as well or may be a hold and move event.
-    const handleDrag = (e: DragEvent<HTMLDivElement>) => {
-
-    }
-
 
     useEffect(() => {
         const scrollAction = () => {
-            let currentScrollY = window.scrollY;
+            const currentScrollY = window.scrollY;
             if (!events_container.current) return
             const totalScrollHeight = (((events_container.current.childNodes[0]) as HTMLDivElement).getBoundingClientRect().height);
             const onePercent = (activeBarHeightPerEvent / totalScrollHeight) * events.length / 2;
@@ -60,7 +54,7 @@ export default function EventsPage() {
         return () => {
             window.removeEventListener("scroll", scrollAction)
         }
-    }, [dates])
+    }, [events.length, activeBarHeightPerEvent])
 
     return (
         <section className={`mt-section px-standard flex min-w-[100vw] w-full m-auto space-x-standard 
@@ -92,7 +86,7 @@ export default function EventsPage() {
                         >
                         </div>
                         <div className="flex w-max space-x-small absolute left-[-7.95px]" style={{ top: `${activeBarHeight - 0.5}%` }}>
-                            <div className="ball w-[20px] h-[20px] rounded-[10px] bg-primary" onDrag={handleDrag}></div>
+                            <div className="ball w-[20px] h-[20px] rounded-[10px] bg-primary"></div>
                             <div className="current_date font-bold h-min">
                                 {currentDate}
                             </div>

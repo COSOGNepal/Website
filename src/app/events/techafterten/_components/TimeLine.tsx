@@ -1,5 +1,5 @@
 import React from "react";
-import Icons from "@assets/index";
+import Icons from "@/assets";
 import { Icon } from "@/components/Icon";
 import { cn } from "@/lib/utils";
 

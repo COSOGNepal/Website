@@ -1,6 +1,6 @@
 import React from "react";
 
-const RouteHeading = ({ Title, Route }: { Title: String; Route: String }) => {
+const RouteHeading = ({ Title, Route }: { Title: string; Route: string }) => {
   return (
     <header className="left-28 top-5">
       <h1 className="my-0 py-0 text-sub-title sm:text-title md:text-heading font-bold">
