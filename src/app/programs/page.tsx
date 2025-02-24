@@ -7,9 +7,9 @@ import Image from "next/image";
 // images
 import Banner from "@/assets/programs_banner.jpg";
 import CS_Awareness from "@/assets/images/Programs/awareness.png";
-import CodeForCharity from "@/assets/images/programs/charity.png";
-import SkillDevelopment from "@/assets/images/programs/skills.png";
-import CodingCompetitions from "@/assets/images/programs/competitions.png";
+import CodeForCharity from "@/assets/images/Programs/charity.png";
+import SkillDevelopment from "@/assets/images/Programs/skills.png";
+import CodingCompetitions from "@/assets/images/Programs/competitions.png";
 
 export default async function ProgramsPage() {
   const data = [
