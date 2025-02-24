@@ -3,6 +3,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Icon } from "./Icon";
 import { APP_ROUTES } from "@/lib/routes";
+import CosogLogo from "@/assets/logo.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
@@ -33,9 +35,9 @@ const Navbar = () => {
       </div>
 
       <nav
-        className={`md:sticky fixed  left-0 top-0 overflow-hidden  z-40 md:pointer-events-auto
-                ${!navActive ? "pointer-events-none" : "pointer-events-auto"}
-                w-screen`}
+        className={`md:sticky fixed  left-0 top-0 overflow-hidden  z-40 md:pointer-events-auto w-screen ${
+          !navActive ? "pointer-events-none" : "pointer-events-auto"
+        }`}
       >
         <main
           className={`${
@@ -46,8 +48,8 @@ const Navbar = () => {
             className={`backdrop-blur-[20px] absolute inset-0 -z-10 bg-[rgba(255,255,255,0.5)] md:bg-[rgba(255,255,255,0.8)]`}
           ></div>
           <Link href="/">
-            <img
-              src={"/assets/logo.png"}
+            <Image
+              src={CosogLogo}
               height={50}
               width={50}
               className="absolute hidden md:block left-block top-[25px]  brk-1400:left-[calc((100%-1400px)/2)]"
