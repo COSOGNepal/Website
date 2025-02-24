@@ -5,13 +5,12 @@ import SanskarLamsal from "@/assets/images/Members/Sanskar_Lamsal.jpg";
 import SarojRegmi from "@/assets/images/Members/Saroj_Regmi.jpg";
 import DityaKC from "@/assets/images/Members/Ditya_KC.jpeg";
 import KrishtinaKhanal from "@/assets/images/Members/Krishtina_Khanal.jpg";
-import SaphalUpreti from "@/assets/images/Members/Saphal_Upreti.jpeg";
+import MesupAdhikari from "@/assets/images/Members/Mesup_Adhikari.jpg";
 import PrakritiMishra from "@/assets/images/Members/Prakriti_Mishra.jpg";
 import GautamBidari from "@/assets/images/Members/Gautam_Bidari.jpg";
 import AbishaAryal from "@/assets/images/Members/Abisha_Aryal.jpg";
 import NishanRegmi from "@/assets/images/Members/NISHAN_REGMI.png";
 import ShitalShrestha from "@/assets/images/Members/Shital_Shrestha.jpeg";
-import AayushMarasini from "@/assets/images/Members/Aayush_Marasini.jpg";
 import PrajwalDas from "@/assets/images/Members/Prajwal_Das.jpg";
 import SudeshAcharya from "@/assets/images/Members/Sudesh_Acharya.png";
 
@@ -80,10 +79,19 @@ const members = [
     post: "Community Outreach Officer",
   },
   {
+    name: "Mesup Adhikari",
+    email: "mesupadhikari@gmail.com",
+    fb_link: "https://www.facebook.com/mesupadhikari/",
+    insta_link: "https://www.instagram.com/mesupadhikari/",
+    linkedin_link: "https://www.linkedin.com/in/mesupadhikari/",
+    image: MesupAdhikari,
+    post: "Executive Member",
+  },
+  {
     name: "Prakriti Mishra",
     email: "prakritim610@gmail.com",
     fb_link: "https://www.facebook.com/prakriti.mishra.79274",
-    insta_link: "https://www.instagram.com/abii__saa/",
+    insta_link: "#",
     linkedin_link: "#",
     image: PrakritiMishra,
     post: "Executive Member",
