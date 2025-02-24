@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     site: "@cosognepal",
-    title: "Cosog Nepal || Programs",
+    title: "Programs | Coding for Social Good Nepal",
     description:
       "Cosog Nepal (Coding for Social Good) is a non-profit organization working to promote Computer Science Education and Initiate CS Clubs in Sec/High Schools in Nepal and facilitating charitable coding initiatives to aid in Nepal's digitalization.",
     images: [
