@@ -5,7 +5,7 @@ import Image from "next/image";
 // images
 import Banner from "@/assets/images/Programs/cs_awareness_banner.png";
 
-export default async function CodeForCharityPage() {
+export default async function CSAwareness() {
   return (
     <>
       <div className="main_container h-max flex flex-col space-y-section w-full px-standard sm:px-block  max-w-[1400px] m-auto">
