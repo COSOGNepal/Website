@@ -1,9 +1,9 @@
-import SectionTitle from "@/components/SectionTitle";
 import InfoBanner from "@/components/InfoBanner";
+import { Descriptor } from "@/app/about/_components";
 import Image from "next/image";
 
 // images
-import Banner from "@/assets/programs_banner.jpg"
+import Banner from "@/assets/images/Programs/Code_for_charity_banner.png";
 
 export default async function CodeForCharityPage() {
   return (
@@ -19,8 +19,21 @@ export default async function CodeForCharityPage() {
           />
         </div>
         <div className="space-y-10 " id="team">
-          <SectionTitle title="Code for Charity" />
-          <div className="flex justify-between flex-wrap gap-4"></div>
+          <Descriptor
+            title="What is code for charity?"
+            descriptions={[
+              "Code for Charity is a flagship program of Coding for Social Good Nepal that provides pro-bono coding services to national and international non-profits. Our team of skilled developers and designers work closely with NGOs to develop websites, applications, and other digital solutions that help them achieve their goals.",
+              "Our goal is to help non-profits leverage technology to increase their impact and reach more people. We believe that technology has the power to transform the way organizations work and help them achieve their mission more effectively.",
+            ]}
+          />
+
+          <Descriptor
+            title="How to apply?"
+            descriptions={[
+              "If you are a non-profit organization looking for technical support, we would love to hear from you! Please fill out the form below to tell us more about your organization and the project you need help with. Our team will review your application and get back to you as soon as possible.",
+              "If you are a developer or designer interested in volunteering with Code for Charity, please reach out to us at contact@cosognepal.org or fill the form available at about us page. We are always looking for talented individuals who are passionate about using their skills for social good.",
+            ]}
+          />
         </div>
       </div>
 
@@ -28,14 +41,14 @@ export default async function CodeForCharityPage() {
         leftContent={
           <article className="max-w-[800px]">
             <h1 className="font-bold text-mid-title">
-              Do you want to shape the situation of Computer Science in Nepal?
+              Do you need help with a technical project?
             </h1>
-            <p>Lets be a change together. Join Cosog Nepal.</p>
+            <p>We are here to help! Fill out the form.</p>
           </article>
         }
         cta={{
-          text: "Volunteer with us",
-          link: " https://forms.gle/euosQkdUW45P8mYc9",
+          text: "Access the form",
+          link: " https://docs.google.com/forms/d/e/1FAIpQLScojNFk_uLuQd48KgT8zkCrbRqPjApYeWPGPVeESG19rlxZ3A/viewform?usp=pp_url&entry.76041240=President&entry.145747725=Nepal",
         }}
       />
     </>

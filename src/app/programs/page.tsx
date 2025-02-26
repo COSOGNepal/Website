@@ -55,7 +55,7 @@ export default async function ProgramsPage() {
             className="banner max-h-[400px] h-auto object-cover m-auto"
           />
         </div>
-        <div className="space-y-10 " id="team">
+        <div className="space-y-8" id="team">
           <SectionTitle title="Our Programs" />
           <div className="flex justify-between flex-wrap gap-4">
             {data.map((item, index) => (
