@@ -52,15 +52,6 @@ const members = [
     post: "Program Manager",
   },
   {
-    name: "Saroj Regmi",
-    email: "sarojregmi.official@gmail.com",
-    fb_link: "https://www.facebook.com/sarojregmi200",
-    insta_link: "https://www.instagram.com/sarojregmi200",
-    linkedin_link: "https://www.linkedin.com/in/sarojregmi200",
-    image: SarojRegmi,
-    post: "IT Head",
-  },
-  {
     name: "Ditya KC",
     email: "dityakc432@gmail.com",
     fb_link: "#",
