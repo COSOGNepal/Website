@@ -34,6 +34,14 @@ export default async function CodeForCharityPage() {
               "If you are a developer or designer interested in volunteering with Code for Charity, please reach out to us at contact@cosognepal.org or fill the form available at about us page. We are always looking for talented individuals who are passionate about using their skills for social good.",
             ]}
           />
+
+          <Descriptor
+            title="Why volunteer?"
+            descriptions={[
+              "Volunteering with Code for Charity is a great way to use your skills for social good and make a positive impact in the world. By volunteering with us, you will have the opportunity to work on real-world projects that help non-profits achieve their goals and make a difference in the lives of others.",
+              "You'll also get a chance to learn from professionals, get your code reviewed, network with other developers, and add this experience to your resume. We'll provide you with the support, resources, and a letter of recommendation to help you succeed in your career.",
+            ]}
+          />
         </div>
       </div>
 
