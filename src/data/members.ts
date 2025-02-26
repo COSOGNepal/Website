@@ -2,7 +2,6 @@ import BibekBhandari from "@/assets/images/Members/Bibek_Bhandari.png";
 import AashishPanthi from "@/assets/images/Members/Aashish_Panthi.jpeg";
 import SushilBhattarai from "@/assets/images/Members/Sushil_Bhattarai.png";
 import SanskarLamsal from "@/assets/images/Members/Sanskar_Lamsal.jpg";
-import SarojRegmi from "@/assets/images/Members/Saroj_Regmi.jpg";
 import DityaKC from "@/assets/images/Members/Ditya_KC.jpeg";
 import KrishtinaKhanal from "@/assets/images/Members/Krishtina_Khanal.jpg";
 import MesupAdhikari from "@/assets/images/Members/Mesup_Adhikari.jpg";
