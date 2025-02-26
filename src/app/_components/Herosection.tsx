@@ -122,12 +122,10 @@ const Herosection = () => {
                     <span className="hidden sm:inline-block">
                       Coding for Social Good Nepal
                     </span>
-                    <br />
-                    CoSoG Nepal
                   </h2>
                 </div>
                 <p className="max-w-[1000px] text-left text-faded text-para mt-standard leading-tight">
-                  CoSoG Nepal is a non-profit organization working to promote
+                  CoSoG Nepal is a non-for-profit organization working to promote
                   Computer Science Education and Initiate CS Clubs in
                   Secondary/High Schools in Nepal and facilitating charitable
                   coding initiatives to aid in Nepal&apos;s digitalization.
